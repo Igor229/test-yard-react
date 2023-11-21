@@ -1,0 +1,60 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #527246;
+  }
+  
+  .shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 60%, rgba(22,27,24,1) 100%);
+    top: 0;
+    left: 0;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    background-color: #527246;
+    border-radius: 100px;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .swiper {
+      border-radius: 20px 20px 0 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .swiper-slide {
+      height: 440px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .swiper-slide {
+      height: 280px;
+    }
+  }

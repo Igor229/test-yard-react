@@ -1,0 +1,91 @@
+$main-color: #181E1A;
+$text-color: #969F9A;
+
+.footer {
+    background-color: $main-color;
+    padding: 35px 0;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        &-items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $text-color;
+        }
+
+        .content__item {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &-title {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            &-logos {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            &-text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #fff;
+                width: max-content;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 1px;
+                    background: #fff;
+                    transition: width .3s;
+                }
+    
+                &:hover::after {
+                    width: 100%;
+                    transition: width .3s;
+                }
+            }
+
+            .upper {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__actions {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &-item a {
+            color: #fff;
+        }
+
+        &-socials {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+
+            .social-icon {
+                width: 20px;
+                height: 20px;
+            }
+
+            .tiktok-icon {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+
+    &-bg {
+        background: #181E1A;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &-nav {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .navigations {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+
+            &__action {
+                color: #fff;
+                font-weight: 400;
+                line-height: 24px;
+                text-transform: uppercase;
+                font-size: 14px;
+    
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 1px;
+                    background: #fff;
+                    transition: width .3s;
+                }
+    
+                &:hover::after {
+                    width: 100%;
+                    transition: width .3s;
+                }
+            }
+        }
+
+        &-contacts {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+
+            .contacts__number {
+                color: #fff;
+                font-weight: 400;
+                line-height: 24px;
+                font-size: 14px;
+    
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 1px;
+                    background: #fff;
+                    transition: width .3s;
+                }
+    
+                &:hover::after {
+                    width: 100%;
+                    transition: width .3s;
+                }
+            }
+
+            .contacts__button {
+                width: 230px;
+                height: 65px;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.beskid-page-swiper {
+    width: 600px;
+    height: 368px;
+    border-radius: 20px;
+    margin: 0;
+}
+
+@media screen and (max-width: 820px) {
+    .beskid-page-swiper {
+        width: 100%;
+        height: 444px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .beskid-page-swiper {
+        height: 228px;
+    }
+}

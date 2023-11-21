@@ -1,0 +1,98 @@
+.managment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 433px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 60px 0 112px 0;
+
+
+    &__box {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+            gap: 16px;
+            transform: translateY(250px);
+        }
+
+        &-number {
+            color: #fff;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 48px;
+        }
+    
+        &-text {
+            color: #fff;
+            font-size: 23px;
+            font-weight: 500;
+            line-height: 28px;
+            text-align: center;
+            max-width: 200px;
+        }
+    }
+    .bg-one {
+        background: linear-gradient(180deg, rgba(24, 30, 26, 0.00) 0%, rgba(24, 30, 26, 0.65) 65.1%), url('../assets/beskidPage/images/managment-group/manageGroupImg1.jpg') no-repeat;
+        background-size: 355px 433px;
+    }
+    .bg-two {
+        background: linear-gradient(180deg, rgba(24, 30, 26, 0.00) 0%, rgba(24, 30, 26, 0.65) 65.1%), url('../assets/beskidPage/images/managment-group/manageGroupImg2.jpg') no-repeat;
+        background-size: 355px 433px;
+    }
+    .bg-three {
+        background: linear-gradient(180deg, rgba(24, 30, 26, 0.00) 0%, rgba(24, 30, 26, 0.65) 65.1%), url('../assets/beskidPage/images/managment-group/manageGroupImg3.jpg') no-repeat;
+        background-size: 355px 433px;
+    }
+    .bg-four {
+        background: linear-gradient(180deg, rgba(24, 30, 26, 0.00) 0%, rgba(24, 30, 26, 0.65) 65.1%), url('../assets/beskidPage/images/managment-group/manageGroupImg4.jpg') no-repeat;
+        background-size: 355px 433px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .managment {
+        flex-wrap: wrap;
+        height: 866px;
+
+        &__box {
+            width: 50%;
+            height: 433px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .managment {
+        flex-wrap: wrap;
+        height: 560px;
+        
+        &__box {
+            width: 50%;
+            height: 280px;
+            background-size: 220px 280px !important;
+
+            &-info {
+                transform: translateY(150px);
+            }
+
+            &-number {
+                font-size: 26px;
+                line-height: 32px;
+            }
+
+            &-text {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+}
