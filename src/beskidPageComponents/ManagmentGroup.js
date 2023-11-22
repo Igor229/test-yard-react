@@ -26,7 +26,7 @@ const managmentData = [
 function ManageBox (props) {
     const {manageNum, text, imgClass} = props
     return (
-            <div className={imgClass}>
+        <div className={imgClass}>
             <div className='managment__box-info'>
                 <h3 className='managment__box-number'>{manageNum}</h3>
                 <p className='managment__box-text'>{text}</p>

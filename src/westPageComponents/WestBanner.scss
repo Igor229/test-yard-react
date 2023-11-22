@@ -1,0 +1,14 @@
+.banner__titles-subtitle {
+    text-align: center;
+}
+
+.west-banner {
+    margin-bottom: 60px;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .west-banner__action {
+        padding: 0 40px;
+    }
+}

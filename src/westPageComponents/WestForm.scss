@@ -1,0 +1,31 @@
+.termination {
+    width: 50%;
+}
+
+.west-form {
+    background-color: #181E1A;
+    padding: 64px 44px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+
+    &__button {
+        width: 100% !important;
+    }
+
+    &__input {
+        width: 100% !important;
+    }
+}
+
+.select {
+    color: #181E1A !important;
+    appearance: none;
+    background-image: url('../assets/westPage/images/icons/chevron-down.png');
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}

@@ -1,9 +1,4 @@
 import './AdventageBox.scss'
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// import required modules
-import { FreeMode, Autoplay } from 'swiper/modules';
 
 function AdventageBox (props) {
     const {adventageNum, text} = props
