@@ -8,7 +8,6 @@
     &-box {
         display: flex;
         flex-direction: column;
-        width: 30%;
         gap: 36px;
 
         &__item {
@@ -29,6 +28,12 @@
                 color: #555;
             }
         }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .advent-box {
+        width: 30%;
     }
 }
 

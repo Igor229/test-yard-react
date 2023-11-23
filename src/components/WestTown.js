@@ -34,7 +34,7 @@ function WestTown () {
 
 
     return (
-        <div className='complex' id="west-town">
+        <div className='complex'>
             <div className="complex__info box">
 
                 <div className={blurClass}>

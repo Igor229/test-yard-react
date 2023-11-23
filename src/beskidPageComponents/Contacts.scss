@@ -1,7 +1,7 @@
 .contacts {
     padding: 60px 0 112px 0;
     display: flex;
-    gap: 36px;
+    gap: 220px;
     justify-content: center;
     align-items: center;
 
@@ -33,6 +33,12 @@
 
     &-button a{
         color: #fff;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .contacts {
+        gap: 36px;
     }
 }
 

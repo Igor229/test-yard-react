@@ -51,7 +51,7 @@ function SliderPhoto(props) {
     const {image, alt} = props
     return (
     <div className="news__item box">
-        <img className="news__item-image" src={image} alt={alt}/>
+        <img className="news__item-image west-gallery__img" src={image} alt={alt}/>
     </div>
     )
 }

@@ -45,13 +45,13 @@ function WestPage () {
             <svg className="action-icon">
               <use href={icons + '#chevron-left'}/>
             </svg>
-            <a href='/' className='action-text'>На головну</a>
+            <a href='#' className='action-text'>На головну</a>
           </div>
         </div>
 
 
         {/* Main Slider Block */}
-        <div className='info wrapper'>
+        <div className='info west-info wrapper'>
           <div className='info-container box west-slider'>
             <MainSlider/>
             <div className='info-description west-info'>
@@ -92,7 +92,7 @@ function WestPage () {
           <WestPlanningType/>
         </div>
 
-        <div className='bedroom wrapper box'>
+        <div className='bedroom box'>
           <div className='bedroom-container'>
             <h2 className='bedroom-container__title'>ДИЗАЙН-ПРОЕКТ У ПОДАРУНОК <br/>ПРИ КУПІВЛІ ТАУНХАУСА</h2>
           </div>

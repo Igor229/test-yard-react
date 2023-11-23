@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 433px;
+    height: 550px;
     border-radius: 20px;
     overflow: hidden;
     margin: 60px 0 112px 0;
@@ -14,6 +14,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-size: 100%;
 
         &-info {
             display: flex;
@@ -42,19 +43,37 @@
     }
     .bg-one {
         background: linear-gradient(180deg, rgba(24, 30, 26, 0.00) 0%, rgba(24, 30, 26, 0.65) 65.1%), url('../assets/beskidPage/images/managment-group/manageGroupImg1.jpg') no-repeat;
-        background-size: 355px 433px;
+        background-size: 100%  433px;
     }
     .bg-two {
         background: linear-gradient(180deg, rgba(24, 30, 26, 0.00) 0%, rgba(24, 30, 26, 0.65) 65.1%), url('../assets/beskidPage/images/managment-group/manageGroupImg2.jpg') no-repeat;
-        background-size: 355px 433px;
+        background-size: 100%  433px;
     }
     .bg-three {
         background: linear-gradient(180deg, rgba(24, 30, 26, 0.00) 0%, rgba(24, 30, 26, 0.65) 65.1%), url('../assets/beskidPage/images/managment-group/manageGroupImg3.jpg') no-repeat;
-        background-size: 355px 433px;
+        background-size: 100%  433px;
     }
     .bg-four {
         background: linear-gradient(180deg, rgba(24, 30, 26, 0.00) 0%, rgba(24, 30, 26, 0.65) 65.1%), url('../assets/beskidPage/images/managment-group/manageGroupImg4.jpg') no-repeat;
-        background-size: 355px 433px;
+        background-size: 100% 433px;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .managment {
+        &__box {
+            background-size: 100% 100% !important;
+        }
+    }
+}
+@media screen and (max-width: 1440px) {
+    .managment {
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .managment {
+        height: 433px;
     }
 }
 

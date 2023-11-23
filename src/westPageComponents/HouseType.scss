@@ -3,7 +3,7 @@
     flex-direction: column;
 
     &__img {
-        height: 403px;
+        height: 520px;
         border-radius: 20px;
         padding-bottom: 24px;
     }
@@ -46,6 +46,12 @@
     }
 }
 
+@media screen and (max-width: 1366px) {
+    .house-type__img {
+        height: 453px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .house-type {
         width: 80%;
@@ -55,5 +61,20 @@
 @media screen and (max-width: 480px) {
     .house-type {
         width: 100%;
+
+        &__img {
+            height: 330px;
+        }
+    }
+}
+@media screen and (max-width: 380px) {
+    .house-type {
+        &__img {
+            height: 250px;
+        }
+
+        &__info-main {
+            font-size: 20px;
+        }
     }
 }

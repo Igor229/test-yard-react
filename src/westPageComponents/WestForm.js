@@ -15,7 +15,7 @@ function WestForm() {
                 </select>
 
                 <select className='west-form__input form-input select'>
-                    <option value=''>Месенджер, де зручніше отримати розрахунок</option>
+                    <option value='' selected disabled>Месенджер, де зручніше отримати розрахунок</option>
                     <option value='Viber'>Viber</option>
                     <option value='Telegram'>Telegram</option>
                     <option value='Wats App'>Wats App</option>

@@ -1,0 +1,9 @@
+.west-gallery__img {
+    height: 350px !important;
+}
+
+@media screen and (max-width: 1440px) {
+    .west-gallery__img {
+        height: 250px !important;
+    }
+}

@@ -54,8 +54,8 @@ function BeskidPage () {
         </div>
 
         {/* titles and actions */}
-        <div className='wrapper title-container box'>
-          <a href='/'>
+        <div className='wrapper box beskid-title'>
+          <a href='#'>
             <div className='action'>
               <svg className="action-icon">
                 <use href={icons + '#chevron-left'}/>

@@ -144,7 +144,30 @@
     }
 }
 
+@media screen and (max-width: 1920px) {
+    .beskid-title {
+        padding-left: 120px;
+        padding-top: 60px;
+    }
+    .title-container {
+        padding: 100px 0 30px 0;
+    }
+}
+@media screen and (max-width: 1650px) {
+    .beskid-title {
+        padding-left: 60px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .beskid-title {
+        padding-left: 0px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
+    .info-description {
+        width: 80%;
+    }
     .card {
         width: 60%;
     }

@@ -20,7 +20,7 @@ function Beskid () {
     const terraceContent = isActive ? '16,80' : '27,90'
 
     return (
-        <div className='complex' id="beskid-home">
+        <div className='complex'>
             <div className="complex__info box">
 
                 <div className='complex__info-slider'>

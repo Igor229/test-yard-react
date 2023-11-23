@@ -29,3 +29,18 @@
     background-position: right 1rem center;
     background-size: 1em;
 }
+
+@media screen and (max-width: 480px) {
+    .west-form {
+        padding: 60px 26px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .west-form {
+        padding: 60px 16px;
+        &__input {
+            height: 48px !important;
+        }
+    }
+}
