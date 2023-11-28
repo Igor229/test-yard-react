@@ -14,14 +14,14 @@ function Footer () {
                     </div>
                     <div className="content__item">
                         <h4 className="content__item-title">Наші комплекси</h4>
-                        <a href='/#beskid-home' className="content__item-text upper">BESKID HOME RESORT</a>
+                        <a href='#beskid-home' className="content__item-text upper">BESKID HOME RESORT</a>
                         <a href='#west-town' className="content__item-text upper">WEST TOWN</a>
                     </div>
 
                     <div className="content__item">
                         <h4 className="content__item-title">Yard Development</h4>
-                        <a href='/#' className="content__item-text upper">Новини</a>
-                        <a href='/#' className="content__item-text upper">Стан будівництва</a>
+                        <a href='#' className="content__item-text upper">Новини</a>
+                        <a href='#' className="content__item-text upper">Стан будівництва</a>
                     </div>
 
                     <div className="content__item">

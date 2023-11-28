@@ -6,7 +6,7 @@ import 'swiper/css';
 
 function WestTown () {
     return (
-        <div className='complex' id="west-town">
+        <div className='complex'>
             <div className="complex__info box">
 
                 <div className='complex__info-slider'>
@@ -26,7 +26,7 @@ function WestTown () {
                         {/*=================== card actions ========================*/}
                         
                         <div className='info-actions'>
-                            <a href='/west-town'>
+                            <a href='#west-town'>
                             <button className='info-actions__btn'>
                                 Докладніше про комплекс
                                 <svg className="btn-icon">

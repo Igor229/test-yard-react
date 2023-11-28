@@ -53,7 +53,7 @@ function WestPage () {
             <svg className="action-icon">
               <use href={icons + '#chevron-left'}/>
             </svg>
-            <a href='/' className='action-text'>На головну</a>
+            <a href='#' className='action-text'>На головну</a>
           </div>
         </div>
 

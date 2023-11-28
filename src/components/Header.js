@@ -69,7 +69,7 @@ function Header() {
                         <img src={burger_icon} alt="menu-open" className="burger__items-icon menuIcon" onClick={showBurger}/>
                         <img src={burger_icon} alt="menu-close" className="burger__items-icon closeIcon" onClick={showBurger}/>
                     </div> 
-                    <a href='/#'><img src={mainLogoWhite} alt="main-logo" className="header__items-logo"/></a>
+                    <a href='#'><img src={mainLogoWhite} alt="main-logo" className="header__items-logo"/></a>
                 </div>
 
                 <div className={burger_class}>
@@ -84,11 +84,11 @@ function Header() {
                         <div className="burger__menu-contacts">
                             <div className="contacts__container">
                                 <h4 className="contacts__container-title">Yard Development</h4>
-                                <a href="/#" className="contacts__container-text burger-link" onClick={showBurger}>Головна</a>
+                                <a href="#" className="contacts__container-text burger-link" onClick={showBurger}>Головна</a>
                                 <a href="#beskid-home" className="contacts__container-text burger-link" onClick={showBurger}>BESKID HOME RESORT</a>
                                 <a href="#west-town" className="contacts__container-text burger-link" onClick={showBurger}>WEST TOWN</a>
-                                <a href="/#" className="contacts__container-text burger-link" onClick={showBurger}>Стан будівництва</a>
-                                <a href="/#" className="contacts__container-text burger-link" onClick={showBurger}>Новини</a>
+                                <a href="#" className="contacts__container-text burger-link" onClick={showBurger}>Стан будівництва</a>
+                                <a href="#" className="contacts__container-text burger-link" onClick={showBurger}>Новини</a>
                             </div>
                             <div className="contacts__container">
                                 <h4 className="contacts__container-title">Контактна інформація</h4>
@@ -122,13 +122,13 @@ function Header() {
             <div className="header__items">
                 <div className="header__items-nav">
 
-                    <a href="/#"><img src={mainLogoWhite} alt="main-logo" className="header__items-logo"/></a>
+                    <a href="#"><img src={mainLogoWhite} alt="main-logo" className="header__items-logo"/></a>
                     <ul className="navigations">
-                        <li><a href="/#" className="navigations__action">Головна</a></li>
+                        <li><a href="#" className="navigations__action">Головна</a></li>
                         <li><a href="#west-town" className="navigations__action">West town</a></li>
                         <li><a href="#beskid-home" className="navigations__action">Beskid home resort</a></li>
-                        <li><a href="/#" className="navigations__action">Новини</a></li>
-                        <li><a href="/#" className="navigations__action">Стан будівництва</a></li>
+                        <li><a href="#" className="navigations__action">Новини</a></li>
+                        <li><a href="#" className="navigations__action">Стан будівництва</a></li>
                     </ul>
                 </div>
 
