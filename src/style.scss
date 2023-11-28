@@ -268,7 +268,7 @@ svg {
 
             &-text {
                 width: 800px;
-                height: 620px;
+                height: 100%;
                 gap: 10px;
 
                 .info__text {
@@ -289,10 +289,6 @@ svg {
         .complex__base-card {
             position: relative;
             transform: translateX(0);
-        }
-
-        .info-actions {
-            display: none !important;
         }
 
         .info-text__extra {

@@ -1,0 +1,56 @@
+.feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #181E1A;
+    height: 372px;
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+
+        &-icon {
+            width: 52px !important;
+            height: 52px !important;
+        }
+
+        &-name {
+            font-size: 23px;
+            font-weight: 500;
+            line-height: 28px;
+            color: #fff;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        text-align: left;
+    }
+}
+
+.feedbackSlider {
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+    .feedback__text {
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .feedback__text {
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .feedback {
+        height: auto;
+    }
+}

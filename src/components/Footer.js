@@ -1,6 +1,4 @@
 import footerLogo from '../assets/images/footer-logo.png'
-import beskidLogo from '../assets/icons/foot-beskid-logo.png'
-import westLogo from '../assets/icons/foot-west-logo.png'
 import icons from '../assets/icons/sprite.svg'
 import tiktokIcon from '../assets/icons/tiktok.svg'
 import './Footer.scss'
@@ -12,20 +10,18 @@ function Footer () {
             <div className="footer__content">
                 <div className="footer__content-items">
                     <div className="content__item footer__logo">
-                        <a href="#" className='main-logo'><img src={footerLogo} alt="main-logo" className="content__item-logo"/></a>
+                        <a href="/#" className='main-logo'><img src={footerLogo} alt="main-logo" className="content__item-logo"/></a>
                     </div>
                     <div className="content__item">
                         <h4 className="content__item-title">Наші комплекси</h4>
-                        <div className='content__item-logos'>
-                            <a href="#beskid-home"><img src={beskidLogo} className='footer-logo'/></a>
-                            <a href="#west-town"><img src={westLogo} className='footer-logo'/></a>
-                        </div>
+                        <a href='/#beskid-home' className="content__item-text upper">BESKID HOME RESORT</a>
+                        <a href='#west-town' className="content__item-text upper">WEST TOWN</a>
                     </div>
 
                     <div className="content__item">
                         <h4 className="content__item-title">Yard Development</h4>
-                        <a href='#news' className="content__item-text upper">Новини</a>
-                        <a href='#building-status' className="content__item-text upper">Стан будівництва</a>
+                        <a href='/#' className="content__item-text upper">Новини</a>
+                        <a href='/#' className="content__item-text upper">Стан будівництва</a>
                     </div>
 
                     <div className="content__item">
@@ -36,7 +32,6 @@ function Footer () {
                 </div>
 
                 <div className="footer__actions">
-                    <p className="footer__actions-item">Дизайн сайту - <a href='https://linktr.ee/vovabondar' target='_blank'>Vova Bondar</a></p>
                     <p className="footer__actions-item">© 2023 | Всі права захищено</p>
                     <div className="footer__actions-socials">
                         <a href="https://www.instagram.com/yard.development/" target="_blank">

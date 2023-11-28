@@ -41,7 +41,7 @@ function Contacts () {
                     </div>
                 </div>
 
-                <button className='main-button contacts-button'><a href='#'>Отримати детальну інформацію</a></button>
+                <button className='main-button contacts-button' onClick={window.scrollTo(0, 0)}><a href='#'>Отримати детальну інформацію</a></button>
             </div>
                 <BeskedMap/>
         </section>

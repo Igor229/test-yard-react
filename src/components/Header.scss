@@ -25,6 +25,8 @@
 
         .navigations {
             display: flex;
+            align-items: center;
+            text-align: center;
             flex-direction: row;
             gap: 32px;
 
@@ -83,6 +85,16 @@
                 font-size: 14px;
                 font-weight: 400;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .navigations {
+        gap: 22px !important;
+
+        &__action {
+            font-size: 12px !important;
         }
     }
 }

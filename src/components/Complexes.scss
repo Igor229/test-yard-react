@@ -15,7 +15,7 @@ $text-color: #969F9A;
     }
 
     .complex {
-        padding: 110px 0;
+        padding: 60px 0;
 
         &__info {
             display: flex;
@@ -123,12 +123,6 @@ $text-color: #969F9A;
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
-                
-
-                .sizes-container {
-                    display: flex;
-                    flex-direction: column;
-                }
             }
 
             .info__container {
@@ -143,10 +137,6 @@ $text-color: #969F9A;
                 font-weight: 400;
                 line-height: 24px;
                 letter-spacing: -0.176px;
-
-                &__extra {
-                    display: none;
-                }
             }
 
             .upper-text {
@@ -159,6 +149,7 @@ $text-color: #969F9A;
                 flex-direction: column;
                 align-items: start;
                 width: max-content;
+                padding-top: 16px;
 
                 &::after {
                     content: '';
@@ -193,23 +184,7 @@ $text-color: #969F9A;
                     width: 24px;
                     height: 24px;
                 }
-
-                .show-less {
-                    display: none;
-                }
             }
-        }
-
-        .show-extra {
-            position: absolute;
-            transform: translateX(30%);
-            width: 980px;
-            box-shadow: 10px 20px 20px grey;
-            -webkit-transition: all 0.3s ease-in-out;
-            -moz-transition: all 0.3s ease-in-out;
-            -ms-transition: all 0.3s ease-in-out;
-            -o-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
         }
 
         .form {
@@ -243,6 +218,11 @@ $text-color: #969F9A;
             }
         }
     }
+    .sizes-container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 16px;
+    }
 }
 
 @media screen and (max-width: 1439px) {
@@ -253,10 +233,6 @@ $text-color: #969F9A;
 
     .complex__base-card {
         width: 600px !important;
-    }
-
-    .show-extra {
-        width: 900px !important;
     }
 }
 
@@ -271,12 +247,9 @@ $text-color: #969F9A;
                 height: 500px;
             }
 
-            .show-extra {
-                width: 760px;
-            }
-
             .info__title {
                 font-size: 24px;
+                padding-top: 36px;
             }
 
             .info__sub-title {
@@ -316,5 +289,11 @@ $text-color: #969F9A;
             gap: 8px !important;
             padding-top: 8px;
         }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .complex__text-container {
+        padding-bottom: 30px;
     }
 }

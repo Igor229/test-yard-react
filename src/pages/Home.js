@@ -1,6 +1,7 @@
 import About from '../components/About';
 import Beskid from '../components/Beskid';
 import WestTown from '../components/WestTown';
+import Feedbacks from '../components/Feedbacks';
 import News from '../components/News';
 import BuildingStatus from '../components/BuildingStatus';
 import Map from '../components/Map';
@@ -35,12 +36,17 @@ function Home () {
         <div className='wrapper'>
           <h2 className='main-title'>Наші комплекси</h2>
           <div className='complexes__items'>
-              <Beskid />
               <WestTown />
+              <Beskid />
           </div>
         </div>
       </section>
 
+      <div className='feedbacks wrapper'>
+        <h2 className='main-title'>Відгуки наших клієнтів</h2>
+        <Feedbacks/>
+      </div>
+      
       <BuildingStatus/>
 
       <section className='news' id='news'>

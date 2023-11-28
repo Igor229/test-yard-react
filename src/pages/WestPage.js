@@ -25,11 +25,17 @@ function WestPage () {
     useLayoutEffect(() => {
       const ctx = gsap.context((self) => {
         const boxes = self.selector('.box')
+        const banners = self.selector('.banner-animation')
+
         boxes.forEach((box) => {
           gsap.fromTo(box, {y: 44, opacity: 0}, {y: 0, opacity: 1, duration: .5, scrollTrigger: {
             trigger: box,
           }})
         });
+
+        banners.forEach((banner) => {
+          gsap.fromTo(banner, {opacity: 0}, {opacity: 1, duration: .5})
+        })
       }, main)
   
       return () => ctx.revert()
@@ -38,14 +44,16 @@ function WestPage () {
   
     return (
       <main ref={main}>
-
-        <WestBanner/>
+        <div className='banner-animation'>
+          <WestBanner/>
+        </div>
+        
         <div className='west-action'>
           <div className='action wrapper'>
             <svg className="action-icon">
               <use href={icons + '#chevron-left'}/>
             </svg>
-            <a href='#' className='action-text'>На головну</a>
+            <a href='/' className='action-text'>На головну</a>
           </div>
         </div>
 

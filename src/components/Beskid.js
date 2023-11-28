@@ -1,9 +1,7 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
 import React, { useState } from 'react'
-import icons from '../assets/icons/besket-icons.svg'
+import sprite from '../assets/icons/sprite.svg'
 import Slider from './BeskedSlider';
 import ContactForm from './ContactForm';
-// import YouTubeVideo from './YouTubeVideo';
 import './Complexes.scss'
 import 'swiper/css';
 
@@ -20,7 +18,7 @@ function Beskid () {
     const terraceContent = isActive ? '16,80' : '27,90'
 
     return (
-        <div className='complex'>
+        <div className='complex' id="beskid-home">
             <div className="complex__info box">
 
                 <div className='complex__info-slider'>
@@ -37,7 +35,7 @@ function Beskid () {
                         <button className={buttonClass} id="typeButton-two" onClick={handleClick}>Тип - 2</button>
                     </div>
 
-                    <div className="text-container besket_text box">
+                    <div className="complex__text-container besket_text box">
                         <div className="sizes-container">
                             <p className="info__text"> - Площа - {squareContent} м2</p>
                             <p className="info__text"> - Тераса – {terraceContent} м2</p>
@@ -52,48 +50,23 @@ function Beskid () {
                             </p>
                         </div>
 
-                        <div className="info__container box">
-                            <svg className="text-icon">
-                                <use href={icons + '#elevator'}/>
-                            </svg>
-                            <p className="info-text">5 хв до найближчого підйомника;</p>
-                        </div>
-
-
-                        <div className="info__container box">
-                            <svg className="text-icon">
-                            <use href={icons + '#spa-zone'}/>
-                            </svg>
-                            <p className="info-text">власна SPA-зона;</p>
-                        </div>
-
-
-                        <div className="info__container box">
-                            <svg className="text-icon">
-                                <use href={icons + '#pool'}/>
-                            </svg>
-                            <p className="info-text">сезонний басейн;</p>
-                        </div>
-
-                        <div className="info__container box">
-                            <svg className="text-icon">
-                                <use href={icons + '#terrace'}/>
-                            </svg>
-                            <p className="info-text">велика тераса з виглядом на гори;</p>
-                        </div>
-
-                        <div className="info__container box">
-                            <svg className="text-icon">
-                                <use href={icons + '#company'}/>
-                            </svg>
-                            <p className="info-text">власна керуюча компанія.</p>
+                        {/*=================== card actions ========================*/}
+                        
+                        <div className='info-actions'>
+                            <a href='/beskid-home'>
+                            <button className='info-actions__btn'>
+                                Докладніше про комплекс
+                                <svg className="btn-icon">
+                                    <use href={sprite + '#chevron-right'}/>
+                                </svg>
+                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <ContactForm title = {'Отримати презентацію комплексу із розрахунком окупності'}/>
-            {/* <YouTubeVideo/> */}
         </div>
     )
 }
