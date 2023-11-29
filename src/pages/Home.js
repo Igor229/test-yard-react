@@ -35,8 +35,10 @@ function Home () {
       <section className='complexes'>
         <div className='wrapper'>
           <h2 className='main-title'>Наші комплекси</h2>          
-            <WestTown />
-            <Beskid />        
+            <div className='complexes__items'>
+              <WestTown />
+              <Beskid /> 
+            </div>       
         </div>
       </section>
 

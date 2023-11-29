@@ -30,7 +30,7 @@ function ContactForm (props) {
                 <button className="form-button main-button item">Відправити</button>
             </div>
         </div>
-    </form>
+        </form>
     )
 }
 

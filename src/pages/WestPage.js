@@ -5,9 +5,7 @@ import WestPlanningType from '../westPageComponents/WestPlanningType';
 import AdventageList from '../westPageComponents/AdventageList';
 import HouseType from '../westPageComponents/HouseType';
 import WestForm from '../westPageComponents/WestForm';
-import Contacts from '../beskidPageComponents/Contacts';
 import WestGallery from '../westPageComponents/WestGallery';
-import FsLightbox from 'fslightbox-react';
 
 import './WestPage.scss'
 import icons from '../assets/icons/sprite.svg'
@@ -15,11 +13,13 @@ import React, { useRef, useLayoutEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import west1 from '../assets/westPage/images/main-slider/0.jpg'
-import west2 from '../assets/westPage/images/main-slider/1.jpg'
-import west3 from '../assets/westPage/images/main-slider/2.jpg'
-import west4 from '../assets/westPage/images/main-slider/3.jpg'
-import west5 from '../assets/westPage/images/main-slider/4.jpg'
+import phoneIcon from '../assets/beskidPage/icons/contacts-icons/phone.png'
+import instagramIcon from '../assets/beskidPage/icons/contacts-icons/instagram.png'
+import mailIcon from '../assets/beskidPage/icons/contacts-icons/mail.png'
+import mapIcon from '../assets/beskidPage/icons/contacts-icons/map.png'
+import BeskedMap from '../beskidPageComponents/BeskedMap';
+import Modal from '../components/Modal';
+import '../beskidPageComponents/Contacts.scss'
 
 import internalTypeImg from '../assets/westPage/images/house-types/internal.png'
 import externalTypeImg from '../assets/westPage/images/house-types/external.png'
@@ -27,9 +27,8 @@ import externalTypeImg from '../assets/westPage/images/house-types/external.png'
 gsap.registerPlugin(ScrollTrigger)
 
 function WestPage () {
+    const [modalActive, setModalActive] = useState(false) 
     const main = useRef()
-    const [toggleSlider, setToggleSlider] = useState(false)
-    const [toggleAdventages, setToggleAdventages] = useState(false)
   
     useLayoutEffect(() => {
       const ctx = gsap.context((self) => {
@@ -53,6 +52,7 @@ function WestPage () {
   
     return (
       <main ref={main}>
+        <Modal active={modalActive} setActive={setModalActive}/>
         <div className='banner-animation'>
           <WestBanner/>
         </div>
@@ -90,7 +90,9 @@ function WestPage () {
         </div>
 
         {/* Planning Types Section */}
-        <WestPlanningType/>
+        <div className='wrapper '>
+          <WestPlanningType/>
+        </div>
 
         <div className='bedroom box'>
           <div className='bedroom-container'>
@@ -117,7 +119,44 @@ function WestPage () {
 
         <WestGallery/>
         
-        <Contacts/>
+         {/* <Contacts/> */}
+         <section className='contacts'>  
+            <div className='contacts-container'>
+                <div className='contacts__item'>
+                    <img src={phoneIcon} className='contacts__item-icon'/>
+                    <div className='contacts__item-info'>
+                        <p className='contacts-title'>Номер телефону:</p>
+                        <p className='contacts-subtitle'>+38 (098) 225 58 00 </p>
+                    </div>
+                </div>
+
+                <div className='contacts__item'>
+                    <img src={instagramIcon} className='contacts__item-icon'/>
+                    <div className='contacts__item-info'>
+                        <p className='contacts-title'>Instagram:</p>
+                        <p className='contacts-subtitle'>beskid_home_resort </p>
+                    </div>
+                </div>
+
+                <div className='contacts__item'>
+                    <img src={mailIcon} className='contacts__item-icon'/>
+                    <div className='contacts__item-info'>
+                        <p className='contacts-title'>Email:</p>
+                        <p className='contacts-subtitle'>yarddevelopment34@gmail.com </p>
+                    </div>
+                </div>
+
+                <div className='contacts__item'>
+                    <img src={mapIcon} className='contacts__item-icon'/>
+                    <div className='contacts__item-info'>
+                        <p className='contacts-title'>Локація:</p>
+                        <p className='contacts-subtitle'>с. Поляниця, вулиця урочище Вишня (поруч готелю Підгір'я) </p>
+                    </div>
+                </div>
+                <button className='main-button contacts-button' onClick={() => setModalActive(true)}>Отримати детальну інформацію</button>
+            </div>
+                <BeskedMap/>
+        </section>
 
       </main>
     );

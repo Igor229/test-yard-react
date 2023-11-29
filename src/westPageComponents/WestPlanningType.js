@@ -6,7 +6,7 @@ import { useState } from 'react'
 function WestPlanningType() {
     const [toggle, setToggle] = useState(false)
     return (
-            <div className='info west-plan info-container west__info-container wrapper'>
+            <div className='info west__info-container west-plan info-container'>
                 <img src={planImg} className='west-plan__img' onClick={() => {setToggle(!toggle)}}/>
 
                 <div className='info-description west__info-description'>

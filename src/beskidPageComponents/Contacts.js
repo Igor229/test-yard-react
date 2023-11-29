@@ -1,13 +1,19 @@
 import './Contacts.scss'
+import { useState } from 'react'
 import phoneIcon from '../assets/beskidPage/icons/contacts-icons/phone.png'
 import instagramIcon from '../assets/beskidPage/icons/contacts-icons/instagram.png'
 import mailIcon from '../assets/beskidPage/icons/contacts-icons/mail.png'
 import mapIcon from '../assets/beskidPage/icons/contacts-icons/map.png'
 import BeskedMap from './BeskedMap'
+import Modal from '../components/Modal'
 
 function Contacts () {
+    const [modalActive, setModalActive] = useState(false)
     return (
+        <>
+        <Modal active={modalActive} setActive={setModalActive}/>
         <section className='contacts'>
+            
             <div className='contacts-container'>
                 <div className='contacts__item'>
                     <img src={phoneIcon} className='contacts__item-icon'/>
@@ -41,10 +47,11 @@ function Contacts () {
                     </div>
                 </div>
 
-                <button className='main-button contacts-button' onClick={window.scrollTo(0, 0)}><a href='#'>Отримати детальну інформацію</a></button>
+                <button className='main-button contacts-button' onClick={() => setModalActive(true)}>Отримати детальну інформацію</button>
             </div>
                 <BeskedMap/>
         </section>
+        </>
     )
 }
 
