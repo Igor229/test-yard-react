@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './BuildingStatus.scss'
 import WestStatusSlider from './WestStatusSlider'
 import BeskidStatusSlider from './BeskidStatusSlider'
+import FsLightbox from 'fslightbox-react'
 
 // import images
 
@@ -39,6 +40,11 @@ import west13 from '../assets/images/build-status/west-status/queue9/west13.jpg'
 import que10Img1 from '../assets/images/build-status/west-status/queue10/que10-1.jpg'
 import que10Img2 from '../assets/images/build-status/west-status/queue10/que10-2.jpg'
 import que10Img3 from '../assets/images/build-status/west-status/queue10/que10-3.jpg'
+
+import beskid1 from '../assets/images/build-status/status-beskid1.jpg'
+import beskid2 from '../assets/images/build-status/status-beskid2.jpg'
+import beskid3 from '../assets/images/build-status/status-beskid3.jpg'
+import beskid4 from '../assets/images/build-status/status-beskid4.jpg'
 
   // cards data
 const album8 = [
@@ -227,6 +233,11 @@ const album10 = [
 
 
 function BuildingStatus() {
+    const [toggler, setToggler] = useState(false)
+    const [togglerTwo, setTogglerTwo] = useState(false)
+    const [togglerThree, setTogglerThree] = useState(false)
+    const [togglerBeskid, setTogglerBeskid] = useState(false)
+
     const [isActive, setIsActive] = useState(true)
     const handleClick = () => {
         setIsActive(!isActive)
@@ -244,7 +255,8 @@ function BuildingStatus() {
     const beskidTypeActive = isActive ? 'build-status__slider' : 'build-status__slider slider-hidden'
 
     return (
-        <section className="build-status box" id='building-status'>
+      <>
+      <section className="build-status box">
             <div className="wrapper">
                 <div className="build-status__items">
                     <div className="build-status__item">
@@ -263,22 +275,57 @@ function BuildingStatus() {
                       <button type='button' className={activeSlider === 2 ? 'queue-button--active' : 'queue-button'} onClick={() => showSlider(2)}>9</button>
                       <button type='button' className={activeSlider === 3 ? 'queue-button--active' : 'queue-button'} onClick={() => showSlider(3)}>10</button>
                     </div>
-                    <div className={activeSlider === 1 ? '' : 'slider-hidden'}>
+                    <div className={activeSlider === 1 ? '' : 'slider-hidden'} onClick={() => {setToggler(!toggler)}}>
                         <WestStatusSlider photos={album8}/>
                     </div>
-                    <div className={activeSlider === 2 ? '' : 'slider-hidden'}>
+                    <div className={activeSlider === 2 ? '' : 'slider-hidden'} onClick={() => {setTogglerTwo(!togglerTwo)}}>
                         <WestStatusSlider photos={album9}/>
                     </div>
-                    <div className={activeSlider === 3 ? '' : 'slider-hidden'}>
+                    <div className={activeSlider === 3 ? '' : 'slider-hidden'} onClick={() => {setTogglerThree(!togglerThree)}}>
                         <WestStatusSlider photos={album10}/>
                     </div>
                 </div>
 
-                <div className={westTypeActive}>
+                <div className={westTypeActive} onClick={() => {setTogglerBeskid(!togglerBeskid)}}>
                     <BeskidStatusSlider/>
                 </div>
             </div>
         </section>
+        <FsLightbox 
+          toggler={toggler}
+          sources={[
+            november1,november2,november3,november4,
+            west10,west11,west1,west2,west3,west4,west5,
+          ]}
+        />
+
+        <FsLightbox 
+          toggler={togglerTwo}
+          sources={[
+            que9Img1,que9Img2,que9Img3,que9Img4,que9Img5,que9Img6,que9Img7,que9Img8,que9Img9,que9Img10,
+            west7,west8,west9,west10,west11,west12,west13,
+          ]}
+        />
+
+        <FsLightbox 
+          toggler={togglerThree}
+          sources={[
+            que10Img1,
+            que10Img2,
+            que10Img3,
+          ]}
+        />
+
+        <FsLightbox 
+          toggler={togglerBeskid}
+          sources={[
+            beskid3,
+            beskid4,
+            beskid2,
+            beskid1,
+          ]}
+        />
+        </>
     )
 }
 

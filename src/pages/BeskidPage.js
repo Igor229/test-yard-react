@@ -8,9 +8,10 @@ import Contacts from '../beskidPageComponents/Contacts';
 import Adventages from '../beskidPageComponents/Adventages';
 import ManagmentGroup from '../beskidPageComponents/ManagmentGroup';
 import InstallmentSystem from '../beskidPageComponents/InstallmentSystem';
+import FsLightbox from 'fslightbox-react';
 
 import './BeskidPage.scss'
-import React, { useRef, useLayoutEffect } from 'react';
+import React, { useRef, useLayoutEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -72,42 +73,13 @@ function BeskidPage () {
           </div>
         </div>
 
-        {/* sliders and text section */}
-        <div className='info wrapper'>
-          <div className='info-container box'>
+        {/* sliders and text section */}   
+          <div className='info wrapper west-info info-container'>
             <FirstSlider/>
-            <div className='info-description'>
-              <h2 className='info-description__title'>BESKID HOME RESORT</h2>
-              <p className='info-description__text'>
-                Це унікальний котеджний комплекс в самому серці Карпат з власною SPA-зоною та басейном. Котеджі розташовані на вершині поблизу карпатського лісу, а з тераси та вікон відкривається дивовижний краєвид на підйомник 1R гірськолижного курорту Bukovel.
-              </p>
-              <p className='info-description__text'>
-                Проектуючи комплекс BESKID, ми подбали про те, щоб він був інвестиційно привабливим, тому врахували наявність власної інфраструктури та обрали найкраще розташування! До ГК Bukovel, ви зможете дістатись за 5 хвилин.
-              </p>
-              <p className='info-description__text'>
-                Капітальне будівництво та індивідуальне газове опалення - наша велика перевага. Всі клопоти по обслуговуванні котеджів візьме на себе управлінська компанія, а ви отримуватимете тільки чистий дохід!
-              </p>
-            </div>
           </div>
-
-          <div className='info-container second-slider__container box'>
-            <div className='info-description'>
-              <h2 className='info-description__title'>КОТЕДЖІ З АВТОРСЬКИМ РЕМОНТОМ</h2>
-
-              <p className='info-description__text'>
-                Котеджі продаються зі стильним та сучасним ремонтом, укомплектовані меблями та технікою провідних марок. Авторський дизайн-проект поєднує в собі елементи етнічного орнаменту та сучасного стилю, що додає певного карпатського колориту.
-              </p>
-              <p className='info-description__text'>
-                Функціональна кухня-студія, де максимум простору, щоб зібратись всією сім'єю чи друзями за великим столом, або відпочивати на комфортному м'якому дивані.
-              </p>
-              <p className='info-description__text'>
-                Три спальні з панорамними вікнами, з яких відкривається дивовижний краєвид на гори. Контрастні відтінки, застосовані в інтер'єрі - поєднання бетону та структурного дерева, роблять його багатограннішим та яскравішим!
-              </p>
-            </div>
-
+          <div className='info wrapper info-container second-slider__container'>
             <SecondSlider/>
           </div>
-        </div>
 
 
         {/* section with group of photos */}
@@ -122,7 +94,7 @@ function BeskidPage () {
         </div>
 
         {/* planning types section */}
-        <div className='plannings-type wrapper box'>
+        <div className='plannings-type wrapper'>
           <PlanningType type='Тип 1' area='117,94 м²' terrace='16,90 м²' floorOne={typeOneFloorOne} floorTwo={typeOneFloorTwo}/>
           <PlanningType type='Тип 2' area='121,74 м²' terrace='27,90 м²' floorOne={typeTwoFloorOne} floorTwo={typeTwoFloorTwo}/>
         </div>

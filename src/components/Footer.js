@@ -10,7 +10,7 @@ function Footer () {
             <div className="footer__content">
                 <div className="footer__content-items">
                     <div className="content__item footer__logo">
-                        <a href="/#" className='main-logo'><img src={footerLogo} alt="main-logo" className="content__item-logo"/></a>
+                        <a href="#" className='main-logo'><img src={footerLogo} alt="main-logo" className="content__item-logo"/></a>
                     </div>
                     <div className="content__item">
                         <h4 className="content__item-title">Наші комплекси</h4>

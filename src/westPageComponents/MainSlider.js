@@ -1,5 +1,7 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useState } from 'react';
+import FsLightbox from 'fslightbox-react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -9,6 +11,11 @@ import './WestSlider.css'
 
 // import required modules
 import { Navigation } from 'swiper/modules';
+import west1 from '../assets/westPage/images/main-slider/0.jpg'
+import west2 from '../assets/westPage/images/main-slider/1.jpg'
+import west3 from '../assets/westPage/images/main-slider/2.jpg'
+import west4 from '../assets/westPage/images/main-slider/3.jpg'
+import west5 from '../assets/westPage/images/main-slider/4.jpg'
 
 const images = [
   {
@@ -34,6 +41,7 @@ const images = [
 ]
 
 function MainSlider () {
+    const [toggler, setToggler] = useState(false)
     return (
         <>
           <Swiper
@@ -48,13 +56,37 @@ function MainSlider () {
     
             {images.map((item, index) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide onClick={() => {setToggler(!toggler)}}>
                   <img className="slider-img" src={require('../assets/westPage/images/main-slider/' + index + '.jpg')} alt={item.alt}/>
                 </SwiperSlide>
               )
             })}
             
           </Swiper>
+
+            <div className='info-description west-info'>
+              <h2 className='info-description__title'>WEST TOWN</h2>
+              <p className='info-description__text'>
+                Найбільше містечко таунхаусів в Івано-Франківську WEST TOWN - ідеально створене для комфортного сімейного проживання, адже проектуючи цей комплекс ми подбали про інтереси всіх поколінь, особистого простору вистачить для кожного члена вашої сім’ї.
+              </p>
+              <p className='info-description__text'>
+                Проводити час з дитиною на власному подвір’ї, читати улюблену книгу на свіжому повітрі, милуватись світанком, заходом сонця за чашкою кави чи спонтанно влаштувати вечірку-барбекю з друзями - все це можливо у містечку WEST TOWN.
+              </p>
+              <p className='info-description__text'>
+                Таунхауси розташовані у Крихівцях поруч містечка Калинова Слобода. Затишне розташування поруч приватного сектору. До міського озера та парку ім.Шевченка  можна дістатись за 10 хвилин на авто. До Центру міста за 15 хвилин.
+              </p>
+            </div>
+
+          <FsLightbox
+            toggler={toggler}
+            sources={[
+              west1,
+              west2,
+              west3,
+              west4,
+              west5,
+            ]}
+          />
         </>
     );
 }

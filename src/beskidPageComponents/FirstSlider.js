@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import FsLightbox from 'fslightbox-react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -10,6 +11,14 @@ import './Slider.css';
 
 // import required modules
 import { Navigation } from 'swiper/modules';
+
+import beskidImg1 from '../assets/beskidPage/images/first-slider/0.png'
+import beskidImg2 from '../assets/beskidPage/images/first-slider/1.png'
+import beskidImg3 from '../assets/beskidPage/images/first-slider/2.png'
+import beskidImg4 from '../assets/beskidPage/images/first-slider/3.png'
+import beskidImg5 from '../assets/beskidPage/images/first-slider/4.png'
+import beskidImg6 from '../assets/beskidPage/images/first-slider/5.png'
+import beskidImg7 from '../assets/beskidPage/images/first-slider/6.png'
 
 const images = [
   {
@@ -44,7 +53,7 @@ const images = [
 
 
 export default function FirstSlider() {
-
+  const [toggler, setToggler] = useState(false)
   return (
     <>
       <Swiper
@@ -59,13 +68,39 @@ export default function FirstSlider() {
 
         {images.map((item, index) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide onClick={() => {setToggler(!toggler)}}>
               <img className="slider-img" src={require('../assets/beskidPage/images/first-slider/' + index + '.png')} alt={item.alt}/>
             </SwiperSlide>
           )
         })}
         
       </Swiper>
+
+      <div className='info-description'>
+        <h2 className='info-description__title'>BESKID HOME RESORT</h2>
+        <p className='info-description__text'>
+          Це унікальний котеджний комплекс в самому серці Карпат з власною SPA-зоною та басейном. Котеджі розташовані на вершині поблизу карпатського лісу, а з тераси та вікон відкривається дивовижний краєвид на підйомник 1R гірськолижного курорту Bukovel.
+        </p>
+        <p className='info-description__text'>
+          Проектуючи комплекс BESKID, ми подбали про те, щоб він був інвестиційно привабливим, тому врахували наявність власної інфраструктури та обрали найкраще розташування! До ГК Bukovel, ви зможете дістатись за 5 хвилин.
+        </p>
+        <p className='info-description__text'>
+          Капітальне будівництво та індивідуальне газове опалення - наша велика перевага. Всі клопоти по обслуговуванні котеджів візьме на себе управлінська компанія, а ви отримуватимете тільки чистий дохід!
+        </p>
+      </div>
+
+      <FsLightbox 
+        toggler={toggler}
+        sources={[
+          beskidImg1,
+          beskidImg2,
+          beskidImg3,
+          beskidImg4,
+          beskidImg5,
+          beskidImg6,
+          beskidImg7,
+        ]}
+      />
     </>
   );
 }
