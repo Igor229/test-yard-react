@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-yard-react/static/css/main.48b837c0.css",
-    "main.js": "/test-yard-react/static/js/main.33d42d22.js",
+    "main.css": "/test-yard-react/static/css/main.f0291694.css",
+    "main.js": "/test-yard-react/static/js/main.03e224e2.js",
     "static/js/787.3a6277e1.chunk.js": "/test-yard-react/static/js/787.3a6277e1.chunk.js",
     "static/media/2.jpg": "/test-yard-react/static/media/2.e91d905c6657fcb71adb.jpg",
     "static/media/3.jpg": "/test-yard-react/static/media/3.bf2a788232e317789746.jpg",
@@ -152,12 +152,12 @@
     "static/media/tiktok.svg": "/test-yard-react/static/media/tiktok.8da0dc92cc7e0d4932d89693f5935153.svg",
     "static/media/menu-open.svg": "/test-yard-react/static/media/menu-open.e47cad21270d448e17cd07096172c4e8.svg",
     "static/media/menu-close.svg": "/test-yard-react/static/media/menu-close.83af43c5ad2451fc6cbcb8abd0ede7c5.svg",
-    "main.48b837c0.css.map": "/test-yard-react/static/css/main.48b837c0.css.map",
-    "main.33d42d22.js.map": "/test-yard-react/static/js/main.33d42d22.js.map",
+    "main.f0291694.css.map": "/test-yard-react/static/css/main.f0291694.css.map",
+    "main.03e224e2.js.map": "/test-yard-react/static/js/main.03e224e2.js.map",
     "787.3a6277e1.chunk.js.map": "/test-yard-react/static/js/787.3a6277e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48b837c0.css",
-    "static/js/main.33d42d22.js"
+    "static/css/main.f0291694.css",
+    "static/js/main.03e224e2.js"
   ]
 }
