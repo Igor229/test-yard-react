@@ -4,6 +4,34 @@ import tiktokIcon from '../assets/icons/tiktok.svg'
 import './Footer.scss'
 
 function Footer () {
+    const handleClickScroll = () => {
+        window.scrollTo(0, 0)
+    }
+//====================================
+    const handleClickNews = () => {
+        const element = document.getElementById('news')
+
+        if (element) {
+            element.scrollIntoView({behavior: 'smooth'})
+        }
+    }
+//====================================
+    const handleClickBuildStatus = () => {
+        const element = document.getElementById('build-status')
+
+        if (element) {
+            element.scrollIntoView({behavior: 'smooth'})
+        }
+    }
+//====================================
+const handleClickFeedbacks = () => {
+    const element = document.getElementById('feedbacks')
+
+    if (element) {
+        element.scrollIntoView({behavior: 'smooth'})
+    }
+}
+
     return (
         <footer className="footer">
         <div className="wrapper">
@@ -14,14 +42,16 @@ function Footer () {
                     </div>
                     <div className="content__item">
                         <h4 className="content__item-title">Наші комплекси</h4>
-                        <a href='#beskid-home' className="content__item-text upper">BESKID HOME RESORT</a>
-                        <a href='#west-town' className="content__item-text upper">WEST TOWN</a>
+                        <a href='#comfort-town' className="content__item-text upper" onClick={handleClickScroll}>COMFORT TOWN<span className="content__item-text-span">Новинка</span></a>
+                        <a href='#beskid-home' className="content__item-text upper" onClick={handleClickScroll}>BESKID HOME RESORT</a>
+                        <a href='#west-town' className="content__item-text upper" onClick={handleClickScroll}>WEST TOWN</a>
                     </div>
 
                     <div className="content__item">
                         <h4 className="content__item-title">Yard Development</h4>
-                        <a href='#' className="content__item-text upper">Новини</a>
-                        <a href='#' className="content__item-text upper">Стан будівництва</a>
+                        <a className="content__item-text upper" onClick={handleClickFeedbacks}>Відгуки</a>
+                        <a className="content__item-text upper" onClick={handleClickNews}>Новини</a>
+                        <a className="content__item-text upper" onClick={handleClickBuildStatus}>Стан будівництва</a>
                     </div>
 
                     <div className="content__item">

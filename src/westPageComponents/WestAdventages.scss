@@ -17,7 +17,7 @@
             top: 0;
             left: 0;
             z-index: -1;
-            width: auto !important;
+            // width: auto !important;
         }
     
         &-text {
@@ -62,11 +62,6 @@
 @media screen and (max-width: 768px) {
     .adventage {
         height: 100%;
-        &__box {
-            &-image {
-                width: 550px !important;
-            }
-        }
     }
 }
 

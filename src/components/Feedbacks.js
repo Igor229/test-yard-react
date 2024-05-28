@@ -82,8 +82,8 @@ function Feedbacks () {
             >
                 {feedbackData.map((item, index) => {
                     return (
-                    <SwiperSlide>
-                        <FeedbackCard key={index} {...item} />
+                    <SwiperSlide key={index}>
+                        <FeedbackCard {...item} />
                     </SwiperSlide>)
                 })}
             </Swiper>

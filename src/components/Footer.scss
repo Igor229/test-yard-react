@@ -40,6 +40,16 @@ $text-color: #969F9A;
                 line-height: 24px;
                 color: #fff;
                 width: max-content;
+                &-span {
+                    background-color: #FFEC8B;
+                    padding: 4px 10px;
+                    font-size: 14px;
+                    color: #181E1A;
+                    border: 1px solid #FFEC8B;
+                    border-radius: 20px;
+                    text-align: center;
+                    margin-left: 8px;
+                }
 
                 &::after {
                     content: '';

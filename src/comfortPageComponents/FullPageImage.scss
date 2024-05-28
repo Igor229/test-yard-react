@@ -1,0 +1,16 @@
+.main-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__image {
+    width: 100%;
+    border-radius: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-block__image {
+    height: 220px;
+  }
+}

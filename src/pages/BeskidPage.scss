@@ -8,11 +8,15 @@
     padding: 12px 20px;
     gap: 8px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 
     &-icon {
         stroke: #555555;
         width: 20px;
         height: 20px;
+        &:hover {
+            stroke: #fff;
+        }
     }
 
     &-text {
@@ -20,6 +24,15 @@
         font-size: 14px;
         font-weight: 500;
         line-height: 20px;
+    }
+
+    &:hover {
+        background-color: #555555;
+
+        .action-text, .action-icon {
+            color: #fff;
+            stroke: #fff;
+        }
     }
 }
 
@@ -66,7 +79,7 @@
     padding-bottom: 112px;
 
     &-container {
-        padding-top: 44px;
+        padding-top: 112px;
         display: flex;
         flex-direction: row;
         gap: 36px;
@@ -163,6 +176,13 @@
         padding-left: 0px;
     }
 }
+@media screen and (max-width: 1366px) {
+    .group-images {
+        height: 512px;
+    }
+}
+
+
 
 @media screen and (max-width: 1024px) {
     .info-description {
@@ -170,6 +190,9 @@
     }
     .card {
         width: 35vw;
+    }
+    .group-images {
+        height: auto;
     }
 
 }

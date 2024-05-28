@@ -1,5 +1,9 @@
 .west-gallery__img {
     height: 350px !important;
+    cursor: pointer;
+}
+.west-gallery__slider {
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 1440px) {

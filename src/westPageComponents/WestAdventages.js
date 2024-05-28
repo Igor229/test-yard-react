@@ -1,10 +1,11 @@
 import './WestAdventages.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 
-import imgOne from '../assets/westPage/images/adventages/1.jpg'
-import imgTwo from '../assets/westPage/images/adventages/2.jpg'
-import imgThree from '../assets/westPage/images/adventages/3.jpg'
+import imgOne from '../assets/westPage/images/adventages/1.webp'
+import imgTwo from '../assets/westPage/images/adventages/2.webp'
+import imgThree from '../assets/westPage/images/adventages/3.webp'
 
 const adventagesData = [
     {
@@ -12,11 +13,11 @@ const adventagesData = [
         image: imgOne,
     },
     {
-        text: 'Приватна земельна ділянка',
+        text: 'Земельна ділянка',
         image: imgTwo,
     },
     {
-        text: 'Повноцінний будинок 120 м²',
+        text: 'Повноцінний будинок',
         image: imgThree,
     },
 ]
@@ -40,7 +41,7 @@ function WestAdventages () {
                 slidesPerView={3}
                 spaceBetween={0}
                 freeMode={true}
-                pagination={true}
+                pagination={{dynamicBullets: true}}
                 autoplay = {false}
     
                 breakpoints={{
@@ -55,8 +56,12 @@ function WestAdventages () {
                     },
     
                 }}
+                style={{
+                    "--swiper-navigation-color": "#fff",
+                    "--swiper-navigation-size": "8px",
+                }}
     
-                modules={[FreeMode, Autoplay]}
+                modules={[FreeMode, Autoplay, Pagination, Navigation]}
                 className="westAdventageSlider"
             >
                 {adventagesData.map((item, index) => {

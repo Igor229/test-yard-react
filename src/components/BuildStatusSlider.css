@@ -29,6 +29,7 @@
     height: 400px !important;
     /* object-fit: cover; */
     border-radius: 10px;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 1440px) {

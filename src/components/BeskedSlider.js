@@ -8,22 +8,22 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './ComplexSlider.css';
 
-import beskidImg1 from '../assets/images/beskid-home/0.jpg'
-import beskidImg2 from '../assets/images/beskid-home/1.jpg'
-import beskidImg3 from '../assets/images/beskid-home/2.jpg'
-import beskidImg4 from '../assets/images/beskid-home/3.jpg'
-import beskidImg5 from '../assets/images/beskid-home/4.jpg'
-import beskidImg6 from '../assets/images/beskid-home/5.jpg'
-import beskidImg7 from '../assets/images/beskid-home/6.jpg'
-import beskidImg8 from '../assets/images/beskid-home/7.jpg'
-import beskidImg9 from '../assets/images/beskid-home/8.jpg'
-import beskidImg10 from '../assets/images/beskid-home/9.jpg'
-import beskidImg11 from '../assets/images/beskid-home/10.jpg'
-import beskidImg12 from '../assets/images/beskid-home/11.jpg'
-import beskidImg13 from '../assets/images/beskid-home/12.jpg'
-import beskidImg14 from '../assets/images/beskid-home/13.jpg'
-import beskidImg15 from '../assets/images/beskid-home/14.jpg'
-import beskidImg16 from '../assets/images/beskid-home/15.jpg'
+import beskidImg1 from '../assets/images/beskid-home/0.webp'
+import beskidImg2 from '../assets/images/beskid-home/1.webp'
+import beskidImg3 from '../assets/images/beskid-home/2.webp'
+import beskidImg4 from '../assets/images/beskid-home/3.webp'
+import beskidImg5 from '../assets/images/beskid-home/4.webp'
+import beskidImg6 from '../assets/images/beskid-home/5.webp'
+import beskidImg7 from '../assets/images/beskid-home/6.webp'
+import beskidImg8 from '../assets/images/beskid-home/7.webp'
+import beskidImg9 from '../assets/images/beskid-home/8.webp'
+import beskidImg10 from '../assets/images/beskid-home/9.webp'
+import beskidImg11 from '../assets/images/beskid-home/10.webp'
+import beskidImg12 from '../assets/images/beskid-home/11.webp'
+import beskidImg13 from '../assets/images/beskid-home/12.webp'
+import beskidImg14 from '../assets/images/beskid-home/13.webp'
+import beskidImg15 from '../assets/images/beskid-home/14.webp'
+import beskidImg16 from '../assets/images/beskid-home/15.webp'
 
 const imgArr = [
   {
@@ -108,6 +108,10 @@ export default function Slider() {
   const terraceContent = isActive ? '16,80' : '27,90'
 
   const [toggler, setToggler] = useState(false)
+
+  const handleClickScroll = () => {
+    window.scrollTo(0, 0)
+  }
   return (
     <>
     <div className="complex__info box">
@@ -127,8 +131,8 @@ export default function Slider() {
 
             {imgArr.map((item, index) => {
               return (
-                <SwiperSlide onClick={() => {setToggler(!toggler)}}>
-                  <img className="slider-img" src={require('../assets/images/beskid-home/' + index + '.jpg')} alt={item.alt}/><div className="shadow"></div>
+                <SwiperSlide key={index} onClick={() => {setToggler(!toggler)}}>
+                  <img className="slider-img" src={require('../assets/images/beskid-home/' + index + '.webp')} alt={item.alt}/><div className="shadow"></div>
                 </SwiperSlide>
               )
             })}
@@ -165,7 +169,7 @@ export default function Slider() {
               
               <div className='info-actions'>
                   <a href='#beskid-home'>
-                  <button className='info-actions__btn'>
+                  <button className='info-actions__btn' onClick={handleClickScroll}>
                       Докладніше про комплекс
                       <svg className="btn-icon">
                           <use href={sprite + '#chevron-right'}/>

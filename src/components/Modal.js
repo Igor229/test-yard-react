@@ -4,7 +4,7 @@ import './Modal.scss'
 import icon from '../assets/icons/sprite.svg'
 
 function Modal({active, setActive}) {
-
+//====================================
     const form = useRef();
 
     const sendEmail = (e) => {

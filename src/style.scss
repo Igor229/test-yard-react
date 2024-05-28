@@ -190,6 +190,18 @@ svg {
                     font-weight: 500;
                     line-height: 24px;
                     color: #fff;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    &-span {
+                        background-color: #FFEC8B;
+                        padding: 1px 9px;
+                        font-size: 14px;
+                        color: #181E1A;
+                        border: 1px solid #FFEC8B;
+                        border-radius: 20px;
+                    }
                 }
             }
         }
@@ -237,7 +249,7 @@ svg {
 @media screen and (max-width: 1024px) {
 
     .wrapper {
-        margin: 0 55px;
+        margin: 0 35px;
     }
 
     .footer__content {
@@ -474,6 +486,7 @@ svg {
 
     .complexes {
         margin-top: 40px;
+        margin-bottom: 40px;
 
         &__title {
             font-size: 26px;
@@ -565,8 +578,4 @@ svg {
             }
         }
     }
-}
-
-@media screen and (max-width: 320px) {
-
 }

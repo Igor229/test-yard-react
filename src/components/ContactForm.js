@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion'
 
 function ContactForm (props) {
     const {title} = props
@@ -25,9 +26,9 @@ function ContactForm (props) {
             <h4 className="form__container-title box">{title}</h4>
 
             <div className="form__container-actions box">
-                <input className="form-input item" type="tel" name="phone" maxLength="13" placeholder="Номер телефону" required/>
-                <input className="form-input item" type="text" name="name" placeholder="Ваше ім’я" required/>
-                <button className="form-button main-button item">Відправити</button>
+                <motion.input whileHover={{scale: 1.05}} transition={{duration: 0.1}} className="form-input item" type="tel" name="phone" maxLength="13" placeholder="Номер телефону" required/>
+                <motion.input whileHover={{scale: 1.05}} transition={{duration: 0.1}} className="form-input item" type="text" name="name" placeholder="Ваше ім’я" required/>
+                <motion.button whileHover={{scale: 1.05}} transition={{duration: 0.02}} className="form-button main-button item">Відправити</motion.button>
             </div>
         </div>
         </form>

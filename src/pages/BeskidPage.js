@@ -4,7 +4,6 @@ import icons from '../assets/icons/sprite.svg'
 import FirstSlider from '../beskidPageComponents/FirstSlider';
 import SecondSlider from '../beskidPageComponents/SecondSlider';
 import PlanningType from '../beskidPageComponents/PlanningType';
-import Contacts from '../beskidPageComponents/Contacts';
 import Adventages from '../beskidPageComponents/Adventages';
 import ManagmentGroup from '../beskidPageComponents/ManagmentGroup';
 import InstallmentSystem from '../beskidPageComponents/InstallmentSystem';
@@ -15,12 +14,11 @@ import mailIcon from '../assets/beskidPage/icons/contacts-icons/mail.png'
 import mapIcon from '../assets/beskidPage/icons/contacts-icons/map.png'
 import BeskedMap from '../beskidPageComponents/BeskedMap';
 import Modal from '../components/Modal';
+import { motion } from 'framer-motion';
 import '../beskidPageComponents/Contacts.scss'
 
 import './BeskidPage.scss'
-import React, { useRef, useLayoutEffect, useState } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useRef, useState } from 'react';
 
 import typeOneFloorOne from '../assets/beskidPage/images/planning-types/resized/type1-floor1.png'
 import typeOneFloorTwo from '../assets/beskidPage/images/planning-types/resized/type1-floor2.png'
@@ -31,47 +29,38 @@ import groupImageOne from '../assets/beskidPage/images/group-images/group_img1-m
 import groupImageTwo from '../assets/beskidPage/images/group-images/group_img2-min.jpg'
 import groupImageThree from '../assets/beskidPage/images/group-images/group_img3-min.jpg'
 
-gsap.registerPlugin(ScrollTrigger)
-
+import Header from '../components/Header';
 function BeskidPage () {
   const [modalActive, setModalActive] = useState(false)
-    const main = useRef()
-  
-    useLayoutEffect(() => {
-      const ctx = gsap.context((self) => {
-        const boxes = self.selector('.box')
-        const banners = self.selector('.banner-animation')
-        boxes.forEach((box) => {
-          gsap.fromTo(box, {y: 44, opacity: 0}, {y: 0, opacity: 1, duration: .5, scrollTrigger: {
-            trigger: box,
-          }})
 
-          banners.forEach((banner) => {
-            gsap.fromTo(banner, {opacity: 0}, {opacity: 1, duration: .5})
-          })
-        });
-      }, main)
-  
-      return () => ctx.revert()
-    }, [])
-  
-  
     return (
-      <main ref={main}>
+      <>
+      <Header/>
+      <main>
         <Modal active={modalActive} setActive={setModalActive}/>
-        <div className='banner-animation'>
+        <motion.div className='banner-animation'
+          initial={{opacity: 0}}
+          whileInView={{opacity: 1}}
+          transition={{duration: 0.7}}
+        >
           <BeskidBanner/>
-        </div>
+        </motion.div>
 
         {/* titles and actions */}
-        <div className='wrapper box beskid-title'>
+        <motion.div className='wrapper beskid-title'
+          initial={{x: -350}}
+          whileInView={{x: 0}}
+          transition={{duration: 0.45}}
+        >
           <a href='#' >
-            <div className='action'>
+            <motion.div className='action'
+              whileHover={{scale: 1.1, duration: 0.01}}
+            >
               <svg className="action-icon">
                 <use href={icons + '#chevron-left'}/>
               </svg>
               <a className='action-text'>На головну</a>
-            </div>
+            </motion.div>
           </a>
 
           <h1 className='title'>Детальніше про котеджі BESKID</h1>
@@ -80,33 +69,53 @@ function BeskidPage () {
             <img src={mapPinIcon} className='location-icon' />
             <p className='location-text'>Буковель</p>
           </div>
-        </div>
+        </motion.div>
 
         {/* sliders and text section */}   
-          <div className='info wrapper west-info info-container'>
+          <motion.div className='info wrapper west-info info-container'
+            initial={{opacity: 0, y: 100, scale: 0.9}}
+            whileInView={{opacity: 1, y: 0, scale: 1}}
+            transition={{duration: 0.37}}
+          >
             <FirstSlider/>
-          </div>
-          <div className='info wrapper info-container second-slider__container'>
+          </motion.div>
+          <motion.div className='info wrapper info-container second-slider__container'
+            initial={{opacity: 0, y: 100, scale: 0.9}}
+            whileInView={{opacity: 1, y: 0, scale: 1}}
+            transition={{duration: 0.37}}
+          >
             <SecondSlider/>
-          </div>
+          </motion.div>
 
 
         {/* section with group of photos */}
-        <div className='wrapper group-images box'>
+        <motion.div className='wrapper group-images box'
+          initial={{opacity: 0}}
+          whileInView={{opacity: 1}}
+          transition={{duration: 0.8}}
+        >
           <img src={groupImageOne} alt='group-image' className='group-images__img'/>
           <img src={groupImageTwo} alt='group-image' className='group-images__img'/>
           <img src={groupImageThree} alt='group-image' className='group-images__img'/>
-        </div>
+        </motion.div>
 
-        <div className='wrapper title-container box'>
+        <motion.div className='wrapper title-container box'
+          initial={{y: 150, opacity: 0}}
+          whileInView={{y: 0, opacity: 1}}
+          transition={{duration: 0.6}}
+        >
           <h1 className='main-title'>Планування котеджів BESKID</h1>
-        </div>
+        </motion.div>
 
         {/* planning types section */}
-        <div className='plannings-type wrapper'>
+        <motion.div className='plannings-type wrapper'
+          initial={{y: 150, opacity: 0}}
+          whileInView={{y: 0, opacity: 1}}
+          transition={{duration: 0.6}}
+        >
           <PlanningType type='Тип 1' area='117,94 м²' terrace='16,90 м²' floorOne={typeOneFloorOne} floorTwo={typeOneFloorTwo}/>
           <PlanningType type='Тип 2' area='121,74 м²' terrace='27,90 м²' floorOne={typeTwoFloorOne} floorTwo={typeTwoFloorTwo}/>
-        </div>
+        </motion.div>
 
         {/* adventages section */}
         <div className='adventages box'>
@@ -118,13 +127,21 @@ function BeskidPage () {
           </div>
         </div>
 
-        <div className='wrapper title-container box'>
+        <motion.div className='wrapper title-container box'
+          initial={{y: 100, opacity: 0}}
+          whileInView={{y: 0, opacity: 1}}
+          transition={{duration: 0.6}}
+        >
           <h1 className='main-title'>Які обов'язки бере на себе управлінська компанія?</h1>
-        </div>
+        </motion.div>
 
-        <div className='wrapper overlay box'>
+        <motion.div className='wrapper overlay box'
+         initial={{y: 100, opacity: 0}}
+         whileInView={{y: 0, opacity: 1}}
+         transition={{duration: 0.6}}
+        >
           <ManagmentGroup/>
-        </div>
+        </motion.div>
 
         <div className='wrapper'>
           <InstallmentSystem/>
@@ -174,6 +191,7 @@ function BeskidPage () {
                 <BeskedMap/>
         </section>
       </main>
+      </>
     );
   }
   

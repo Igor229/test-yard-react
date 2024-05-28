@@ -2,7 +2,6 @@
     position: fixed;
     opacity: 0;
     pointer-events: none;
-
     
     &--active {
         opacity: 1;
@@ -95,6 +94,10 @@
 }
 @media screen and (max-width: 380px) {
     .modal__actions-action {
-        width: 250px !important;
+        width: 100% !important;
+        height: 45px !important;
+    }
+    .modal__container {
+        padding: 0 16px;
     }
 }

@@ -31,11 +31,6 @@
             border: none;
             color: #fff;
         }
-
-        #wes-town__button {
-            width: 120px;
-            height: 40px;
-        }
     }
 
     &__slider {
@@ -47,7 +42,15 @@
         display: none;
     }
 }
+#wes-town__button {
+    width: 120px;
+    height: 40px;
+}
 
+#comf-town__button {
+    width: 150px;
+    height: 40px;
+}
 .queue {
     display: flex;
     flex-direction: row;
@@ -102,7 +105,7 @@
             width: 100%;
         }
 
-        #wes-town__button {
+        #wes-town__button, #comf-town__button {
             width: 100%;
         }
     }

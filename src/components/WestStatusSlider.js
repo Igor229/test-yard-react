@@ -48,8 +48,8 @@ export default function WestStatusSlider( {photos} ) {
       >
           {photos.map((item, index) => {
             return (
-            <SwiperSlide>
-              <SliderCard key={index} {...item} />
+            <SwiperSlide key={index}>
+              <SliderCard {...item} />
             </SwiperSlide>)
           })}
       </Swiper>

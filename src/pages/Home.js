@@ -1,65 +1,77 @@
 import About from '../components/About';
-import Beskid from '../components/Beskid';
-import WestTown from '../components/WestTown';
+import ComplexCard from '../components/ComplexCard';
 import Feedbacks from '../components/Feedbacks';
 import News from '../components/News';
 import BuildingStatus from '../components/BuildingStatus';
 import Map from '../components/Map';
+import { motion } from 'framer-motion';
+import Header from '../components/Header';
+import beskidCardPhoto from '../assets/images/beskid-home/home-beskid.webp'
+import comfortCardPhoto from '../assets/images/beskid-home/home-comfort.webp'
+import westCardPhoto from '../assets/images/beskid-home/home-west.webp'
 
-import React, { useRef, useLayoutEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger)
-
+//====================================
 function Home () {
-  const main = useRef()
-
-  useLayoutEffect(() => {
-    const ctx = gsap.context((self) => {
-      const boxes = self.selector('.box')
-      boxes.forEach((box) => {
-        gsap.fromTo(box, {y: 44, opacity: 0}, {y: 0, opacity: 1, duration: .5, scrollTrigger: {
-          trigger: box,
-        }})
-      });
-    }, main)
-
-    return () => ctx.revert()
-  }, [])
-
 
   return (
-    <main ref={main}>
+    <>
+    <Header/>
+    <main>
       <About />
 
-      <section className='complexes'>
+      <motion.section className='complexes'
+        initial={{opacity: 0, y: 100, scale: 0.9}}
+        whileInView={{opacity: 1, y: 0, scale: 1}}
+        transition={{duration: 0.37}}
+      >
         <div className='wrapper'>
-          <h2 className='main-title'>Наші комплекси</h2>          
-            <div className='complexes__items'>
-              <WestTown />
-              <Beskid /> 
-            </div>       
+          <h2 className='main-title'>ТОП-1 на ринку таунхаусів та малоповерхової забудови в Івано-Франківську</h2>
+          <div className='complexes-up'>
+          <ComplexCard header='COMFORT TOWN' location='Угорники' type='10 хв до Центру Івано-Франківська' image={comfortCardPhoto}/>
+            <ComplexCard header='WEST TOWN' location='Крихівці' type='10 хв до міського озера' image={westCardPhoto}/>
+          </div>
+          <h2 className='main-title'>Будуємо котеджі в самому серці Карпат для інвестиції або власного проживання</h2>
+            <div className='complexes-down'>
+              <ComplexCard header='BESKID HOME RESORT' location='с.Поляниця, вул.урочище Вишні' type='ГК Bukovel' image={beskidCardPhoto}/>
+            </div>
         </div>
-      </section>
+      </motion.section>
 
-      <div className='feedbacks wrapper'>
+      <motion.div className='feedbacks wrapper' id='feedbacks'
+        initial={{opacity: 0, y: 100, scale: 0.9}}
+        whileInView={{opacity: 1, y: 0, scale: 1}}
+        transition={{duration: 0.37}}
+      >
         <h2 className='main-title'>Відгуки наших клієнтів</h2>
         <Feedbacks/>
-      </div>
-      
+      </motion.div>
+      <motion.div
+        initial={{opacity: 0, y: 100, scale: 0.9}}
+        whileInView={{opacity: 1, y: 0, scale: 1}}
+        transition={{duration: 0.37}}
+      >
       <BuildingStatus/>
-
-      <section className='news' id='news'>
-        <div className='wrapper'>
+      </motion.div>
+      <motion.section className='news' id='news'
+        initial={{opacity: 0, y: 100, scale: 0.9}}
+        whileInView={{opacity: 1, y: 0, scale: 1}}
+        transition={{duration: 0.37}}
+      >
+        <motion.div className='wrapper'
+          initial={{opacity: 0, y: 100, scale: 0.9}}
+          whileInView={{opacity: 1, y: 0, scale: 1}}
+          transition={{duration: 0.37}}
+        >
           <h2 className='main-title box'>Новини</h2>
-          <div className='news__container box'>
+          <div className='news__container box' id='news'>
             <News/>
           </div>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
       <Map />
     </main>
+    </>
   );
 }
 

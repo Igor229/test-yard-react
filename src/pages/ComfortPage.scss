@@ -1,0 +1,256 @@
+.block-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 32px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 40px;
+    color: #181E1A;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555;
+    width: 40%;
+  }
+}
+
+.private-ground {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 112px 0 60px 0;
+  gap: 16px;
+
+  &__proposal {
+    background-color: #FFEC8B;
+    border-radius: 100px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #181E1A;
+  }
+  &__title {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #181E1A;
+    text-align: center;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555;
+    text-align: center;
+  }
+
+}
+
+.contact-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 32px;
+
+  &__text {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: #555;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding-right: 15%;
+
+    &-box {
+      &-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #555;
+      }
+      &-tel {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #181E1A;
+      }
+    }
+  }
+}
+
+.insaltment {
+  background-image: url('../assets/comfortPage/images/instalments.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  &-box {
+    background-color: #181E1A;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 179px 36px;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      &-zap {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFEC8B;
+        border: 1px solid #FFEC8B;
+        border-radius: 100px;
+        padding: 8px 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: fit-content;
+      }
+
+      &-title {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 32px;
+        color: #527246;
+      }
+
+      &-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #969F9A;
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .insaltment-box {
+    padding: 110px 36px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .insaltment {
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 70vh;
+    background-position: -140px -240px;
+    &-box {
+      height: fit-content;
+      width: 100%;
+      padding: 36px;
+    }
+  }
+
+  .contact-block__phone {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .block-info {
+    flex-wrap: wrap;
+    gap: 24px;
+
+    &__text {
+      width: 100%;
+    }
+  }
+  .comfort-action {
+    margin: 40px 0 0 56px !important;
+  }
+
+  .private-ground {
+    padding: 40px 0 40px 0;
+  }
+
+
+  .contact-block__text {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .comfort-action {
+    margin: 40px 0 0 16px !important;
+  }
+  .advantage-comfort-title {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .contact-comfort-title {
+    padding: 40px 0 !important;
+  }
+  .comfort-last-block {
+    margin-bottom: 60px !important;
+  }
+}
+@media screen and (max-width: 540px) {
+  .block-info {
+    &__title {
+      font-size: 23px;
+      line-height: 28px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .private-ground {
+    &__title {
+      font-size: 23px;
+      line-height: 28px;
+    }
+  }
+  .insaltment-box {
+    padding: 16px;
+  }
+  .insaltment-box__info-title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .insaltment-box__info-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .insaltment-box__info-button {
+    width: 100% !important;
+  }
+
+  .contact-block {
+    flex-wrap: wrap;
+    gap: 20px;
+    &__text {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .insaltment {
+    height: 85vh;
+  }
+}
