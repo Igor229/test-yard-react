@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-yard-react/static/css/main.f0291694.css",
-    "main.js": "/test-yard-react/static/js/main.03e224e2.js",
+    "main.css": "/test-yard-react/static/css/main.c5b4e4d4.css",
+    "main.js": "/test-yard-react/static/js/main.29a5bf39.js",
     "static/js/787.3a6277e1.chunk.js": "/test-yard-react/static/js/787.3a6277e1.chunk.js",
     "static/media/2.jpg": "/test-yard-react/static/media/2.e91d905c6657fcb71adb.jpg",
     "static/media/3.jpg": "/test-yard-react/static/media/3.bf2a788232e317789746.jpg",
@@ -149,15 +149,16 @@
     "static/media/alternateTown.webp": "/test-yard-react/static/media/alternateTown.bf1d307450698143f0c9.webp",
     "static/media/sprite.svg": "/test-yard-react/static/media/sprite.ed002f29049753607d6b64b630138cc9.svg",
     "index.html": "/test-yard-react/index.html",
+    "static/media/Frame.svg": "/test-yard-react/static/media/Frame.00bca8afdf9431aecb9d59c5c81a9bba.svg",
     "static/media/tiktok.svg": "/test-yard-react/static/media/tiktok.8da0dc92cc7e0d4932d89693f5935153.svg",
     "static/media/menu-open.svg": "/test-yard-react/static/media/menu-open.e47cad21270d448e17cd07096172c4e8.svg",
     "static/media/menu-close.svg": "/test-yard-react/static/media/menu-close.83af43c5ad2451fc6cbcb8abd0ede7c5.svg",
-    "main.f0291694.css.map": "/test-yard-react/static/css/main.f0291694.css.map",
-    "main.03e224e2.js.map": "/test-yard-react/static/js/main.03e224e2.js.map",
+    "main.c5b4e4d4.css.map": "/test-yard-react/static/css/main.c5b4e4d4.css.map",
+    "main.29a5bf39.js.map": "/test-yard-react/static/js/main.29a5bf39.js.map",
     "787.3a6277e1.chunk.js.map": "/test-yard-react/static/js/787.3a6277e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0291694.css",
-    "static/js/main.03e224e2.js"
+    "static/css/main.c5b4e4d4.css",
+    "static/js/main.29a5bf39.js"
   ]
 }
