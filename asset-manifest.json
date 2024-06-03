@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/test-yard-react/static/css/main.c5b4e4d4.css",
+    "main.css": "/test-yard-react/static/css/main.00262557.css",
     "main.js": "/test-yard-react/static/js/main.a2dfa956.js",
     "static/js/787.3a6277e1.chunk.js": "/test-yard-react/static/js/787.3a6277e1.chunk.js",
     "static/media/2.jpg": "/test-yard-react/static/media/2.e91d905c6657fcb71adb.jpg",
@@ -87,11 +87,11 @@
     "static/media/beskid-april6.webp": "/test-yard-react/static/media/beskid-april6.436f391315024c9e1796.webp",
     "static/media/april7.webp": "/test-yard-react/static/media/april7.27d627e9b5e90ea36cb4.webp",
     "static/media/april3.webp": "/test-yard-react/static/media/april3.3adb956951916626d34e.webp",
+    "static/media/main-banner.webp": "/test-yard-react/static/media/main-banner.8dccb4cf1be29e5b3dca.webp",
     "static/media/november4.webp": "/test-yard-react/static/media/november4.2e178d964f129aa898d2.webp",
     "static/media/17.webp": "/test-yard-react/static/media/17.b4837c47ad2083a56386.webp",
     "static/media/7.webp": "/test-yard-react/static/media/7.d1c4e83068a8463dd6c5.webp",
     "static/media/6.webp": "/test-yard-react/static/media/6.aee83fa6b8d877102ae7.webp",
-    "static/media/main_background.webp": "/test-yard-react/static/media/main_background.68a72617b7596602dcc2.webp",
     "static/media/12.webp": "/test-yard-react/static/media/12.4a911b49db3c337247da.webp",
     "static/media/april4.webp": "/test-yard-react/static/media/april4.305ab0d61e36bbfd581a.webp",
     "static/media/que9-7.webp": "/test-yard-react/static/media/que9-7.deec7a29fc670d36fe0a.webp",
@@ -153,12 +153,12 @@
     "static/media/tiktok.svg": "/test-yard-react/static/media/tiktok.8da0dc92cc7e0d4932d89693f5935153.svg",
     "static/media/menu-open.svg": "/test-yard-react/static/media/menu-open.e47cad21270d448e17cd07096172c4e8.svg",
     "static/media/menu-close.svg": "/test-yard-react/static/media/menu-close.83af43c5ad2451fc6cbcb8abd0ede7c5.svg",
-    "main.c5b4e4d4.css.map": "/test-yard-react/static/css/main.c5b4e4d4.css.map",
+    "main.00262557.css.map": "/test-yard-react/static/css/main.00262557.css.map",
     "main.a2dfa956.js.map": "/test-yard-react/static/js/main.a2dfa956.js.map",
     "787.3a6277e1.chunk.js.map": "/test-yard-react/static/js/787.3a6277e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5b4e4d4.css",
+    "static/css/main.00262557.css",
     "static/js/main.a2dfa956.js"
   ]
 }
