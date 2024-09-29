@@ -4,8 +4,7 @@ function FullPageImage (props) {
   const {image} = props
 
   return (
-    <div className='main-block wrapper'>
-      <img src={image} className='main-block__image' alt='some image'/>
+    <div className='main-block' style={{backgroundImage: `url(${image})`}}>
     </div>
   )
 }

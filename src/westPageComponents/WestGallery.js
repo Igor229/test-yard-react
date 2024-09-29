@@ -122,7 +122,7 @@ export default function WestGallery() {
                 <Swiper
                 slidesPerView={3}
                 spaceBetween={10}
-                freeMode={true}
+                freeMode={false}
                 pagination={false}
                 autoHeight = {true}
                 autoplay = {true}

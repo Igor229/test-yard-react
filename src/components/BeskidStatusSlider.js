@@ -36,6 +36,11 @@ import beskidMay4 from '../assets/images/build-status/beskid-status/may4.webp'
 import beskidMay5 from '../assets/images/build-status/beskid-status/may5.webp'
 import beskidMay6 from '../assets/images/build-status/beskid-status/may6.webp'
 import beskidMay7 from '../assets/images/build-status/beskid-status/may7.webp'
+import beskidSeptember1 from '../assets/images/build-status/beskid-status/september1.webp'
+import beskidSeptember2 from '../assets/images/build-status/beskid-status/september2.webp'
+import beskidSeptember3 from '../assets/images/build-status/beskid-status/september3.webp'
+import beskidSeptember4 from '../assets/images/build-status/beskid-status/september4.webp'
+import beskidSeptember5 from '../assets/images/build-status/beskid-status/september5.webp'
 
 function SliderCard(props) {
   const {month, title, info,info1,info2,info3,info4,info5,info6,info7,info8, img, subinfo} = props
@@ -63,6 +68,36 @@ function SliderCard(props) {
 
 export default function BeskidStatusSlider() {
   const cardData = [
+    {
+      img: beskidSeptember1,
+      month: 'Вересень',
+      title: 'BESKID HOME RESORT',
+      info: ''
+    },
+    {
+      img: beskidSeptember2,
+      month: 'Вересень',
+      title: 'BESKID HOME RESORT',
+      info: ''
+    },
+    {
+      img: beskidSeptember3,
+      month: 'Вересень',
+      title: 'BESKID HOME RESORT',
+      info: ''
+    },
+    {
+      img: beskidSeptember4,
+      month: 'Вересень',
+      title: 'BESKID HOME RESORT',
+      info: ''
+    },
+    {
+      img: beskidSeptember5,
+      month: 'Вересень',
+      title: 'BESKID HOME RESORT',
+      info: ''
+    },
     {
       img: beskidMay1,
       month: 'Травень',
@@ -235,7 +270,7 @@ export default function BeskidStatusSlider() {
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
-        freeMode={true}
+        freeMode={false}
         pagination={false}
         autoHeight={true}
 

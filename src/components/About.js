@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './About.scss'
 import Modal from './Modal'
 import { motion } from 'framer-motion'
+import MainVideoBG from '../assets/videos/bg-video.MP4'
 
 function About () {
     const [modalActive, setModalActive] = useState(false)
@@ -16,6 +17,9 @@ function About () {
 
             <div className='about-container'>
                 <div className='about-container__info'>
+
+                
+
                     <div className='wrapper'>
                         <motion.h1 className='text-container__title'
                             initial={{y: -70, opacity: 0}}
@@ -48,6 +52,9 @@ function About () {
                     </div>
                     
                 </div>
+                <div className='video-container'>
+                <video src={MainVideoBG} typeof='video/mp4' className='main-video' autoPlay playsInline loop muted/>
+            </div>
             </div>
         <div className='about-shadow'></div>
         </motion.section>

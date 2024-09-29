@@ -11,16 +11,18 @@ import './WestSlider.css'
 
 // import required modules
 import { Navigation } from 'swiper/modules';
-import west1 from '../assets/westPage/images/main-slider/0.webp'
-import west2 from '../assets/westPage/images/main-slider/1.webp'
-import west3 from '../assets/westPage/images/main-slider/2.webp'
-import west4 from '../assets/westPage/images/main-slider/3.webp'
-import west5 from '../assets/westPage/images/main-slider/4.webp'
-import west6 from '../assets/westPage/images/main-slider/5.webp'
-import west7 from '../assets/westPage/images/main-slider/6.webp'
-import west8 from '../assets/westPage/images/main-slider/7.webp'
-import west9 from '../assets/westPage/images/main-slider/8.webp'
-import west10 from '../assets/westPage/images/main-slider/9.webp'
+import west0 from '../assets/westPage/images/main-slider/0.webp'
+import west1 from '../assets/westPage/images/main-slider/1.webp'
+import west2 from '../assets/westPage/images/main-slider/2.webp'
+import west3 from '../assets/westPage/images/main-slider/3.webp'
+import west4 from '../assets/westPage/images/main-slider/4.webp'
+import west5 from '../assets/westPage/images/main-slider/5.webp'
+import west6 from '../assets/westPage/images/main-slider/6.webp'
+import west7 from '../assets/westPage/images/main-slider/7.webp'
+import west8 from '../assets/westPage/images/main-slider/8.webp'
+import west9 from '../assets/westPage/images/main-slider/9.webp'
+import west10 from '../assets/westPage/images/main-slider/10.webp'
+import west11 from '../assets/westPage/images/main-slider/11.webp'
 
 const images = [
   {
@@ -61,6 +63,14 @@ const images = [
   },
   {
     src: '9',
+    alt: 'west-town'
+  },
+  {
+    src: '10',
+    alt: 'west-town'
+  },
+  {
+    src: '11',
     alt: 'west-town'
   },
 ]
@@ -105,6 +115,7 @@ function MainSlider () {
           <FsLightbox
             toggler={toggler}
             sources={[
+              west0,
               west1,
               west2,
               west3,
@@ -115,6 +126,7 @@ function MainSlider () {
               west8,
               west9,
               west10,
+              west11,
             ]}
           />
         </>

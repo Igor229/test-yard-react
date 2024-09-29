@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Autoplay } from 'swiper/modules';
 import { Navigation, Pagination } from 'swiper/modules';
 
-import imgOne from '../assets/westPage/images/partners/1.jpg'
-import imgTwo from '../assets/westPage/images/partners/2.jpg'
-import imgThree from '../assets/westPage/images/partners/3.jpg'
+import imgOne from '../assets/westPage/images/partners/1.webp'
+import imgTwo from '../assets/westPage/images/partners/2.webp'
+import imgThree from '../assets/westPage/images/partners/3.webp'
 
 const adventagesData = [
     {
@@ -40,7 +40,7 @@ function Partners () {
             <Swiper
                 slidesPerView={3}
                 spaceBetween={0}
-                freeMode={true}
+                freeMode={false}
                 pagination={{dynamicBullets: true}}
                 autoplay = {false}
     

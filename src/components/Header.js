@@ -93,7 +93,7 @@ function Header(props) {
                             <div className="burger__menu-contacts">
                                 <div className="contacts__container">
                                     <h4 className="contacts__container-title">Yard Development</h4>
-                                    <a href="#comfort-town" className="contacts__container-text burger-link" onClick={showBurger}>Comfort Town<span className="contacts__container-text-span">Новинка</span></a>
+                                    <a href="#comfort-town" className="contacts__container-text burger-link" onClick={showBurger}>Comfort Town</a>
                                     <a href="#beskid-home" className="contacts__container-text burger-link" onClick={showBurger}>BESKID HOME RESORT</a>
                                     <a href="#west-town" className="contacts__container-text burger-link" onClick={showBurger}>WEST TOWN</a>
                                 </div>
@@ -131,7 +131,7 @@ function Header(props) {
 
                         <a href="#"><img src={mainLogoWhite} alt="main-logo" className="header__items-logo"/></a>
                         <ul className="navigations">
-                            <li className='comfortTown_action'><a href="#comfort-town" className="navigations__action" onClick={handleClickScroll}>Comfort Town</a><span className="navigations__action-span">Новинка</span></li>
+                            <li className='comfortTown_action'><a href="#comfort-town" className="navigations__action" onClick={handleClickScroll}>Comfort Town</a></li>
                             <li><a href="#west-town" className="navigations__action" onClick={handleClickScroll}>West town</a></li>
                             <li><a href="#beskid-home" className="navigations__action" onClick={handleClickScroll}>Beskid home resort</a></li>
                         </ul>

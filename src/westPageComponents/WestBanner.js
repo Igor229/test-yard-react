@@ -18,7 +18,7 @@ function WestBanner () {
                         whileInView={{y: 0, opacity: 1}}
                         transition={{duration: 0.5}}
                     >
-                        Найбільше містечко таунхаусів <br/> в Івано-Франківську
+                        Містечко ТОП-1 - вибір серед таунхаусів Івано-Франківська
                     </motion.h3>
                     <motion.h1 className='banner__titles-main'
                         initial={{y: -90, opacity: 0}}

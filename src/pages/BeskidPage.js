@@ -7,6 +7,7 @@ import PlanningType from '../beskidPageComponents/PlanningType';
 import Adventages from '../beskidPageComponents/Adventages';
 import ManagmentGroup from '../beskidPageComponents/ManagmentGroup';
 import InstallmentSystem from '../beskidPageComponents/InstallmentSystem';
+import BeskidStatus from '../beskidPageComponents/BeskidStatus';
 
 import phoneIcon from '../assets/beskidPage/icons/contacts-icons/phone.png'
 import instagramIcon from '../assets/beskidPage/icons/contacts-icons/instagram.png'
@@ -146,6 +147,8 @@ function BeskidPage () {
         <div className='wrapper'>
           <InstallmentSystem/>
         </div>
+
+        <BeskidStatus/>
 
         <div className='wrapper title-container box'>
           <h1 className='main-title'>Контактна інформація</h1>

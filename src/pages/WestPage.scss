@@ -76,33 +76,6 @@
     }
 }
 
-.special-proposal {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #FFEC8B;
-    width: 100%;
-    padding: 8px 0;
-
-    &__text {
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-        color: #181E1A;
-    }
-    &__action {
-        display: flex;
-        align-items: center;
-        color: #181E1A;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-        cursor: pointer;
-    }
-}
-
-
 @media screen and (max-width: 1920px) {
     .west-action {
         padding-left: 120px;

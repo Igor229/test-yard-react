@@ -6,6 +6,11 @@
     cursor: pointer;
 }
 
+.back-yard-swiper {
+    width: 623px;
+}
+
+
 @media screen and (max-width: 1024px) {
     .west-page-swiper {
         width: 80%;
@@ -23,5 +28,8 @@
 @media screen and (max-width: 480px) {
     .west-page-swiper {
         height: 228px;
+    }
+    .back-yard-swiper {
+        height: auto;
     }
 }

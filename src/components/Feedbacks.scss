@@ -48,10 +48,13 @@
     .feedback__text {
         line-height: 22px;
     }
+    .feedbackSlider {
+        margin-top: 40px;
+    }
 }
 
 @media screen and (max-width: 620px) {
     .feedback {
-        height: auto;
+        height: 370px;
     }
 }

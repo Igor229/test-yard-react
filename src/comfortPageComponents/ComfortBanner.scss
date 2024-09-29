@@ -3,6 +3,7 @@ $title-color: #7F9E56;
 
 
 .about-comfort {
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -97,5 +98,10 @@ $title-color: #7F9E56;
         font-size: 14px !important;
         line-height: 20px !important;
         
+    }
+}
+@media screen and (max-height: 600px) {
+    .about-button-comfort {
+        margin-bottom: 25px !important;
     }
 }

@@ -79,7 +79,7 @@ body {
     align-items: center;
     font-size: 34px;
     font-weight: 600;
-    line-height: 28px;
+    line-height: 38px;
     color: $main-color;
     letter-spacing: -0.35px;
     text-align: center;
@@ -439,6 +439,7 @@ svg {
 @media screen and (max-width: 480px) {
     .main-title {
         font-size: 23px;
+        margin: 0;
     }
 
     .burger {

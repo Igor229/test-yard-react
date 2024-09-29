@@ -42,7 +42,7 @@ const handleClickFeedbacks = () => {
                     </div>
                     <div className="content__item">
                         <h4 className="content__item-title">Наші комплекси</h4>
-                        <a href='#comfort-town' className="content__item-text upper" onClick={handleClickScroll}>COMFORT TOWN<span className="content__item-text-span">Новинка</span></a>
+                        <a href='#comfort-town' className="content__item-text upper" onClick={handleClickScroll}>COMFORT TOWN</a>
                         <a href='#beskid-home' className="content__item-text upper" onClick={handleClickScroll}>BESKID HOME RESORT</a>
                         <a href='#west-town' className="content__item-text upper" onClick={handleClickScroll}>WEST TOWN</a>
                     </div>
@@ -62,7 +62,7 @@ const handleClickFeedbacks = () => {
                 </div>
 
                 <div className="footer__actions">
-                    <p className="footer__actions-item">© 2023 | Всі права захищено</p>
+                    <p className="footer__actions-item">© 2024 | Всі права захищено</p>
                     <div className="footer__actions-socials">
                         <a href="https://www.instagram.com/yard.development/" target="_blank">
                             <svg className="social-icon">

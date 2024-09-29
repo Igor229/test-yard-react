@@ -1,5 +1,5 @@
 import '../westPageComponents/AdventageList.scss'
-import schoolIcon from '../assets/comfortPage/icons/advantages-icons/school.png'
+import schoolIcon from '../assets/comfortPage/icons/advantages-icons/Frame.svg'
 import planningIcon from '../assets/comfortPage/icons/advantages-icons/planning.png'
 import stationIcon from '../assets/comfortPage/icons/advantages-icons/bus-station.png'
 import groundIcon from '../assets/comfortPage/icons/advantages-icons/ground-space.png'

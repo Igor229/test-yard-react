@@ -2,14 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import './BuildStatusSlider.css';
 import './News.scss'
 import { FreeMode, Autoplay } from 'swiper/modules';
-import westTownNewsImg from '../assets/images/news/west-town_news.webp'
-import spaNewsImg from '../assets/images/news/spa-news.webp'
-import beskedNewsImage from '../assets/images/news/besked-news.webp'
 import alternateTown from '../assets/images/news/alternateTown.webp'
 import gasHeating from '../assets/images/news/gas-heating.webp'
-import specialOffer from '../assets/images/news/special-offer.webp'
-import westNovemberOffer from '../assets/images/news/west-town-sale11.webp'
-import startFebruarySaleImg from '../assets/images/news/startQue8Sale.webp'
 import easterImg from '../assets/images/news/easter.webp'
 import comfortTown from '../assets/images/news/comfortTown.webp'
 
@@ -51,20 +45,6 @@ export default function News() {
       text: "Придбайте таунхаус у містечку WEST TOWN ДО 03.05.2024 та отримайте газовий гриль У ПОДАРУНОК на власне подвір'я.",
     },
     {
-      image: startFebruarySaleImg,
-      date:'20.02.24',
-      title: " 8 ЧЕРГА WEST TOWN ВЖЕ НА СТАДІЇ ЗДАЧІ В ЕКСПЛУАТАЦІЮ",
-      subtitle: '',
-      text: "Хочемо повідомити, що 8 черга будівництва містечка WEST TOWN вже в процесі введення в експлуатацію! Зовсім скоро мешканці зможуть приступати до ремонтних робіт. На даний момент здійснюються роботи по благоустрою прибудинкової території - здійснюється укладання бруківки. В усіх будинках вже встановлені вхідні броньовані двері покращеного типу нового зразка. ВАЖЛИВО - до 8 черги WEST TOWN вже підведено ГАЗ!",
-    },
-    {
-      image: westNovemberOffer,
-      date:'25.01.24',
-      title: "СТАРТ ПРОДАЖУ WEST TOWN 11",
-      subtitle: '',
-      text: "Стартував продаж таунхаусів у новій черзі будівництва - WEST TOWN 11. Діє акційна пропозиція для перших трьох покупців - 30 місяців безвідсоткового розтермінування. Здача нової черги будівництва запланована на 2-ий квартал 2025 року.",
-    },
-    {
       image: gasHeating,
       date:'15.11.23',
       title: "Газове опалення у BESKID HOME RESORT",
@@ -84,7 +64,7 @@ export default function News() {
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
-        freeMode={true}
+        freeMode={false}
         pagination={false}
         autoHeight = {true}
         autoplay = {true}
