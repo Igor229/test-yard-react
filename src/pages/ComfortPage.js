@@ -84,10 +84,10 @@ function ComfortPage () {
 
           <div className='propose-boxes'>
           <div className='propose-box'>
-              <h3 className='propose-box__title'>Надійний</h3>
+              <h3 className='propose-box__title'>1-ий варіант</h3>
               <div className='propose-box__info'>
                 <p className='propose-box__info-text'>Умови</p>
-                <p className='propose-box__info-subtext'><span className='propose-span'>40%</span> перший платіж від <span className='propose-price'>19 500$</span></p>
+                <p className='propose-box__info-subtext'><span className='propose-span'>30%</span> перший платіж від <span className='propose-price'>19 500$</span></p>
                 <p className='propose-box__info-subtext'><span className='propose-span'>2 р.</span> термін розтермінування</p>
                 <p className='propose-box__info-subtext'><span className='propose-span'>серпень 2025 р.</span> здача будинку в експлуатацію  </p>
               </div>
@@ -95,10 +95,10 @@ function ComfortPage () {
             </div>
 
             <div className='propose-box'>
-              <h3 className='propose-box__title'>Звичайний</h3>
+              <h3 className='propose-box__title'>2-ий варіант</h3>
               <div className='propose-box__info'>
                 <p className='propose-box__info-text'>Умови</p>
-                <p className='propose-box__info-subtext'><span className='propose-span'>30%</span> перший платіж від <span className='propose-price'>26 000$</span></p>
+                <p className='propose-box__info-subtext'><span className='propose-span'>40%</span> перший платіж від <span className='propose-price'>26 000$</span></p>
                 <p className='propose-box__info-subtext'><span className='propose-span'>60%</span> сума платежу після отримання документів на право власності</p>
                 <p className='propose-box__info-subtext'><span className='propose-span'>серпень 2025 р.</span> здача будинку в експлуатацію </p>
               </div>
