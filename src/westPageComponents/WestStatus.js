@@ -42,6 +42,14 @@ import que10Sept1 from '../assets/images/build-status/west-status/queue10/sept1.
 import que10Sept2 from '../assets/images/build-status/west-status/queue10/sept2.webp'
 import que10Sept3 from '../assets/images/build-status/west-status/queue10/sept3.webp'
 import que10Sept4 from '../assets/images/build-status/west-status/queue10/sept4.webp'
+import que10Oct1 from '../assets/images/build-status/west-status/queue10/oct1.webp'
+import que10Oct2 from '../assets/images/build-status/west-status/queue10/oct2.webp'
+import que10Oct3 from '../assets/images/build-status/west-status/queue10/oct3.webp'
+import que10Oct4 from '../assets/images/build-status/west-status/queue10/oct4.webp'
+import que10Oct5 from '../assets/images/build-status/west-status/queue10/oct5.webp'
+import que10Nov5 from '../assets/images/build-status/west-status/queue10/november5.webp'
+import que10Nov6 from '../assets/images/build-status/west-status/queue10/november6.webp'
+import que10Nov7 from '../assets/images/build-status/west-status/queue10/november7.webp'
 
 // queue11
 import que11April1 from '../assets/images/build-status/west-status/queue11/april1.webp'
@@ -66,16 +74,97 @@ import que11Sept1 from '../assets/images/build-status/west-status/queue11/sept1.
 import que11Sept2 from '../assets/images/build-status/west-status/queue11/sept2.webp'
 import que11Sept3 from '../assets/images/build-status/west-status/queue11/sept3.webp'
 import que11Sept4 from '../assets/images/build-status/west-status/queue11/sept4.webp'
+import que11Oct1 from '../assets/images/build-status/west-status/queue11/oct1.webp'
+import que11Oct2 from '../assets/images/build-status/west-status/queue11/oct2.webp'
+import que11Oct3 from '../assets/images/build-status/west-status/queue11/oct3.webp'
+import que11Oct4 from '../assets/images/build-status/west-status/queue11/oct4.webp'
+import que11Oct5 from '../assets/images/build-status/west-status/queue11/oct5.webp'
+import que11Oct6 from '../assets/images/build-status/west-status/queue11/oct6.webp'
+import que11Nov1 from '../assets/images/build-status/west-status/queue11/nov1.webp'
+import que11Nov2 from '../assets/images/build-status/west-status/queue11/nov2.webp'
+import que11Nov3 from '../assets/images/build-status/west-status/queue11/nov3.webp'
+import que11Nov4 from '../assets/images/build-status/west-status/queue11/nov4.webp'
+import que11Nov5 from '../assets/images/build-status/west-status/queue11/nov5.webp'
+import que11Nov6 from '../assets/images/build-status/west-status/queue11/nov6.webp'
+import que11Nov7 from '../assets/images/build-status/west-status/queue11/nov7.webp'
+import que11Nov8 from '../assets/images/build-status/west-status/queue11/nov8.webp'
+import que11Nov9 from '../assets/images/build-status/west-status/queue11/nov9.webp'
+import que11Nov10 from '../assets/images/build-status/west-status/queue11/nov10.webp'
+import que11Nov11 from '../assets/images/build-status/west-status/queue11/nov11.webp'
 
 // queue12
 import que12July1 from '../assets/images/build-status/west-status/queue12/sept1.webp'
 import que12July2 from '../assets/images/build-status/west-status/queue12/sept2.webp'
 import que12July3 from '../assets/images/build-status/west-status/queue12/sept3.webp'
 import que12July4 from '../assets/images/build-status/west-status/queue12/sept4.webp'
+import que12Oct1 from '../assets/images/build-status/west-status/queue12/oct1.webp'
+import que12Oct2 from '../assets/images/build-status/west-status/queue12/oct2.webp'
+import que12Oct3 from '../assets/images/build-status/west-status/queue12/oct3.webp'
+import que12Oct4 from '../assets/images/build-status/west-status/queue12/oct4.webp'
+import que12Nov1 from '../assets/images/build-status/west-status/queue12/nov1.webp'
+import que12Nov2 from '../assets/images/build-status/west-status/queue12/nov2.webp'
+import que12Nov3 from '../assets/images/build-status/west-status/queue12/nov3.webp'
+import que12Nov4 from '../assets/images/build-status/west-status/queue12/nov4.webp'
+import que12Nov5 from '../assets/images/build-status/west-status/queue12/nov5.webp'
+import que12Nov6 from '../assets/images/build-status/west-status/queue12/nov6.webp'
+import que12Nov7 from '../assets/images/build-status/west-status/queue12/nov7.webp'
+import que12Nov8 from '../assets/images/build-status/west-status/queue12/nov8.webp'
+import que12Nov9 from '../assets/images/build-status/west-status/queue12/nov9.webp'
+import que12Nov10 from '../assets/images/build-status/west-status/queue12/nov10.webp'
+import que12Nov11 from '../assets/images/build-status/west-status/queue12/nov11.webp'
+import que12Nov12 from '../assets/images/build-status/west-status/queue12/nov12.webp'
 
   // cards data
 
 const album10 = [
+  {
+    img: que10Nov5,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que10Nov6,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que10Nov7,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que10Oct1,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que10Oct2,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que10Oct3,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que10Oct4,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que10Oct5,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
   {
     img: que10Sept1,
     month: 'Вересень',
@@ -290,6 +379,108 @@ const album10 = [
 
 const album11 = [
   {
+    img: que11Nov9,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que11Nov10,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que11Nov11,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que11Nov1,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que11Nov2,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que11Nov3,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que11Nov4,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que11Nov5,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que11Nov6,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que11Nov7,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que11Nov8,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que11Oct1,
+    month: 'Жовтень',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que11Oct2,
+    month: 'Жовтень',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que11Oct3,
+    month: 'Жовтень',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que11Oct4,
+    month: 'Жовтень',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que11Oct5,
+    month: 'Жовтень',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que11Oct6,
+    month: 'Жовтень',
+    title: 'west town',
+    info: ''
+  },
+  {
     img: que11Sept1,
     month: 'Вересень',
     title: 'west town',
@@ -425,6 +616,102 @@ const album11 = [
 
 const album12 = [
   {
+    img: que12Nov9,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que12Nov10,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que12Nov11,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que12Nov12,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que12Nov1,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que12Nov2,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que12Nov3,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que12Nov4,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que12Nov5,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que12Nov6,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que12Nov7,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que12Nov8,
+    month: 'Листопад',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que12Oct1,
+    month: 'Жовтень',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que12Oct2,
+    month: 'Жовтень',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que12Oct3,
+    month: 'Жовтень',
+    title: 'west town',
+    info: ''
+  },
+  {
+    img: que12Oct4,
+    month: 'Жовтень',
+    title: 'west town',
+    info: ''
+  },
+  {
     img: que12July1,
     month: 'Вересень',
     title: 'west town',
@@ -493,6 +780,14 @@ function WestStatus() {
         <FsLightbox 
           toggler={togglerTwo}
           sources={[
+            que10Nov5,
+            que10Nov6,
+            que10Nov7,
+            que10Oct1,
+            que10Oct2,
+            que10Oct3,
+            que10Oct4,
+            que10Oct5,
             que10Sept1,
             que10Sept2,
             que10Sept3,
@@ -534,6 +829,23 @@ function WestStatus() {
         <FsLightbox 
           toggler={togglerThree}
           sources={[
+            que11Nov9,
+            que11Nov10,
+            que11Nov11,
+            que11Nov1,
+            que11Nov2,
+            que11Nov3,
+            que11Nov4,
+            que11Nov5,
+            que11Nov6,
+            que11Nov7,
+            que11Nov8,
+            que11Oct1,
+            que11Oct2,
+            que11Oct3,
+            que11Oct4,
+            que11Oct5,
+            que11Oct6,
             que11Sept1,
             que11Sept2,
             que11Sept3,
@@ -562,6 +874,22 @@ function WestStatus() {
         <FsLightbox 
           toggler={togglerFour}
           sources={[
+            que12Nov9,
+            que12Nov10,
+            que12Nov11,
+            que12Nov12,
+            que12Nov1,
+            que12Nov2,
+            que12Nov3,
+            que12Nov4,
+            que12Nov5,
+            que12Nov6,
+            que12Nov7,
+            que12Nov8,
+            que12Oct1,
+            que12Oct2,
+            que12Oct3,
+            que12Oct4,
             que12July1,
             que12July2,
             que12July3,

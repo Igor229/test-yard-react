@@ -1,4 +1,6 @@
-import mainImg from '../assets/beskidPage/images/beskid_page-banner.jpg'
+import mainImg from '../assets/beskidPage/images/main-banner.webp'
+// import mainImg from '../assets/beskidPage/images/main-banner.png'
+import checkIcon from '../assets/beskidPage/icons/check.svg'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Modal from '../components/Modal'
@@ -11,26 +13,29 @@ function BeskidBanner () {
             <Modal active={modalActive} setActive={setModalActive}/>
             <img src={mainImg} className='banner__image' alt='main-logo' />
             <div className='banner__titles'>
+
+                <p className='banner__titles-liltext'><img src={checkIcon} className='banner__titles-liltext-icon'/> Котеджі введено в експлуатацію</p>
+
                 <motion.h1 className='banner__titles-main'
                     initial={{y: -70, opacity: 0}}
                     whileInView={{y: 0, opacity: 1}}
                     transition={{duration: 0.5}}
                 >
-                    BESKID HOME RESORT
+                    FOMICH RESIDENCE <br/> GUESTHOUSES
                 </motion.h1>
                 <motion.h3 className='banner__titles-subtitle'
                     initial={{y: -90, opacity: 0}}
                     whileInView={{y: 0, opacity: 1}}
                     transition={{duration: 0.5}}
                 >
-                    Котеджне містечко у самому серці Карпат
+                     відпочивайте та заробляйте - продаж котеджів у серці Карпат
                 </motion.h3>  
             </div>
             <motion.button className='banner__action' onClick={() => setModalActive(true)}
                 transition={{duration: 0.05}}
                 whileHover={{scale: 1.03}}
             >
-                Отримати комерційну пропозицію
+                Дізнатися більше
             </motion.button>
         </section>
     )

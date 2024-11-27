@@ -1,7 +1,5 @@
-import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './BuildStatusSlider.css';
-import { FreeMode, Autoplay } from 'swiper/modules';
 
 function SliderCard(props) {
   const {month, info, img, subinfo} = props
@@ -24,10 +22,8 @@ export default function WestStatusSlider( {photos} ) {
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
-        freeMode={false}
         pagination={false}
         autoHeight = {true}
-        autoplay = {true}
 
         breakpoints={{
             279: {
@@ -42,7 +38,6 @@ export default function WestStatusSlider( {photos} ) {
 
         }}
 
-        modules={[FreeMode, Autoplay]}
         className="buildStatusSlider"
       >
           {photos.map((item, index) => {

@@ -5,9 +5,9 @@ import News from '../components/News';
 import Map from '../components/Map';
 import { motion } from 'framer-motion';
 import Header from '../components/Header';
-import beskidCardPhoto from '../assets/images/home-beskid.webp'
 import comfortCardPhoto from '../assets/images/home-comfort.webp'
 import westCardPhoto from '../assets/images/home-west.webp'
+import guestHouseCardPhoto from '../assets/images/home-guesthouse.webp'
 
 //====================================
 function Home () {
@@ -35,7 +35,7 @@ function Home () {
           </div>
           <h2 className='main-title bes-title'>Будуємо котеджі в самому серці Карпат для інвестиції <br/> або власного проживання</h2>
             <div className='complexes-down'>
-              <a href='#beskid-home' onClick={handleClickScroll}><ComplexCard header='BESKID HOME RESORT' location='с.Поляниця, вул.урочище Вишні' type='ГК Bukovel' image={beskidCardPhoto}/></a>
+              <a href='#beskid-home' onClick={handleClickScroll}><ComplexCard header='FOMICH RESIDENCE GUESTHOUSES' location='с.Поляниця, вул.урочище Вишні' type='ГК Bukovel' image={guestHouseCardPhoto}/></a>
             </div>
         </div>
       </motion.section>

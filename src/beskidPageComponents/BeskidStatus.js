@@ -36,6 +36,14 @@ import beskidSeptember2 from '../assets/images/build-status/beskid-status/septem
 import beskidSeptember3 from '../assets/images/build-status/beskid-status/september3.webp'
 import beskidSeptember4 from '../assets/images/build-status/beskid-status/september4.webp'
 import beskidSeptember5 from '../assets/images/build-status/beskid-status/september5.webp'
+import beskidOct1 from '../assets/images/build-status/beskid-status/oct1.webp'
+import beskidOct2 from '../assets/images/build-status/beskid-status/oct2.webp'
+import beskidOct3 from '../assets/images/build-status/beskid-status/oct3.webp'
+import beskidOct4 from '../assets/images/build-status/beskid-status/oct4.webp'
+import beskidOct5 from '../assets/images/build-status/beskid-status/oct5.webp'
+import beskidOct6 from '../assets/images/build-status/beskid-status/oct6.webp'
+import beskidOct7 from '../assets/images/build-status/beskid-status/oct7.webp'
+import beskidOct8 from '../assets/images/build-status/beskid-status/oct8.webp'
 
 
 function BeskidStatus() {
@@ -60,6 +68,14 @@ function BeskidStatus() {
         <FsLightbox 
           toggler={togglerBeskid}
           sources={[
+            beskidOct1,
+            beskidOct2,
+            beskidOct3,
+            beskidOct4,
+            beskidOct5,
+            beskidOct6,
+            beskidOct7,
+            beskidOct8,
             beskidSeptember1,
             beskidSeptember2,
             beskidSeptember3,

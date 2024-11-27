@@ -77,7 +77,7 @@ export default function FirstSlider() {
       </Swiper>
 
       <div className='info-description'>
-        <h2 className='info-description__title'>BESKID HOME RESORT</h2>
+        <h2 className='info-description__title'>FOMICH RESIDENCE GUESTHOUSES</h2>
         <p className='info-description__text'>
           Це унікальний котеджний комплекс в самому серці Карпат з власною SPA-зоною та басейном. Котеджі розташовані на вершині поблизу карпатського лісу, а з тераси та вікон відкривається дивовижний краєвид на підйомник 1R гірськолижного курорту Bukovel.
         </p>
