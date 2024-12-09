@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-yard-react/static/css/main.c9058203.css",
-    "main.js": "/test-yard-react/static/js/main.b93adbf4.js",
+    "main.css": "/test-yard-react/static/css/main.6e2358ce.css",
+    "main.js": "/test-yard-react/static/js/main.ee5bf5d8.js",
     "static/js/787.3a6277e1.chunk.js": "/test-yard-react/static/js/787.3a6277e1.chunk.js",
     "static/media/bg-video.MP4": "/test-yard-react/static/media/bg-video.b0d77293e27fac262997.MP4",
     "static/media/manageGroupImg4.jpg": "/test-yard-react/static/media/manageGroupImg4.650e55a38f0a492efd93.jpg",
@@ -113,6 +113,7 @@
     "static/media/oct6.webp": "/test-yard-react/static/media/oct6.8fa147c67bace2bfc72e.webp",
     "static/media/beskid-april5.webp": "/test-yard-react/static/media/beskid-april5.17f99a5d9623ae1d73ba.webp",
     "static/media/march3.webp": "/test-yard-react/static/media/march3.e125a3e2cc5a362fd171.webp",
+    "static/media/new-year.png": "/test-yard-react/static/media/new-year.c5f71ecdc5c7c4105422.png",
     "static/media/may7.webp": "/test-yard-react/static/media/may7.1dc981d892844d421f61.webp",
     "static/media/beskid-november5-min.webp": "/test-yard-react/static/media/beskid-november5-min.a3e177976fadb624f39e.webp",
     "static/media/7.webp": "/test-yard-react/static/media/7.1e85318574d855ab6cff.webp",
@@ -154,6 +155,7 @@
     "static/media/alternateTown.webp": "/test-yard-react/static/media/alternateTown.bf1d307450698143f0c9.webp",
     "static/media/main-0.webp": "/test-yard-react/static/media/main-0.9336885b1a313a2b4f6f.webp",
     "static/media/main-2.webp": "/test-yard-react/static/media/main-2.d1752c11cdaf15fc2c93.webp",
+    "static/media/ny-bg.png": "/test-yard-react/static/media/ny-bg.ef582cb6b434ac00434b.png",
     "static/media/sprite.svg": "/test-yard-react/static/media/sprite.1a2213c19ef454154d32c8e91328be7b.svg",
     "static/media/calendar.svg": "/test-yard-react/static/media/calendar.d863a14f7419fdeccf27e5df1f5acd65.svg",
     "static/media/check.svg": "/test-yard-react/static/media/check.c720488a736097ac84142150e87954eb.svg",
@@ -165,12 +167,12 @@
     "static/media/stoncks.svg": "/test-yard-react/static/media/stoncks.3d1ce1c73db49ecf1fcaa3e62a2e1b51.svg",
     "static/media/menu-close.svg": "/test-yard-react/static/media/menu-close.e20279ac4433a2ac04225d21f9064a29.svg",
     "static/media/rectangle.svg": "/test-yard-react/static/media/rectangle.544c591b4e3ee02b53a6061123636c6d.svg",
-    "main.c9058203.css.map": "/test-yard-react/static/css/main.c9058203.css.map",
-    "main.b93adbf4.js.map": "/test-yard-react/static/js/main.b93adbf4.js.map",
+    "main.6e2358ce.css.map": "/test-yard-react/static/css/main.6e2358ce.css.map",
+    "main.ee5bf5d8.js.map": "/test-yard-react/static/js/main.ee5bf5d8.js.map",
     "787.3a6277e1.chunk.js.map": "/test-yard-react/static/js/787.3a6277e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9058203.css",
-    "static/js/main.b93adbf4.js"
+    "static/css/main.6e2358ce.css",
+    "static/js/main.ee5bf5d8.js"
   ]
 }
