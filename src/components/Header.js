@@ -94,7 +94,7 @@ function Header(props) {
                                 <div className="contacts__container">
                                     <h4 className="contacts__container-title">Yard Development</h4>
                                     <a href="#comfort-town" className="contacts__container-text burger-link" onClick={showBurger}>Comfort Town</a>
-                                    <a href="#beskid-home" className="contacts__container-text burger-link" onClick={showBurger}>FOMICH RESIDENCE GUESTHOUSES</a>
+                                    <a href="#fomich-guesthouses" className="contacts__container-text burger-link" onClick={showBurger}>FOMICH RESIDENCE GUESTHOUSES</a>
                                     <a href="#west-town" className="contacts__container-text burger-link" onClick={showBurger}>WEST TOWN</a>
                                 </div>
                                 <div className="contacts__container">
@@ -133,7 +133,7 @@ function Header(props) {
                         <ul className="navigations">
                             <li className='comfortTown_action'><a href="#comfort-town" className="navigations__action" onClick={handleClickScroll}>Comfort Town</a></li>
                             <li><a href="#west-town" className="navigations__action" onClick={handleClickScroll}>West town</a></li>
-                            <li><a href="#beskid-home" className="navigations__action" onClick={handleClickScroll}>FOMICH RESIDENCE GUESTHOUSES</a></li>
+                            <li><a href="#fomich-guesthouses" className="navigations__action" onClick={handleClickScroll}>FOMICH RESIDENCE GUESTHOUSES</a></li>
                         </ul>
                     </div>
 

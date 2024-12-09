@@ -43,7 +43,7 @@ const handleClickFeedbacks = () => {
                     <div className="content__item">
                         <h4 className="content__item-title">Наші комплекси</h4>
                         <a href='#comfort-town' className="content__item-text upper" onClick={handleClickScroll}>COMFORT TOWN</a>
-                        <a href='#beskid-home' className="content__item-text upper" onClick={handleClickScroll}>FOMICH RESIDENCE GUESTHOUSES</a>
+                        <a href='#fomich-guesthouses' className="content__item-text upper" onClick={handleClickScroll}>FOMICH RESIDENCE GUESTHOUSES</a>
                         <a href='#west-town' className="content__item-text upper" onClick={handleClickScroll}>WEST TOWN</a>
                     </div>
 

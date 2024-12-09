@@ -15,7 +15,7 @@ function App() {
         <HashRouter>
           <Routes>
             <Route exact path='/' element={<Home/>}/>
-            <Route path='/beskid-home' element={<BeskidPage/>}/>
+            <Route path='/fomich-guesthouses' element={<BeskidPage/>}/>
             <Route path='/west-town' element={<WestPage/>}/>
             <Route path='/comfort-town' element={<ComfortPage/>}/>
           </Routes>

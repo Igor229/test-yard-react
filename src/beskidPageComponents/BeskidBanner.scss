@@ -83,6 +83,9 @@
 
 @media screen and (max-width: 1280px) {
     .banner {
+        &__titles {
+            gap: 16px;
+        }
         &__action {
             margin-bottom: 50px;
             padding: 0 20px;
@@ -104,7 +107,7 @@
         }
 
         &__action {
-            margin-bottom: 180px;
+            margin-bottom: 80px;
             font-size: 14px;
         }
     }
@@ -129,6 +132,48 @@
             margin-bottom: 100px;
             width: 288px;
             padding: 0;
+        }
+    }
+}
+
+@media screen and (max-height: 720px) {
+    .banner {
+        &__titles {
+            &-main {
+                font-size: 54px;
+                line-height: 55px;
+            }
+            &-subtitle {
+                font-size: 22px;
+                line-height: 24px;
+                text-align: center;
+            }
+        }
+
+        &__action {
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (max-height: 667px) {
+    .banner {
+        &__titles {
+            gap: 22px;
+            &-main {
+                font-size: 34px;
+                line-height: 35px;
+            }
+            &-subtitle {
+                font-size: 18px;
+                line-height: 20px;
+                text-align: center;
+            }
+        }
+
+        &__action {
+            font-size: 22px;
+            margin-bottom: 25px;
         }
     }
 }

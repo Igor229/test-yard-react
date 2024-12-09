@@ -168,7 +168,7 @@ export default function Slider() {
               {/*=================== card actions ========================*/}
               
               <div className='info-actions'>
-                  <a href='#beskid-home'>
+                  <a href='#fomich-guesthouses'>
                   <button className='info-actions__btn' onClick={handleClickScroll}>
                       Докладніше про комплекс
                       <svg className="btn-icon">
