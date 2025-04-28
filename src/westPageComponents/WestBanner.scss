@@ -6,9 +6,24 @@
     margin-bottom: 60px;
 }
 
+.west__banner-phone {
+    display: none;
+}
 
 @media screen and (max-width: 1280px) {
     .west-banner__action {
         padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .west__banner-pc {
+        display: none;
+    }
+
+    .west__banner-phone {
+        display: block;
+        object-fit: cover;
+        
     }
 }

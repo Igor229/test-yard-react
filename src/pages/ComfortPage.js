@@ -34,10 +34,7 @@ function ComfortPage () {
   return (
     <>
       <Modal active={modalActive} setActive={setModalActive}/>
-      <div className='special-proposal'>
-          <p className='special-proposal__text'>Змінено умови розтермінування для COMFORT TOWN. </p>
-          <a className='special-proposal__action' onClick={handleClickProposal} style={{fontWeight: '600', cursor: 'pointer', color: '#000'}}>Умови акції<img src={chevronRight} style={{cursor: 'pointer'}}/></a>
-      </div>
+      
       <Header/>
       <ComfortBanner/>
 

@@ -17,14 +17,6 @@ function ComfortBanner () {
             <div className='about-container'>
                 <div className='about-container__info'>
                     <div className='wrapper'>
-                        <motion.p className='text-container__text-comfort' style={{fontStyle: 'italic', paddingBottom: '14px'}}
-                            initial={{y: -90, opacity: 0}}
-                            whileInView={{y: 0, opacity: 1}}
-                            transition={{duration: 0.5}}
-                        >
-                            комфортно там, де вдома
-                        </motion.p>
-
                         <motion.h1 className='text-container__title-comfort'
                             initial={{y: -70, opacity: 0}}
                             whileInView={{y: 0, opacity: 1}}

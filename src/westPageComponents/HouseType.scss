@@ -61,6 +61,12 @@
     }
 }
 
+@media screen and (max-width: 580px) {
+    .house-type__info-main {
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .house-type {
         width: 100%;

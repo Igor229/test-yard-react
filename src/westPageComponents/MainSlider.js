@@ -21,8 +21,6 @@ import west6 from '../assets/westPage/images/main-slider/6.webp'
 import west7 from '../assets/westPage/images/main-slider/7.webp'
 import west8 from '../assets/westPage/images/main-slider/8.webp'
 import west9 from '../assets/westPage/images/main-slider/9.webp'
-import west10 from '../assets/westPage/images/main-slider/10.webp'
-import west11 from '../assets/westPage/images/main-slider/11.webp'
 
 const images = [
   {
@@ -63,14 +61,6 @@ const images = [
   },
   {
     src: '9',
-    alt: 'west-town'
-  },
-  {
-    src: '10',
-    alt: 'west-town'
-  },
-  {
-    src: '11',
     alt: 'west-town'
   },
 ]
@@ -125,8 +115,6 @@ function MainSlider () {
               west7,
               west8,
               west9,
-              west10,
-              west11,
             ]}
           />
         </>

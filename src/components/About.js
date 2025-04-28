@@ -3,6 +3,7 @@ import './About.scss'
 import Modal from './Modal'
 import { motion } from 'framer-motion'
 import MainVideoBG from '../assets/videos/bg-video.MP4'
+import MainBanner from '../assets/images/main.webp'
 
 function About () {
     const [modalActive, setModalActive] = useState(false)
@@ -33,7 +34,7 @@ function About () {
                             whileInView={{y: 0, opacity: 1}}
                             transition={{duration: 0.5}}
                         >
-                            Дбаємо про ваш комфорт та добробут
+                            Будуємо найбільше містечко <br/>таунхаусів в Івано-Франківську
                         </motion.p>
 
                         <motion.div className='text-container__actions'
@@ -53,7 +54,8 @@ function About () {
                     
                 </div>
                 <div className='video-container'>
-                <video src={MainVideoBG} typeof='video/mp4' className='main-video' autoPlay playsInline loop muted/>
+                {/* <video src={MainVideoBG} typeof='video/mp4' className='main-video' autoPlay playsInline loop muted/> */}
+                <img src={MainBanner} className='main-banner' alt='main-banner'/>
             </div>
             </div>
         <div className='about-shadow'></div>

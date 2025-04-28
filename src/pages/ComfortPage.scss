@@ -20,30 +20,6 @@
   }
 }
 
-.special-proposal {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FFEC8B;
-  width: 100%;
-  padding: 8px 0;
-  z-index: 5;
-
-  &__text {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 20px;
-      color: #181E1A;
-  }
-  &__action {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 12px;
-  }
-}
-
 
 .private-ground {
   display: flex;
@@ -390,11 +366,6 @@
     &__text {
       width: 100%;
     }
-  }
-
-  .special-proposal {
-    font-size: 14px;
-    flex-direction: column;
   }
 
   .propose {

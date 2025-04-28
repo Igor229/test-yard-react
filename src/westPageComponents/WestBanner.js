@@ -3,6 +3,7 @@ import '../beskidPageComponents/BeskidBanner.scss'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import mainImg from '../assets/westPage/images/west-banner.webp'
+import mainImgPhone from '../assets/westPage/images/west_banner_phone.webp'
 import ModalPlus from '../components/ModalPlus'
 
 function WestBanner () {
@@ -11,7 +12,8 @@ function WestBanner () {
         <>
             <section className="banner west-banner">
                 <ModalPlus active={modalActive} setActive={setModalActive}/>
-                <img src={mainImg} className='banner__image' alt='main-logo' />
+                <img src={mainImg} className='banner__image west__banner-pc' alt='main-logo' />
+                <img src={mainImgPhone} className='banner__image west__banner-phone' alt='main-logo' />
                 <div className='banner__titles'> 
                     <motion.h3 className='banner__titles-subtitle'
                         initial={{y: -70, opacity: 0}}
@@ -26,7 +28,7 @@ function WestBanner () {
                         transition={{duration: 0.5}}
                     >
                         WEST TOWN
-                    </motion.h1>  
+                    </motion.h1>
                 </div>
                 <motion.button className='banner__action west-banner__action' onClick={() => setModalActive(true)}
                     transition={{duration: 0.05}}

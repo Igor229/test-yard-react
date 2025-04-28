@@ -1,6 +1,3 @@
-import React, { useState } from 'react'
-import Slider from './BeskedSlider';
-import ContactForm from './ContactForm';
 import mapPinIcon from '../assets/icons/map-pin.png'
 import './ComplexCard.scss'
 import './Complexes.scss'

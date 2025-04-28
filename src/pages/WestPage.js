@@ -10,6 +10,7 @@ import BackgroundYard from '../westPageComponents/BackgroundYard';
 import WPlanType from '../westPageComponents/WPlanType';
 import WestStatus from '../westPageComponents/WestStatus';
 import PreviousStatus from '../westPageComponents/PreviousStatus';
+import QuadroWest from '../westPageComponents/QuadroWest';
 
 import './WestPage.scss'
 import icons from '../assets/icons/sprite.svg'
@@ -145,6 +146,8 @@ function WestPage () {
             <MainSlider />
           </motion.div>
 
+            <QuadroWest />
+
           {/* Adventages Images */}
           <motion.div
             className="wrapper title-container box"
@@ -186,7 +189,7 @@ function WestPage () {
               image={internalTypeImg}
               type="Внутрішній"
               rooms="4"
-              square="120 м²"
+              square="120 м² - 135 м²"
               area="1,65-1,8 сотих"
             />
             <HouseType

@@ -24,6 +24,12 @@ import comfortOct1 from '../assets/images/build-status/comfort-status/oct1.webp'
 import comfortOct2 from '../assets/images/build-status/comfort-status/oct2.webp'
 import comfortOct3 from '../assets/images/build-status/comfort-status/oct3.webp'
 import comfortOct4 from '../assets/images/build-status/comfort-status/oct4.webp'
+import comfortFeb1 from '../assets/images/build-status/comfort-status/feb1.webp'
+import comfortFeb2 from '../assets/images/build-status/comfort-status/feb2.webp'
+import comfortFeb3 from '../assets/images/build-status/comfort-status/feb3.webp'
+import comfortFeb4 from '../assets/images/build-status/comfort-status/feb4.webp'
+import comfortMarch1 from '../assets/images/build-status/comfort-status/march1.webp'
+import comfortMarch2 from '../assets/images/build-status/comfort-status/march2.webp'
 
 function SliderCard(props) {
   const {month, title, info, img, subinfo} = props
@@ -43,6 +49,42 @@ function SliderCard(props) {
 
 export default function ComfortStatusSlider() {
   const cardData = [
+    {
+      img: comfortMarch1,
+      month: 'Березень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortMarch2,
+      month: 'Березень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortFeb1,
+      month: 'Лютий',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortFeb2,
+      month: 'Лютий',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortFeb3,
+      month: 'Лютий',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortFeb4,
+      month: 'Лютий',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
     {
       img: comfortOct1,
       month: 'Жовтень',
