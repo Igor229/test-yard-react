@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-yard-react/static/css/main.ab15a7e0.css",
-    "main.js": "/test-yard-react/static/js/main.1f24916b.js",
+    "main.css": "/test-yard-react/static/css/main.668d509c.css",
+    "main.js": "/test-yard-react/static/js/main.4fd87c7a.js",
     "static/js/787.3a6277e1.chunk.js": "/test-yard-react/static/js/787.3a6277e1.chunk.js",
     "static/media/bg-video.MP4": "/test-yard-react/static/media/bg-video.b0d77293e27fac262997.MP4",
     "static/media/manageGroupImg4.jpg": "/test-yard-react/static/media/manageGroupImg4.650e55a38f0a492efd93.jpg",
@@ -165,12 +165,12 @@
     "static/media/stoncks.svg": "/test-yard-react/static/media/stoncks.3d1ce1c73db49ecf1fcaa3e62a2e1b51.svg",
     "static/media/menu-close.svg": "/test-yard-react/static/media/menu-close.e20279ac4433a2ac04225d21f9064a29.svg",
     "static/media/rectangle.svg": "/test-yard-react/static/media/rectangle.544c591b4e3ee02b53a6061123636c6d.svg",
-    "main.ab15a7e0.css.map": "/test-yard-react/static/css/main.ab15a7e0.css.map",
-    "main.1f24916b.js.map": "/test-yard-react/static/js/main.1f24916b.js.map",
+    "main.668d509c.css.map": "/test-yard-react/static/css/main.668d509c.css.map",
+    "main.4fd87c7a.js.map": "/test-yard-react/static/js/main.4fd87c7a.js.map",
     "787.3a6277e1.chunk.js.map": "/test-yard-react/static/js/787.3a6277e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab15a7e0.css",
-    "static/js/main.1f24916b.js"
+    "static/css/main.668d509c.css",
+    "static/js/main.4fd87c7a.js"
   ]
 }
