@@ -344,7 +344,7 @@ export default function BeskidStatusSlider() {
         }}
 
         modules={[FreeMode, Autoplay]}
-        className="buildStatusSlider"
+        className="buildStatusSlider fomich-Slider"
       >
         {cardData.map((item, index) => {
             return (

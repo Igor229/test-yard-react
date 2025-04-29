@@ -26,10 +26,11 @@ function WestForm() {
                 <motion.input whileHover={{scale: 1.03}} className="west-form__input form-input" type="tel" name="phone" maxLength="13" placeholder="Номер телефону" required/>
 
                 <motion.select whileHover={{scale: 1.03}} className='west-form__input form-input select' name='house'>
-                    <option value='' selected disabled>Оберіть таунхаус</option>
+                    <option value='' selected disabled>Оберіть варіант</option>
                     <option value='Внутрішній'>Внутрішній</option>
                     <option value='Крайній'>Крайній</option>
-                    <option value='Обидва варіанти'>Обидва варіанти</option>
+                    <option value='Обидва варіанти'>Квадрохаус</option>
+                    <option value='Обидва варіанти'>Всі варіанти</option>
                 </motion.select>
 
                 <motion.select whileHover={{scale: 1.03}} className='west-form__input form-input select' name='messanger'>

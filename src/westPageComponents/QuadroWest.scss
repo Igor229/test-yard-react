@@ -58,8 +58,34 @@
     }
 }
 
-.quadro-slider {
-    width: 100%;
+.west-page-swiper-quadro {
+    width: 50%;
     height: 622px;
     border-radius: 20px;
+    user-select: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .quadro {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &-info {
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            text-align: center;
+        }
+    }
+
+    .west-page-swiper-quadro {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .west-page-swiper-quadro {
+        height: 344px;
+    }
 }

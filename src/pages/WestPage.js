@@ -176,7 +176,7 @@ function WestPage () {
             transition={{ duration: 0.6 }}
           >
             <h1 className="main-title">
-              У нашому містечку ви можете обрати таунхаус
+            У нашому містечку ви можете обрати <br/>таунхаус / квадрохаус
             </h1>
           </motion.div>
           <motion.div
@@ -185,20 +185,7 @@ function WestPage () {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
-            <HouseType
-              image={internalTypeImg}
-              type="Внутрішній"
-              rooms="4"
-              square="120 м² - 135 м²"
-              area="1,65-1,8 сотих"
-            />
-            <HouseType
-              image={externalTypeImg}
-              type="Крайній"
-              rooms="4"
-              square="120 м²"
-              area="2,5-2,8 сотих"
-            />
+            <HouseType/>
           </motion.div>
 
           {/* Planning Types Section */}

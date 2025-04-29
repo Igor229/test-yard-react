@@ -1,15 +1,14 @@
 import thunderIcon from '../assets/westPage/icons/zap.png'
 import windowIcon from '../assets/westPage/icons/window.png'
 import crownIcon from '../assets/westPage/icons/crown.png'
-import quadroSliderImg from '../assets/westPage/images/quadro/quadro-west1.webp'
-
+import QuadroSlider from './QuadroSlider'
 import './QuadroWest.scss'
 
 function QuadroWest () {
     return (
         <section className="quadro-section">
             <div className='quadro wrapper'>
-            <img src={quadroSliderImg} alt='quadro-img' className="quadro-slider"/>
+            <QuadroSlider/>
                 <div className="quadro-info">
                     <div className="quadro-info__thunder"><img src={thunderIcon} alt='thunder-icon' className="quadro-info_thunder-png"/><p className="quadro-info__thunder-text">Новинка у WEST TOWN</p></div>
                     <h2 className="quadro-info__title">Будинки-квадрохауси із повністю закритим подвір'ям</h2>

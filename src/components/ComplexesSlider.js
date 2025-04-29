@@ -14,25 +14,35 @@ const complexesData = [
         header: 'WEST TOWN XIII (квадрохауси)',
         location: 'Крихівці',
         type: '10 хв до Центру Івано-Франківська',
-        image: westXIIICardPhoto
+        image: westXIIICardPhoto,
+        href: '#west-town'
     },
     {
         header: 'COMFORT TOWN',
         location: 'Угорники',
         type: '10 хв до Центру Івано-Франківська',
-        image: comfortCardPhoto
+        image: comfortCardPhoto,
+        href: '#comfort-town'
     },
     {
         header: 'WEST TOWN',
         location: 'Крихівці',
         type: '10 хв до міського озера',
-        image: westCardPhoto
+        image: westCardPhoto,
+        href: '#west-town'
     },
 ]
 
 function ComplexCard (props) {
-    const {header, location, type, image} = props
+    // Scrolling Tips
+    const handleClickScroll = () => {
+        window.scrollTo(0, 0)
+      }
+
+
+    const {header, location, type, image, href} = props
     return (
+        <a href={href} onClick={handleClickScroll}>
         <div className='complex' style={{backgroundImage: `url(${image})`, zIndex: -99}}>
             <div className='complex-body' style={{background: 'linear-gradient(180deg, rgba(24, 30, 26, 0) 20%, rgba(24, 30, 26, 0.65) 91%)', zIndex: 100}}>
                 <div className='complex-body__text'>
@@ -42,6 +52,7 @@ function ComplexCard (props) {
                 </div>
             </div>
         </div>
+        </a>
     )
 }
 

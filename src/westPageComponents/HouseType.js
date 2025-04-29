@@ -1,29 +1,53 @@
+import { useState } from 'react'
+
 import './HouseType.scss'
+import internalImg from '../assets/westPage/images/house-types/internal.webp'
+import externalImg from '../assets/westPage/images/house-types/external.webp'
+import quadroImg from '../assets/westPage/images/quadroWest.webp'
 
-function HouseType(props) {
-    const {image, type, rooms, square, area} = props
+
+function HouseType() {
+  const [activeButton, setActiveButton] = useState(0)
+  const handleButtonClick = (buttonNumber) => {
+    setActiveButton(buttonNumber)
+  }
     return (
-        <div className='house-type'>
-            <img src={image} alt='house-type-image' className='house-type__img' />
-            <p className='house-type__type'>{type}</p>
+            <div className='htype'>
 
-            <div className='house-type__info'>
-                <div className='house-type__info-item'>
-                    <p className='house-type__info-main'>{rooms}</p>
-                    <p className='house-type__info-subinfo'>Кімнати</p>
-                </div>
+                <div className='htype-content'>
+                  <img src={quadroImg} className={activeButton === 0 ? 'htype-image' : 'htype-image--hidden'}/>
+                  <img src={internalImg} className={activeButton === 1 ? 'htype-image' : 'htype-image--hidden'}/>
+                  <img src={externalImg} className={activeButton === 2 ? 'htype-image' : 'htype-image--hidden'}/>
 
-                <div className='house-type__info-item'>
-                    <p className='house-type__info-main'>{square}</p>
-                    <p className='house-type__info-subinfo'>Площа</p>
-                </div>
+                  <div className='htype-actions'>
+                    <div className='htype-actions__buttons'>
+                      <button className={activeButton === 0 ? 'htype-button' : 'htype-button--noactive'} onClick={() => handleButtonClick(0)}>Квадрохаус</button>
+                      <button className={activeButton === 1 ? 'htype-button' : 'htype-button--noactive'} onClick={() => handleButtonClick(1)}>Внутрішній</button>
+                      <button className={activeButton === 2 ? 'htype-button' : 'htype-button--noactive'} onClick={() => handleButtonClick(2)}>Крайній</button>
+                    </div>
 
-                <div className='house-type__info-item'>
-                    <p className='house-type__info-main'>{area}</p>
-                    <p className='house-type__info-subinfo'>Ділянка</p>
+                    <div className='htype-actions__list'>
+                    <div className={activeButton === 0 ? 'htype-list' : 'htype-list--hidden'}>
+                        <div className='hlist'><div className='hlist-item'><p className='hlist-text'>Кімнати</p></div><p className='hlist-text'>4</p></div>
+                        <div className='hlist'><div className='hlist-item'><p className='hlist-text'>Площа</p></div><p className='hlist-text'>105-135 м²</p></div>
+                        <div className='hlist'><div className='hlist-item'><p className='hlist-text'>Ділянка</p></div><p className='hlist-text'>1,6-1,9 м²</p></div>
+                      </div>
+                      <div className={activeButton === 1 ? 'htype-list' : 'htype-list--hidden'}>
+                        <div className='hlist'><div className='hlist-item'><p className='hlist-text'>Кімнати</p></div><p className='hlist-text'>4</p></div>
+                        <div className='hlist'><div className='hlist-item'><p className='hlist-text'>Площа</p></div><p className='hlist-text'>120 м² - 135 м²</p></div>
+                        <div className='hlist'><div className='hlist-item'><p className='hlist-text'>Ділянка</p></div><p className='hlist-text'>1,65-1,8 сотих</p></div>
+                      </div>
+
+                      <div className={activeButton === 2 ? 'htype-list' : 'htype-list--hidden'}>
+                        <div className='hlist'><div className='hlist-item'><p className='hlist-text'>Кімнати</p></div><p className='hlist-text'>4</p></div>
+                        <div className='hlist'><div className='hlist-item'><p className='hlist-text'>Площа</p></div><p className='hlist-text'>120 м²</p></div>
+                        <div className='hlist'><div className='hlist-item'><p className='hlist-text'>Ділянка</p></div><p className='hlist-text'>2,5-2,8 сотих</p></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
-        </div>
     )
 }
+
 export default HouseType
