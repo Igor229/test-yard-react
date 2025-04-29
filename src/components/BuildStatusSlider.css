@@ -26,12 +26,14 @@
   
   .buildStatusImg {
     display: block;
-    width: 533px !important;
     height: 400px !important;
     /* object-fit: cover; */
     border-radius: 10px;
     cursor: pointer;
   }
+  .west-slider img{
+    width: 100% !important;
+}
 
   @media screen and (max-width: 1440px) {
      .buildStatusImg {

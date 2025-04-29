@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import './BuildStatusSlider.css';
+// import './BuildStatusSlider.css';
+import './BuildingStatus.scss'
 
 function SliderCard(props) {
   const {month, info, img, subinfo} = props
@@ -38,7 +39,7 @@ export default function WestStatusSlider( {photos} ) {
 
         }}
 
-        className="buildStatusSlider"
+        className="buildStatusSlider west-slider"
       >
           {photos.map((item, index) => {
             return (

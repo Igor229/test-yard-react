@@ -30,7 +30,7 @@ function HouseType() {
                     <div className={activeButton === 0 ? 'htype-list' : 'htype-list--hidden'}>
                         <div className='hlist'><div className='hlist-item'><p className='hlist-text'>Кімнати</p></div><p className='hlist-text'>4</p></div>
                         <div className='hlist'><div className='hlist-item'><p className='hlist-text'>Площа</p></div><p className='hlist-text'>105-135 м²</p></div>
-                        <div className='hlist'><div className='hlist-item'><p className='hlist-text'>Ділянка</p></div><p className='hlist-text'>1,6-1,9 м²</p></div>
+                        <div className='hlist'><div className='hlist-item'><p className='hlist-text'>Ділянка</p></div><p className='hlist-text'>1,6-1,9 сотих</p></div>
                       </div>
                       <div className={activeButton === 1 ? 'htype-list' : 'htype-list--hidden'}>
                         <div className='hlist'><div className='hlist-item'><p className='hlist-text'>Кімнати</p></div><p className='hlist-text'>4</p></div>
