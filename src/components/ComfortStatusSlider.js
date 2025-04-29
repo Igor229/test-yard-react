@@ -222,7 +222,7 @@ export default function ComfortStatusSlider() {
         }}
 
         modules={[FreeMode, Autoplay]}
-        className="buildStatusSlider"
+        className="buildStatusSlider comfort-slider"
       >
         {cardData.map((item, index) => {
             return (

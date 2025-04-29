@@ -19,6 +19,14 @@ $text-color: #969F9A;
         justify-content: center;
         padding-top: 60px;
     }
+
+    &-slider .swiper-button-next{
+        background-color: #fff;
+    }
+    &-slider .swiper-button-prev{
+        background-color: #fff;
+    }
+    
 }
 
 @media screen and (max-width: 1020px) {

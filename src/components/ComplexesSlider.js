@@ -1,9 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 import '../components/BuildStatusSlider.css';
-import { FreeMode, Autoplay } from 'swiper/modules';
-import { useState } from 'react';
 import '../components/ComplexCard.scss'
 import '../components/Complexes.scss'
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import mapPinIcon from '../assets/icons/map-pin.png'
 import comfortCardPhoto from '../assets/images/home-comfort.webp'
 import westCardPhoto from '../assets/images/home-west.webp'
@@ -18,19 +20,20 @@ const complexesData = [
         href: '#west-town'
     },
     {
-        header: 'COMFORT TOWN',
-        location: 'Угорники',
-        type: '10 хв до Центру Івано-Франківська',
-        image: comfortCardPhoto,
-        href: '#comfort-town'
-    },
-    {
         header: 'WEST TOWN',
         location: 'Крихівці',
         type: '10 хв до міського озера',
         image: westCardPhoto,
         href: '#west-town'
     },
+    {
+        header: 'COMFORT TOWN',
+        location: 'Угорники',
+        type: '10 хв до Центру Івано-Франківська',
+        image: comfortCardPhoto,
+        href: '#comfort-town'
+    },
+    
 ]
 
 function ComplexCard (props) {
@@ -64,8 +67,12 @@ export default function ComplexCards() {
                 spaceBetween={36}
                 freeMode={true}
                 pagination={false}
-                // autoHeight = {true}
-                // autoplay = {true}
+                navigation={true}
+                style={{
+                    "--swiper-navigation-color": "#181E1A",
+                    "--swiper-navigation-size": "12px",
+                  }}
+                modules={[Navigation]}
                 breakpoints={{
                     279: {
                         slidesPerView: 1,
@@ -79,8 +86,7 @@ export default function ComplexCards() {
 
                 }}
 
-                // modules={[FreeMode, Autoplay]}
-                className="complexes-up"
+                className="complexes-up complexes-slider"
                 >
                     {complexesData.map((item, index) => {
                     return (

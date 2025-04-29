@@ -209,7 +209,7 @@ function WestPage () {
           >
             <div className="partners__info">
               <h1 className="partners__info-title">
-                Партнер містечка WEST TOWN - студія дизайну інтер’єру Monochrome
+                Партнер містечка WEST TOWN - <br/>студія дизайну інтер’єру Monochrome
                 Interior Design
               </h1>
               <p className="partners__info-text">
