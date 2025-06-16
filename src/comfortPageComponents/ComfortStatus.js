@@ -30,6 +30,12 @@ import comfortMarch2 from '../assets/images/build-status/comfort-status/march2.w
 import comfortApr1 from '../assets/images/build-status/comfort-status/apr1.webp'
 import comfortApr2 from '../assets/images/build-status/comfort-status/apr2.webp'
 import comfortApr3 from '../assets/images/build-status/comfort-status/apr3.webp'
+import comfortNewMay1 from '../assets/images/build-status/comfort-status/newmay1.webp'
+import comfortNewMay2 from '../assets/images/build-status/comfort-status/newmay2.webp'
+import comfortNewMay3 from '../assets/images/build-status/comfort-status/newmay3.webp'
+import comfortNewMay4 from '../assets/images/build-status/comfort-status/newmay4.webp'
+import comfortNewMay5 from '../assets/images/build-status/comfort-status/newmay5.webp'
+import comfortNewMay6 from '../assets/images/build-status/comfort-status/newmay6.webp'
 
 function ComfortStatus() {
     const [toggler, setToggler] = useState(false)
@@ -54,6 +60,12 @@ function ComfortStatus() {
         <FsLightbox 
           toggler={toggler}
           sources={[
+            comfortNewMay1,
+            comfortNewMay2,
+            comfortNewMay3,
+            comfortNewMay4,
+            comfortNewMay5,
+            comfortNewMay6,
             comfortApr1,
             comfortApr2,
             comfortApr3,

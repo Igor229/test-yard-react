@@ -10,7 +10,7 @@ function Map() {
         width: '100%',
         height: '400px'
     }
-    const { isLoaded } = useLoadScript({googleMapsApiKey: 'AIzaSyAw-AVtvpx9nhS6rhXAR4qJ3af03KXhTj8'})
+    const { isLoaded } = useLoadScript({googleMapsApiKey: 'AIzaSyBFwcX6iO3FuHpNP9GDev71jFbCQls_tnE'})
     if (!isLoaded){
         return (<div>Loading...</div>)
     } else {

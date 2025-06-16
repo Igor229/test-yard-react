@@ -9,7 +9,7 @@ import Modal from '../components/Modal'
 import MoreAbout from '../comfortPageComponents/MoreAbout'
 import ComfortPlanning from '../comfortPageComponents/ComfortPlanning'
 import ComfortStatus from '../comfortPageComponents/ComfortStatus'
-import FullPageSlider from '../comfortPageComponents/FullPageSlider'
+import IntroductionBlock from '../comfortPageComponents/IntroductionBlock'
 
 import { motion } from 'framer-motion';
 import icons from '../assets/icons/sprite.svg'
@@ -62,47 +62,14 @@ function ComfortPage () {
 
         {/* ======= first block about comfort town ======= */}
         <div className='block-info wrapper'>
-          <h2 className='block-info__title'>Котеджне містечко таунхаусів <br/> COMFORT TOWN</h2>
-          <p className='block-info__text'>Це зразок сучасного житла в поєднанні з високим рівнем комфорту та приватності, це уособлення справжніх сімейних цінностей та затишку - адже комфортно там, де вдома!</p>
+          <h2 className='block-info__title'>Котеджне містечко таунхаусів COMFORT TOWN</h2>
         </div>
         
         <div className='wrapper'>
-          <FullPageSlider/>
+          <IntroductionBlock/>
         </div>
 
         <div  id='propose'></div>
-
-         {/* ======= propose block ======= */}
-        <div className='propose wrapper'>
-          <div className='propose-block'>
-            <h2 className='propose-title'>Умови розтермінування</h2>
-            <p className='propose-block__text'>Наша компанія максимально лояльна до кожного клієнта, тож ми пропонуємо 2 варіанти вигідного розтермінування платежу на купівлю таунхауса у містечку COMFORT TOWN</p>
-          </div>
-
-          <div className='propose-boxes'>
-          <div className='propose-box'>
-              <h3 className='propose-box__title'>1-ий варіант</h3>
-              <div className='propose-box__info'>
-                <p className='propose-box__info-text'>Умови</p>
-                <p className='propose-box__info-subtext'><span className='propose-span'>30%</span> перший платіж від <span className='propose-price'>20 400$</span></p>
-                <p className='propose-box__info-subtext'><span className='propose-span'>2 р.</span> термін розтермінування</p>
-                <p className='propose-box__info-subtext'><span className='propose-span'>серпень 2025 р.</span> здача будинку в експлуатацію  </p>
-              </div>
-              <button onClick={() => setModalActive(true)} className='main-button propose-box__button'>Отримати повний розрахунок</button>
-            </div>
-
-            <div className='propose-box'>
-              <h3 className='propose-box__title'>2-ий варіант</h3>
-              <div className='propose-box__info'>
-                <p className='propose-box__info-text'>Умови</p>
-                <p className='propose-box__info-subtext'><span className='propose-span'>40%</span> перший платіж від <span className='propose-price'>27 200$</span></p>
-                <p className='propose-box__info-subtext'><span className='propose-span'>60%</span> сума платежу після отримання документів на право власності</p>
-                <p className='propose-box__info-subtext'><span className='propose-span'>серпень 2025 р.</span> здача будинку в експлуатацію </p>
-              </div>
-              <button onClick={() => setModalActive(true)} className='main-button propose-box__button'>Отримати повний розрахунок</button>
-            </div>
-          </div>
-        </div>
 
         {/* ======== more about project block ======== */}
         <div className="wrapper title-container about-comfort-title" style={{padding: '112px 0 64px 0'}}>
@@ -114,9 +81,8 @@ function ComfortPage () {
 
         {/* ======== private ground block ======== */}
         <div className='private-ground wrapper'>
-          <p className='private-ground__proposal'><img src={zapIcon} alt='zap-icon'/>Нова пропозиція</p>
-          <h2 className='private-ground__title'>Таунхауси з повністю приватною ділянкою</h2>
-          <p className='private-ground__text'>Закритий передній та задній двори. Ділянки від 1,65 до 2,5 сотих.</p>
+          <h2 className='private-ground__title'>COMFORT TOWN 2 черга - таунхауси з повністю <br/> приватним подвір’ям</h2>
+          <p className='private-ground__text'>Земельні ділянки від 1,6 до 2,9 сотих</p>
         </div>
 
         {/* ======== full page image ============ */}
