@@ -11,16 +11,18 @@ import ComfortPlanning from '../comfortPageComponents/ComfortPlanning'
 import ComfortStatus from '../comfortPageComponents/ComfortStatus'
 import IntroductionBlock from '../comfortPageComponents/IntroductionBlock'
 
+import instagramIcon from '../assets/beskidPage/icons/contacts-icons/instagram.png'
+import mailIcon from '../assets/beskidPage/icons/contacts-icons/mail.png'
+import mapIcon from '../assets/beskidPage/icons/contacts-icons/map.png'
+import ComfortMap from '../comfortPageComponents/ComfortMap'
+
 import { motion } from 'framer-motion';
 import icons from '../assets/icons/sprite.svg'
-import zapIcon from '../assets/comfortPage/icons/zap.png'
-import yellowZapIcon from '../assets/comfortPage/icons/yellow-zap.png'
 import phoneIcon from '../assets/beskidPage/icons/contacts-icons/phone.png'
-import chevronRight from '../assets/icons/chevron-right.png'
-import rectangleIcon from '../assets/icons/rectangle.svg'
 
-import PrivateGroundImage from '../assets/comfortPage/images/ground-place.webp'
-import ContactInfoImage from '../assets/comfortPage/images/contact-info.webp'
+
+import PrivateGroundImage from '../assets/comfortPage/images/ground-place1.webp'
+import WestForm from '../westPageComponents/WestForm'
 
 function ComfortPage () {
   const [modalActive, setModalActive] = useState(false)
@@ -90,6 +92,15 @@ function ComfortPage () {
           <FullPageImage image={PrivateGroundImage}/>
         </div>
 
+
+        {/* ======== planning types block ======== */}
+        <div className='planning-type'>
+          <div className="wrapper title-container box">
+            <h1 className="main-title" style={{color: '#fff'}}>Планування</h1>
+          </div>
+          <ComfortPlanning />
+        </div>
+
         {/* ======== advantages block ======== */}
         <div className="wrapper title-container">
           <h1 className="main-title">9 причин обрати таунхаус у COMFORT TOWN</h1>
@@ -99,34 +110,63 @@ function ComfortPage () {
           <ComfortAdvantages />
         </div>
 
-        {/* ======== planning types block ======== */}
-        <div className="wrapper title-container box" style={{paddingBottom: '60px'}}>
-          <h1 className="main-title">Можливість самостійно обрати варіант планування!</h1>
-        </div>
-
-        <div className='wrapper'>
-          <ComfortPlanning />
+        {/* ======== contact form block ======== */}
+        <div className="wrapper comfortForm" style={{backgroundColor: '#181E1A', borderRadius: '32px'}}>
+          <div className="title-container comfort-formtitle box">
+            <h1 className="main-title contactform-title" style={{color: '#fff'}}>ВИГІДНІ УМОВИ РОЗТЕРМІНУВАННЯ ДО 2-Х РОКІВ</h1>
+          </div>
+          <div className="wrapper termination-form">
+            <p className="termination-form__subtitle" style={{color: '#fff', paddingBottom: '0'}}>Заповніть форму та отримайте детальний <br /> розрахунок розтермінування.</p>
+            <WestForm />
+          </div>
         </div>
 
           <ComfortStatus/>
 
-        {/* ======== contact block ======== */}
-        <div className="wrapper title-container contact-comfort-title box" style={{padding: '112px 0 64px 0'}}>
-          <h1 className="main-title">Контактна інформація</h1>
+
+        {/* <Contacts/> */}
+        <div className='wrapper title-container box'>
+          <h1 className='main-title'>Контактна інформація</h1>
         </div>
-        <div className='contact-block wrapper'>
-          <p className='contact-block__text'>Дізнатись більше інформації можна <br/> зателефонувавши у відділ продажу</p>
-          <div className='contact-block__phone'>
-            <img src={phoneIcon} alt='phone-icon'/>
-            <div className='contact-block__phone-box'>
-              <p className='contact-block__phone-box-text'>Номер телефону:</p>
-              <p className='contact-block__phone-box-tel'>+38 (098) 225 58 00</p>
+        <section className='contacts'>  
+            <div className='contacts-container'>
+                <div className='contacts__item'>
+                    <img src={phoneIcon} className='contacts__item-icon'/>
+                    <div className='contacts__item-info'>
+                        <p className='contacts-title'>Номер телефону:</p>
+                        <p className='contacts-subtitle'>+38 (098) 225 58 00 </p>
+                    </div>
+                </div>
+
+                <a href='https://www.instagram.com/comfort_town_if?igsh=dm5tZXF4Y3M1eGNj' target='etarget' className='contacts__item'>
+                    <img src={instagramIcon} className='contacts__item-icon'/>
+                    <div className='contacts__item-info'>
+                        <p className='contacts-title'>Instagram:</p>
+                        <p className='contacts-subtitle'>comfort_town_if</p>
+                    </div>
+                </a>
+
+                <div className='contacts__item'>
+                    <img src={mailIcon} className='contacts__item-icon'/>
+                    <div className='contacts__item-info'>
+                        <p className='contacts-title'>Email:</p>
+                        <p className='contacts-subtitle'>yarddevelopment34@gmail.com</p>
+                    </div>
+                </div>
+
+                <div className='contacts__item'>
+                    <img src={mapIcon} className='contacts__item-icon'/>
+                    <div className='contacts__item-info'>
+                        <p className='contacts-title'>Локація:</p>
+                        <p className='contacts-subtitle'>с. Угорники, вулиця Тополина</p>
+                    </div>
+                </div>
+
+                <button className='main-button contacts-button' onClick={() => setModalActive(true)}>Отримати детальну інформацію</button>
             </div>
-          </div>
-        </div>
-        <div className='comfort-last-block wrapper' style={{marginBottom: '112px'}}>
-          <FullPageImage image={ContactInfoImage}/>
-        </div>
+                <ComfortMap/>
+        </section>
+
       </main>
     </>
   )

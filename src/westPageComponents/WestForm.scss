@@ -30,9 +30,13 @@
     background-size: 1em;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1280px) {
     .west-form {
-        padding: 60px 26px;
+        padding: 60px 16px;
+    }
+
+    .west-form__input {
+        width: 100% !important;
     }
 }
 

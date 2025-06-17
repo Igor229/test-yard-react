@@ -2,7 +2,7 @@ import './MoreAbout.scss'
 import natureIcon from '../assets/comfortPage/icons/more-about-project_icons/nature.png'
 import buildingIcon from '../assets/comfortPage/icons/more-about-project_icons/building.png'
 import cityIcon from '../assets/comfortPage/icons/more-about-project_icons/city.png'
-import blockImage from '../assets/comfortPage/images/more-about.webp'
+import blockImage from '../assets/comfortPage/images/more-about1.webp'
 import numberOneIcon from '../assets/comfortPage/icons/1.png'
 import numberTwoIcon from '../assets/comfortPage/icons/2.png'
 import numberThreeIcon from '../assets/comfortPage/icons/3.png'
@@ -53,7 +53,7 @@ function MoreAbout() {
                 </div>
                 <div className='moreabout-content__info-item'>
                   <img src={numberTwoIcon} alt='one' className='moreabout-content__info-item-icon'/>
-                  <p className='moreabout-content__info-item-text'>Власну приватну земельну ділянку, яку ви можете облаштувати на свій розсуд - поставити мангал та запросити друзів чи проводити теплі вечори з сім’єю. В НАЯВНОСТІ НОВИНКА - таунхауси з повністю закритим подвір’ям - відгороджений, як передній, так і задній двір.</p>
+                  <p className='moreabout-content__info-item-text'>Власну приватну земельну ділянку, яку ви можете облаштувати на свій розсуд - поставити мангал та запросити друзів чи проводити теплі вечори з сім’єю. Таунхауси з повністю закритим подвір’ям - відгороджений, як передній, так і задній двір.</p>
                 </div>
                 <div className='moreabout-content__info-item'>
                   <img src={numberThreeIcon} alt='one' className='moreabout-content__info-item-icon'/>

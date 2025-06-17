@@ -33,6 +33,7 @@
     display: flex;
     gap: 36px;
     justify-content: center;
+    align-items: center;
 
     &__info {
       display: flex;
@@ -63,6 +64,10 @@
           color: #555;
         }
       }
+    }
+    &__img {
+      width: 50%;
+      border-radius: 20px;
     }
   }
 }

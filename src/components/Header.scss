@@ -6,7 +6,8 @@
     transition: all 0.2s ease-in-out;
 
     &-bg {
-        background: #181E1A;
+        background-color: rgba($color: #181E1A, $alpha: 0.4);
+        backdrop-filter: blur(60px);
     }
 
     &__items {
