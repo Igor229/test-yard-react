@@ -10,13 +10,12 @@ import { FreeMode, Autoplay } from 'swiper/modules';
 
 
 function SliderCard(props) {
-  const {month, title, info, img, subinfo} = props
+  const {month, info, img, subinfo} = props
     return (
       <div>
         <img className='buildStatusImg' src={img} alt="west-town"/>
         <div className='status-info__container'>
           <p className='status-info__date'>{month}</p>
-          <h3 className='status-info__title'>{title}</h3>
           <p className='status-info__text'>{info}</p>
           <p className='status-info__text'>{subinfo}</p>
         </div>
