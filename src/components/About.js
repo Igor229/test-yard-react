@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './About.scss'
 import Modal from './Modal'
 import { motion } from 'framer-motion'
-import MainVideoBG from '../assets/videos/bg-video.MP4'
 import MainBanner from '../assets/images/main.webp'
 
 function About () {

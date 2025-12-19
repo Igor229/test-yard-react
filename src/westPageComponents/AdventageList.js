@@ -4,7 +4,6 @@ import treeIcon from '../assets/westPage/images/icons/tree.png'
 import wallIcon from '../assets/westPage/images/icons/wall.png'
 import lakeIcon from '../assets/westPage/images/icons/lake.png'
 import parkingIcon from '../assets/westPage/images/icons/parking.png'
-// import playgroundIcon from '../assets/westPage/images/icons/playground.png'
 import lockIcon from '../assets/westPage/images/icons/lock.png'
 import cityIcon from '../assets/westPage/images/icons/city.png'
 import calendarIcon from '../assets/westPage/images/icons/date.png'
@@ -24,8 +23,6 @@ const adventListData = [
         icon1: lakeIcon,
         text2: 'Паркомісця до кожного будинку',
         icon2: parkingIcon,
-        // text3: 'Дитячий майданчик',
-        // icon3: playgroundIcon,
         text3: 'Окремі житлові квартали',
         icon3: lockIcon,
     },
@@ -84,8 +81,3 @@ function AdventageList() {
 }
 
 export default AdventageList
-
-// This comment was written for git deploy, just ignore it
-// This comment was written for git deploy, just ignore it
-// This comment was written for git deploy, just ignore it
-// This comment was written for git deploy, just ignore it

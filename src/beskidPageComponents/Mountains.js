@@ -15,15 +15,15 @@ function Mountains() {
       <div className='mountains-cards wrapper'>
 
         <div className='mountains-card'>
-          <img src={MountShieldIcon}/>
+          <img src={MountShieldIcon} alt='cart'/>
           <p className='mountains-card-text'>Досвідчена керуюча компанія <br/>FOMICH HOTELS GROUP</p>
         </div>
         <div className='mountains-card'>
-          <img src={MountCalendarIcon}/>
+          <img src={MountCalendarIcon} alt='cart'/>
           <p className='mountains-card-text'>Сезон у Буковелі проходить <br/>365 днів на рік</p>
         </div>
         <div className='mountains-card'>
-          <img src={MountStoncksIcon}/>
+          <img src={MountStoncksIcon} alt='cart'/>
           <p className='mountains-card-text'>Інвестиції з дохідністю <br/> до 15-ти % річних</p>
         </div>
       </div>
@@ -32,15 +32,15 @@ function Mountains() {
     <div className='mountains-cards-tabs wrapper'>
 
         <div className='mountains-card'>
-          <img src={MountShieldIcon}/>
+          <img src={MountShieldIcon} alt='cart'/>
           <p className='mountains-card-text'>Досвідчена керуюча компанія <br/>FOMICH HOTELS GROUP</p>
         </div>
         <div className='mountains-card'>
-          <img src={MountCalendarIcon}/>
+          <img src={MountCalendarIcon} alt='cart'/>
           <p className='mountains-card-text'>Сезон у Буковелі проходить <br/>365 днів на рік</p>
         </div>
         <div className='mountains-card'>
-          <img src={MountStoncksIcon}/>
+          <img src={MountStoncksIcon} alt='cart'/>
           <p className='mountains-card-text'>Інвестиції з дохідністю <br/> до 15-ти % річних</p>
         </div>
       </div>

@@ -16,7 +16,7 @@ function Contacts () {
             
             <div className='contacts-container'>
                 <div className='contacts__item'>
-                    <img src={phoneIcon} className='contacts__item-icon'/>
+                    <img src={phoneIcon} className='contacts__item-icon' alt='cart'/>
                     <div className='contacts__item-info'>
                         <p className='contacts-title'>Номер телефону:</p>
                         <p className='contacts-subtitle'>+38 (098) 225 58 00 </p>
@@ -24,7 +24,7 @@ function Contacts () {
                 </div>
 
                 <div className='contacts__item'>
-                    <img src={instagramIcon} className='contacts__item-icon'/>
+                    <img src={instagramIcon} className='contacts__item-icon' alt='cart'/>
                     <div className='contacts__item-info'>
                         <p className='contacts-title'>Instagram:</p>
                         <p className='contacts-subtitle'>beskid_home_resort </p>
@@ -32,7 +32,7 @@ function Contacts () {
                 </div>
 
                 <div className='contacts__item'>
-                    <img src={mailIcon} className='contacts__item-icon'/>
+                    <img src={mailIcon} className='contacts__item-icon' alt='cart'/>
                     <div className='contacts__item-info'>
                         <p className='contacts-title'>Email:</p>
                         <p className='contacts-subtitle'>yarddevelopment34@gmail.com </p>
@@ -40,7 +40,7 @@ function Contacts () {
                 </div>
 
                 <div className='contacts__item'>
-                    <img src={mapIcon} className='contacts__item-icon'/>
+                    <img src={mapIcon} className='contacts__item-icon' alt='cart'/>
                     <div className='contacts__item-info'>
                         <p className='contacts-title'>Локація:</p>
                         <p className='contacts-subtitle'>с. Поляниця, вулиця урочище Вишня (поруч готелю Підгір'я) </p>

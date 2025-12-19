@@ -10,6 +10,11 @@
     display: none;
 }
 
+.west__banner-pc {
+    transform: translate(0px, -35px);
+    height: 108vh; // lil up
+}
+
 @media screen and (max-width: 1280px) {
     .west-banner__action {
         padding: 0 40px;

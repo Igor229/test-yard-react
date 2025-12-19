@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import '../components/BuildingStatus.scss'
 import BeskidStatusSlider from '../components/BeskidStatusSlider'
 import FsLightbox from 'fslightbox-react'

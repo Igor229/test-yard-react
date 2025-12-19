@@ -10,7 +10,7 @@ function ComplexCard (props) {
             <div className='complex-body' style={{background: 'linear-gradient(180deg, rgba(24, 30, 26, 0) 20%, rgba(24, 30, 26, 0.65) 91%)', zIndex: 100}}>
                 <div className='complex-body__text'>
                     <h3 className='complex-body__header'>{header}</h3>
-                    <p className='complex-body__location'><img src={mapPinIcon}/>{location}</p>
+                    <p className='complex-body__location'><img src={mapPinIcon} alt='map'/>{location}</p>
                     <p className='complex-body__type'>{type}</p>
                 </div>
             </div>

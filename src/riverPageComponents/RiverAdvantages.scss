@@ -1,0 +1,115 @@
+.riveradv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 55px;
+
+    &__main {
+      color: #181E1A;
+      font-size: 34px;
+      font-weight: 600;
+      text-align: center;
+    }
+    &__sub {
+      color: #181E1A;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+
+  &-cards {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 90%;
+    height: 100%;
+
+    &-tabs {
+      display: none;
+    }
+  }
+  &-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    border-radius: 12px;
+    align-items: flex-start;
+    padding: 24px;
+    width: 33.33%;
+    gap: 8px;
+    color: #555555;
+    height: 134px;
+
+    &-icon {
+        width: 48px;
+        height: 48px;
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .mountains-titles {
+    &__main {
+      font-size: 34px;
+    }
+    &__sub {
+      font-size: 14px;
+      width: 75%;
+    }
+  }
+  .mountains-card-text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mountains {
+    height: 100%;
+  }
+  .mountains-titles {
+    transform: translateY(0);
+  }
+  .mountains-cards {
+    display: none;
+    &-tabs {
+      display: flex;
+      gap: 8px;
+      padding-top: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .mountains-cards-tabs {
+    flex-direction: column;
+  }
+  .mountains-card {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .mountains-titles {
+    padding: 40px 16px;
+    &__main {
+      font-size: 22px;
+    }
+    &__sub {
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+  .mountains-card-text {
+    font-size: 12px;
+  }
+}

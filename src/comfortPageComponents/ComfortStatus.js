@@ -37,13 +37,150 @@ import comfortNewMay3 from '../assets/images/build-status/comfort-status/newmay3
 import comfortNewMay4 from '../assets/images/build-status/comfort-status/newmay4.webp'
 import comfortNewMay5 from '../assets/images/build-status/comfort-status/newmay5.webp'
 import comfortNewMay6 from '../assets/images/build-status/comfort-status/newmay6.webp'
+import comfortNewJuly1 from '../assets/images/build-status/comfort-status/july1.webp'
+import comfortNewJuly2 from '../assets/images/build-status/comfort-status/july2.webp'
+import comfortNewJuly3 from '../assets/images/build-status/comfort-status/july3.webp'
+import comfortAug1 from '../assets/images/build-status/comfort-status/august1.webp'
+import comfortAug2 from '../assets/images/build-status/comfort-status/august2.webp'
+import comfortAug3 from '../assets/images/build-status/comfort-status/august3.webp'
+import comfortAug4 from '../assets/images/build-status/comfort-status/august4.webp'
+import comfortSept1 from '../assets/images/build-status/comfort-status/sept1.webp'
+import comfortSept2 from '../assets/images/build-status/comfort-status/sept2.webp'
+import comfortSept3 from '../assets/images/build-status/comfort-status/sept3.webp'
+import comfortSept4 from '../assets/images/build-status/comfort-status/sept4.webp'
+import comfortSept5 from '../assets/images/build-status/comfort-status/sept5.webp'
+import comfortNOct1 from '../assets/images/build-status/comfort-status/oct1_1.webp'
+import comfortNOct2 from '../assets/images/build-status/comfort-status/oct2_1.webp'
+import comfortNOct3 from '../assets/images/build-status/comfort-status/oct3_1.webp'
+import comfortNOct4 from '../assets/images/build-status/comfort-status/oct4_1.webp'
 
 
 //queue2
 import comfortJun1 from '../assets/images/build-status/comfort-status/queue2/jun1.webp'
 import comfortJun2 from '../assets/images/build-status/comfort-status/queue2/jun2.webp'
+import comfortJul1 from '../assets/images/build-status/comfort-status/queue2/jul1.webp'
+import comfortJul2 from '../assets/images/build-status/comfort-status/queue2/jul2.webp'
+import comfortJul3 from '../assets/images/build-status/comfort-status/queue2/jul3.webp'
+import comfortQue2Aug1 from '../assets/images/build-status/comfort-status/queue2/august1.webp'
+import comfortQue2Aug2 from '../assets/images/build-status/comfort-status/queue2/august2.webp'
+import comfortQue2Aug3 from '../assets/images/build-status/comfort-status/queue2/august3.webp'
+import comfortQue2Aug4 from '../assets/images/build-status/comfort-status/queue2/august4.webp'
+import comfortQue2Aug5 from '../assets/images/build-status/comfort-status/queue2/august5.webp'
+import comfortQue2Aug6 from '../assets/images/build-status/comfort-status/queue2/august6.webp'
+import comfortQueSept1 from '../assets/images/build-status/comfort-status/queue2/sept1.webp'
+import comfortQueSept2 from '../assets/images/build-status/comfort-status/queue2/sept2.webp'
+import comfortQueSept3 from '../assets/images/build-status/comfort-status/queue2/sept3.webp'
+import comfortQueSept4 from '../assets/images/build-status/comfort-status/queue2/sept4.webp'
+import comfortQueSept5 from '../assets/images/build-status/comfort-status/queue2/sept5.webp'
+import comfortQueSept6 from '../assets/images/build-status/comfort-status/queue2/sept6.webp'
+import comfortQueSept7 from '../assets/images/build-status/comfort-status/queue2/sept7.webp'
+import comfortQueSept8 from '../assets/images/build-status/comfort-status/queue2/sept8.webp'
+import comfortQueSept9 from '../assets/images/build-status/comfort-status/queue2/sept9.webp'
+import comfortQueSept10 from '../assets/images/build-status/comfort-status/queue2/sept10.webp'
+import comfortQueSept11 from '../assets/images/build-status/comfort-status/queue2/sept11.webp'
+import comfortQueOct1 from '../assets/images/build-status/comfort-status/queue2/oct1.webp'
+import comfortQueOct2 from '../assets/images/build-status/comfort-status/queue2/oct2.webp'
+import comfortQueOct3 from '../assets/images/build-status/comfort-status/queue2/oct3.webp'
+import comfortQueOct4 from '../assets/images/build-status/comfort-status/queue2/oct4.webp'
+import comfortQueOct5 from '../assets/images/build-status/comfort-status/queue2/oct5.webp'
 
   const album1 = [
+    {
+      img: comfortNOct1,
+      month: 'Жовтень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortNOct2,
+      month: 'Жовтень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortNOct3,
+      month: 'Жовтень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortNOct4,
+      month: 'Жовтень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortSept1,
+      month: 'Вересень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortSept2,
+      month: 'Вересень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortSept3,
+      month: 'Вересень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortSept4,
+      month: 'Вересень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortSept5,
+      month: 'Вересень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortAug1,
+      month: 'Липеь 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortAug2,
+      month: 'Липеь 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortAug3,
+      month: 'Липеь 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortAug4,
+      month: 'Липеь 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortNewJuly1,
+      month: 'Липень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortNewJuly2,
+      month: 'Липень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortNewJuly3,
+      month: 'Липень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
     {
       img: comfortNewMay1,
       month: 'Травень 2025',
@@ -228,6 +365,155 @@ import comfortJun2 from '../assets/images/build-status/comfort-status/queue2/jun
 
   const album2 = [
     {
+      img: comfortQueOct1,
+      month: 'Жовтень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortQueOct2,
+      month: 'Жовтень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortQueOct3,
+      month: 'Жовтень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortQueOct4,
+      month: 'Жовтень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+      img: comfortQueOct5,
+      month: 'Жовтень 2025',
+      title: 'COMFORT TOWN',
+      info: ''
+    },
+    {
+        img: comfortQueSept1,
+        month: 'Вересень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortQueSept2,
+        month: 'Вересень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortQueSept3,
+        month: 'Вересень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },{
+        img: comfortQueSept4,
+        month: 'Вересень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortQueSept5,
+        month: 'Вересень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortQueSept6,
+        month: 'Вересень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortQueSept7,
+        month: 'Вересень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortQueSept8,
+        month: 'Вересень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortQueSept9,
+        month: 'Вересень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortQueSept10,
+        month: 'Вересень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortQueSept11,
+        month: 'Вересень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortQue2Aug1,
+        month: 'Липень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortQue2Aug2,
+        month: 'Липень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortQue2Aug3,
+        month: 'Липень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortQue2Aug4,
+        month: 'Липень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortQue2Aug5,
+        month: 'Липень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortQue2Aug6,
+        month: 'Липень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortJul1,
+        month: 'Липень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortJul2,
+        month: 'Липень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
+        img: comfortJul3,
+        month: 'Липень 2025',
+        title: 'COMFORT TOWN',
+        info: ''
+    },
+    {
         img: comfortJun1,
         month: 'Червень 2025',
         title: 'COMFORT TOWN',
@@ -279,6 +565,22 @@ function ComfortStatus() {
         <FsLightbox 
           toggler={togglerOne}
           sources={[
+            comfortNOct1,
+            comfortNOct2,
+            comfortNOct3,
+            comfortNOct4,
+            comfortSept1,
+            comfortSept2,
+            comfortSept3,
+            comfortSept4,
+            comfortSept5,
+            comfortAug1,
+            comfortAug2,
+            comfortAug3,
+            comfortAug4,
+            comfortNewJuly1,
+            comfortNewJuly2,
+            comfortNewJuly3,
             comfortNewMay1,
             comfortNewMay2,
             comfortNewMay3,
@@ -314,6 +616,31 @@ function ComfortStatus() {
         <FsLightbox 
           toggler={togglerTwo}
           sources={[
+            comfortQueOct1,
+            comfortQueOct2,
+            comfortQueOct3,
+            comfortQueOct4,
+            comfortQueOct5,
+            comfortQueSept1,
+            comfortQueSept2,
+            comfortQueSept3,
+            comfortQueSept4,
+            comfortQueSept5,
+            comfortQueSept6,
+            comfortQueSept7,
+            comfortQueSept8,
+            comfortQueSept9,
+            comfortQueSept10,
+            comfortQueSept11,
+            comfortQue2Aug1,
+            comfortQue2Aug2,
+            comfortQue2Aug3,
+            comfortQue2Aug4,
+            comfortQue2Aug5,
+            comfortQue2Aug6,
+            comfortJul1,
+            comfortJul2,
+            comfortJul3,
             comfortJun1,
             comfortJun2,
           ]}

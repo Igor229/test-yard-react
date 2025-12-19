@@ -1,7 +1,6 @@
 import About from '../components/About';
 import ComplexCard from '../components/ComplexCard';
 import Feedbacks from '../components/Feedbacks';
-import News from '../components/News';
 import Map from '../components/Map';
 import { motion } from 'framer-motion';
 import Header from '../components/Header';
@@ -46,25 +45,6 @@ function Home () {
         <h2 className='main-title'>Відгуки наших клієнтів</h2>
         <Feedbacks/>
       </motion.div>
-      {/* <motion.div
-        initial={{opacity: 0, y: 100, scale: 0.9}}
-        whileInView={{opacity: 1, y: 0, scale: 1}}
-        transition={{duration: 0.37}}
-      >
-      <BuildingStatus/>
-      </motion.div> */}
-      <motion.section className='news' id='news'
-        initial={{opacity: 0, y: 100, scale: 0.9}}
-        whileInView={{opacity: 1, y: 0, scale: 1}}
-        transition={{duration: 0.37}}
-      >
-        <motion.div className='wrapper'
-          initial={{opacity: 0, y: 100, scale: 0.9}}
-          whileInView={{opacity: 1, y: 0, scale: 1}}
-          transition={{duration: 0.37}}
-        >
-        </motion.div>
-      </motion.section>
 
       <Map />
     </main>

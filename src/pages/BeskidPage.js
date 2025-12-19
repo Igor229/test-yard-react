@@ -1,5 +1,4 @@
 import BeskidBanner from '../beskidPageComponents/BeskidBanner';
-import mapPinIcon from '../assets/beskidPage/icons/map-pin.png'
 import icons from '../assets/icons/sprite.svg'
 import FirstSlider from '../beskidPageComponents/FirstSlider';
 import SecondSlider from '../beskidPageComponents/SecondSlider';
@@ -18,7 +17,7 @@ import { motion } from 'framer-motion';
 import '../beskidPageComponents/Contacts.scss'
 
 import './BeskidPage.scss'
-import React, { useRef, useState } from 'react';
+import { useState } from 'react';
 
 import groupImageOne from '../assets/beskidPage/images/group-images/group_img1.webp'
 import groupImageTwo from '../assets/beskidPage/images/group-images/group_img2.webp'
@@ -47,14 +46,14 @@ function BeskidPage () {
           whileInView={{x: 0}}
           transition={{duration: 0.45}}
         >
-          <a href='#' style={{display: 'block', width: 'fit-content', marginBottom: '24px'}}>
+          <a href='/' style={{display: 'block', width: 'fit-content', marginBottom: '24px'}}>
             <motion.div className='action'
               whileHover={{scale: 1.1, duration: 0.01}}
             >
               <svg className="action-icon">
                 <use href={icons + '#chevron-left'}/>
               </svg>
-              <a className='action-text'>На головну</a>
+              <a href='/'className='action-text'>На головну</a>
             </motion.div>
           </a>
         </motion.div>
@@ -85,9 +84,9 @@ function BeskidPage () {
           whileInView={{opacity: 1}}
           transition={{duration: 0.8}}
         >
-          <img src={groupImageOne} alt='group-image' className='group-images__img'/>
-          <img src={groupImageTwo} alt='group-image' className='group-images__img'/>
-          <img src={groupImageThree} alt='group-image' className='group-images__img'/>
+          <img src={groupImageOne} alt='group' className='group-images__img'/>
+          <img src={groupImageTwo} alt='group' className='group-images__img'/>
+          <img src={groupImageThree} alt='group' className='group-images__img'/>
         </motion.div>
 
         <motion.div className='wrapper title-container box'
@@ -132,7 +131,7 @@ function BeskidPage () {
         <section className='contacts'>  
             <div className='contacts-container'>
                 <div className='contacts__item'>
-                    <img src={phoneIcon} className='contacts__item-icon'/>
+                    <img src={phoneIcon} alt='phone' className='contacts__item-icon'/>
                     <div className='contacts__item-info'>
                         <p className='contacts-title'>Номер телефону:</p>
                         <p className='contacts-subtitle'>+38 (098) 225 58 00 </p>
@@ -140,7 +139,7 @@ function BeskidPage () {
                 </div>
 
                 <a href='https://www.instagram.com/fomich_residence_guesthouses?igsh=MWE2Z2dpencyaWdmYw==' target='etarget' className='contacts__item'>
-                    <img src={instagramIcon} className='contacts__item-icon'/>
+                    <img src={instagramIcon} alt='insta' className='contacts__item-icon'/>
                     <div className='contacts__item-info'>
                         <p className='contacts-title'>Instagram:</p>
                         <p className='contacts-subtitle'>fomich_residence_guesthouses </p>
@@ -148,7 +147,7 @@ function BeskidPage () {
                 </a>
 
                 <div className='contacts__item'>
-                    <img src={mailIcon} className='contacts__item-icon'/>
+                    <img src={mailIcon} alt='mail' className='contacts__item-icon'/>
                     <div className='contacts__item-info'>
                         <p className='contacts-title'>Email:</p>
                         <p className='contacts-subtitle'>yarddevelopment34@gmail.com </p>
@@ -156,7 +155,7 @@ function BeskidPage () {
                 </div>
 
                 <div className='contacts__item'>
-                    <img src={mapIcon} className='contacts__item-icon'/>
+                    <img src={mapIcon} alt='map' className='contacts__item-icon'/>
                     <div className='contacts__item-info'>
                         <p className='contacts-title'>Локація:</p>
                         <p className='contacts-subtitle'>с. Поляниця, вулиця урочище Вишня (поруч готелю Підгір'я) </p>

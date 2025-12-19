@@ -14,7 +14,7 @@ import QuadroWest from '../westPageComponents/QuadroWest';
 
 import './WestPage.scss'
 import icons from '../assets/icons/sprite.svg'
-import React, { useRef, useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import phoneIcon from '../assets/beskidPage/icons/contacts-icons/phone.png'
@@ -26,50 +26,15 @@ import Modal from '../components/Modal';
 import partnersInstagram from '../assets/westPage/images/partners/instagram-icon.png'
 import '../beskidPageComponents/Contacts.scss'
 
-import internalTypeImg from '../assets/westPage/images/house-types/internal.webp'
-import externalTypeImg from '../assets/westPage/images/house-types/external.webp'
-
-// ==========planning type component from beskid==================
-import WestPlanningTypes from '../westPageComponents/WestPlanningTypes';
-import PlanTypeImgOne from '../assets/westPage/images/TypeOne.webp'
-import PlanTypeImgTwo from '../assets/westPage/images/TypeTwo.webp'
-
 // proposal imports =====================================
 import Header from '../components/Header';
-import '../westPageComponents/Proposal.scss'
 
 // =======================================================
 function WestPage () {
     const [modalActive, setModalActive] = useState(false)
 
-    // ====== scrolling from stick to proposal block ======
-    // const handleClickProposal = () => {
-    //   const element = document.getElementById('proposal-block')
-    //   if (element) {
-    //     element.scrollIntoView({behavior: 'smooth'})
-    //   }
-    // }
-
-    // ====== scrolling from proposal block to termination-form =====
-    // const handleClickGetPropose = () => {
-    //   const element = document.getElementById('propose')
-    //   if (element) {
-    //     element.scrollIntoView({behavior: 'smooth'})
-    //   }
-    // }
     return (
       <>
-        {/* ================ SPECIAL PROPOSAL STICK ================ */}
-        {/* <div className="special-proposal">
-          <p className="special-proposal__text">
-            СТАРТ ПРОДАЖУ! 30 МІСЯЦІВ РОЗТЕРМІНУВАННЯ!
-          </p>
-          <a onClick={handleClickProposal} className="special-proposal__action">
-            Детальніше{" "}
-            <img src={chevronRight} style={{ width: "24px", height: "24px" }} />
-          </a>
-        </div> */}
-
         <Header/>
         <main>
           <Modal active={modalActive} setActive={setModalActive} />
@@ -96,44 +61,11 @@ function WestPage () {
               <svg className="action-icon">
                 <use href={icons + "#chevron-left"} />
               </svg>
-              <a href="#" className="action-text">
+              <a href="/" className="action-text">
                 На головну
               </a>
             </motion.div>
           </motion.div>
-
-          {/* =============== PROPOSAL ACTION SECTION =============== */}
-          {/* <div className="proposal" id='proposal-block'>
-            <h3 className="proposal-title">
-              СТАРТ ПРОДАЖУ НОВОЇ ЧЕРГИ БУДІВНИЦТВА
-            </h3>
-            <div>
-              <h2 className="proposal-subtitle">WEST TOWN 11</h2>
-              <h2 className="proposal-subtitle">30 МІСЯЦІВ РОЗТЕРМІНУВАННЯ</h2>
-            </div>
-            <div className="proposal-actions">
-              <div className="proposal-actions__price">
-                <h2 className="proposal-actions__price-text">1493$</h2>
-                <p className="proposal-actions__price-subtext">
-                  щомісячний платіж
-                </p>
-              </div>
-                <button className="main-button proposal-actions__price-button" onClick={handleClickGetPropose}>
-                  Отримати розрахунок ціни
-                </button>
-            </div>
-          </div> */}
-
-          {/* <div className='mobActions wrapper'>
-            <div style={{display: 'flex', flexDirection: 'column', gap: '8px'}}>
-              <h3 className='mobActions-title'>WEST TOWN 11</h3>
-              <h3 className='mobActions-title'>30 МІСЯЦІВ РОЗТЕРМІНУВАННЯ </h3>
-            </div>
-            <button onClick={handleClickGetPropose} className='main-button mobActions-button'>Отримати розрахунок ціни</button>
-          </div> */}
-          {/* ================================================================================ */}
-
-
 
           {/* Main Slider Block */}
           <motion.div
@@ -188,7 +120,6 @@ function WestPage () {
             <HouseType/>
           </motion.div>
 
-          {/* Planning Types Section */}
           {/* planning types section */}
         <motion.div className='wrapper'
           initial={{y: 150, opacity: 0}}
@@ -196,8 +127,6 @@ function WestPage () {
           transition={{duration: 0.6}}
         >
           <WPlanType/>
-          {/* <WestPlanningTypes type='Тип 1' area='120 м²' floorOne={PlanTypeImgOne}/>
-          <WestPlanningTypes type='Тип 2' area='135 м²' floorOne={PlanTypeImgTwo}/> */}
         </motion.div>
 
           {/* =================Partners Section======================== */}
@@ -231,6 +160,7 @@ function WestPage () {
                   href="https://www.instagram.com/monochrome_interiors_?igsh=Nms0am00anF3a3E1"
                   target="_blank"
                   className="partners__info-action"
+                  rel="noopener noreferrer"
                 >
                   monochrome_interiors_
                 </a>
@@ -279,7 +209,7 @@ function WestPage () {
               Заповніть форму та отримайте детальний <br /> розрахунок
               розтермінування.
             </p>
-            <WestForm />
+            <WestForm/>
           </motion.div>
 
 
@@ -292,7 +222,7 @@ function WestPage () {
           <section className="contacts">
             <div className="contacts-container">
               <div className="contacts__item">
-                <img src={phoneIcon} className="contacts__item-icon" />
+                <img src={phoneIcon} alt='phone' className="contacts__item-icon" />
                 <div className="contacts__item-info">
                   <p className="contacts-title">Номер телефону:</p>
                   <p className="contacts-subtitle">+38 (098) 225 58 00 </p>
@@ -300,7 +230,7 @@ function WestPage () {
               </div>
 
               <div className="contacts__item">
-                <img src={instagramIcon} className="contacts__item-icon" />
+                <img src={instagramIcon} alt='insta' className="contacts__item-icon" />
                 <div className="contacts__item-info">
                   <p className="contacts-title">Instagram:</p>
                   <p className="contacts-subtitle">west_town_if</p>
@@ -308,7 +238,7 @@ function WestPage () {
               </div>
 
               <div className="contacts__item">
-                <img src={mailIcon} className="contacts__item-icon" />
+                <img src={mailIcon} alt='mail' className="contacts__item-icon" />
                 <div className="contacts__item-info">
                   <p className="contacts-title">Email:</p>
                   <p className="contacts-subtitle">
@@ -318,7 +248,7 @@ function WestPage () {
               </div>
 
               <div className="contacts__item">
-                <img src={mapIcon} className="contacts__item-icon" />
+                <img src={mapIcon} alt='map' className="contacts__item-icon" />
                 <div className="contacts__item-info">
                   <p className="contacts-title">Локація:</p>
                   <p className="contacts-subtitle">

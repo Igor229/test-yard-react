@@ -42,7 +42,7 @@ function FeedbackCard(props) {
     return (
         <div className='feedback'>
             <div className='feedback__info'>
-                <img src={icon} className='feedback__info-icon' alt='feedback-icon'/>
+                <img src={icon} className='feedback__info-icon' alt='feedback'/>
                 <p className='feedback__info-name'>{name}</p>
             </div>
             <p className='feedback__text'>{text}</p>

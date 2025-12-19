@@ -95,7 +95,7 @@
     max-width: 403px;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     padding-left: 5px;
     padding-top: 12px;
     gap: 12px;

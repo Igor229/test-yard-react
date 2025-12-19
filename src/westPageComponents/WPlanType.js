@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
 import './WPlanType.scss'
-import planImageOne from '../assets/westPage/images/TypeOne.png'
-import planImageTwo from '../assets/westPage/images/TypeTwo.png'
+import planImageOne from '../assets/westPage/images/TypeOne.webp'
+import planImageTwo from '../assets/westPage/images/TypeTwo.webp'
 
 import numIconOne from '../assets/westPage/images/icons/num1.png'
 import numIconTwo from '../assets/westPage/images/icons/num2.png'
@@ -34,8 +34,8 @@ function WPlanType() {
                 </div>
 
                 <div className='wtype-content'>
-                  <img src={planImageOne} className={activeButton === 1 ? 'wtype-image' : 'wtype-image--hidden'}/>
-                  <img src={planImageTwo} className={activeButton === 0 ? 'wtype-image' : 'wtype-image--hidden'}/>
+                  <img src={planImageOne} alt='some-icon' className={activeButton === 1 ? 'wtype-image' : 'wtype-image--hidden'}/>
+                  <img src={planImageTwo} alt='some-icon' className={activeButton === 0 ? 'wtype-image' : 'wtype-image--hidden'}/>
 
                   <div className='wtype-actions'>
                     <div className='bottom-actions wtype-actions__buttons'>
@@ -45,20 +45,20 @@ function WPlanType() {
 
                     <div className='wtype-actions__list'>
                       <div className={activeButton === 1 ? 'wtype-list' : 'wtype-list--hidden'}>
-                        <div className='wlist'><div className='wlist-item'><img src={numIconOne} className='wlist-icon'/><p className='wlist-text'>Коридор</p></div><p className='wlist-text'>13,5 м²</p></div>
-                        <div className='wlist'><div className='wlist-item'><img src={numIconTwo} className='wlist-icon'/><p className='wlist-text'>Вітальня</p></div><p className='wlist-text'>25,5 м²</p></div>
-                        <div className='wlist'><div className='wlist-item'><img src={numIconThree} className='wlist-icon'/><p className='wlist-text'>Кухня</p></div><p className='wlist-text'>13,3 м²</p></div>
-                        <div className='wlist'><div className='wlist-item'><img src={numIconFour} className='wlist-icon'/><p className='wlist-text'>Кладова</p></div><p className='wlist-text'>2,9 м²</p></div>
-                        <div className='wlist'><div className='wlist-item'><img src={numIconFive} className='wlist-icon'/><p className='wlist-text'>Санвузол</p></div><p className='wlist-text'>3,4 м²</p></div>
+                        <div className='wlist'><div className='wlist-item'><img src={numIconOne} alt='some-icon' className='wlist-icon'/><p className='wlist-text'>Коридор</p></div><p className='wlist-text'>13,5 м²</p></div>
+                        <div className='wlist'><div className='wlist-item'><img src={numIconTwo} alt='some-icon' className='wlist-icon'/><p className='wlist-text'>Вітальня</p></div><p className='wlist-text'>25,5 м²</p></div>
+                        <div className='wlist'><div className='wlist-item'><img src={numIconThree} alt='some-icon' className='wlist-icon'/><p className='wlist-text'>Кухня</p></div><p className='wlist-text'>13,3 м²</p></div>
+                        <div className='wlist'><div className='wlist-item'><img src={numIconFour} alt='some-icon' className='wlist-icon'/><p className='wlist-text'>Кладова</p></div><p className='wlist-text'>2,9 м²</p></div>
+                        <div className='wlist'><div className='wlist-item'><img src={numIconFive} alt='some-icon' className='wlist-icon'/><p className='wlist-text'>Санвузол</p></div><p className='wlist-text'>3,4 м²</p></div>
                       </div>
 
                       <div className={activeButton === 0 ? 'wtype-list' : 'wtype-list--hidden'}>
-                        <div className='wlist'><div className='wlist-item'><img src={numIconSix} className='wlist-icon'/><p className='wlist-text'>Коридор</p></div><p className='wlist-text'>6,2 м²</p></div>
-                        <div className='wlist'><div className='wlist-item'><img src={numIconSeven} className='wlist-icon'/><p className='wlist-text'>Батьківська спальня</p></div><p className='wlist-text'>23,2 м²</p></div>
-                        <div className='wlist'><div className='wlist-item'><img src={numIconEight} className='wlist-icon'/><p className='wlist-text'>Ванна кімната</p></div><p className='wlist-text'>5,5 м²</p></div>
-                        <div className='wlist'><div className='wlist-item'><img src={numIconNine} className='wlist-icon'/><p className='wlist-text'>Спальня №2</p></div><p className='wlist-text'>12,5 м²</p></div>
-                        <div className='wlist'><div className='wlist-item'><img src={numIconTen} className='wlist-icon'/><p className='wlist-text'>Спальня №3</p></div><p className='wlist-text'>13,5 м²</p></div>
-                        <div className='wlist'><div className='wlist-item'><img src={numIconEleven} className='wlist-icon'/><p className='wlist-text'>Балкон</p></div><p className='wlist-text'>1,9 м²</p></div>
+                        <div className='wlist'><div className='wlist-item'><img src={numIconSix} alt='some-icon' className='wlist-icon'/><p className='wlist-text'>Коридор</p></div><p className='wlist-text'>6,2 м²</p></div>
+                        <div className='wlist'><div className='wlist-item'><img src={numIconSeven} alt='some-icon' className='wlist-icon'/><p className='wlist-text'>Батьківська спальня</p></div><p className='wlist-text'>23,2 м²</p></div>
+                        <div className='wlist'><div className='wlist-item'><img src={numIconEight} alt='some-icon' className='wlist-icon'/><p className='wlist-text'>Ванна кімната</p></div><p className='wlist-text'>5,5 м²</p></div>
+                        <div className='wlist'><div className='wlist-item'><img src={numIconNine} alt='some-icon' className='wlist-icon'/><p className='wlist-text'>Спальня №2</p></div><p className='wlist-text'>12,5 м²</p></div>
+                        <div className='wlist'><div className='wlist-item'><img src={numIconTen} alt='some-icon' className='wlist-icon'/><p className='wlist-text'>Спальня №3</p></div><p className='wlist-text'>13,5 м²</p></div>
+                        <div className='wlist'><div className='wlist-item'><img src={numIconEleven} alt='some-icon' className='wlist-icon'/><p className='wlist-text'>Балкон</p></div><p className='wlist-text'>1,9 м²</p></div>
                       </div>
                     </div>
                   </div>

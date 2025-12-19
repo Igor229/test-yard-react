@@ -78,7 +78,7 @@ function Header(props) {
                             <img src={burger_icon} alt="menu-open" className="burger__items-icon menuIcon" onClick={showBurger}/>
                             <img src={burger_icon} alt="menu-close" className="burger__items-icon closeIcon" onClick={showBurger}/>
                         </div> 
-                        <a href='#'><img src={mainLogoWhite} alt="main-logo" className="header__items-logo"/></a>
+                        <a href='/'><img src={mainLogoWhite} alt="main-logo" className="header__items-logo"/></a>
                     </div>
 
                     <div className={burger_class}>
@@ -99,23 +99,23 @@ function Header(props) {
                                 </div>
                                 <div className="contacts__container">
                                     <h4 className="contacts__container-title">Контактна інформація</h4>
-                                    <a href="#" className="contacts__container-text">+380 (98) 22 55 800 (Viber, Telegram, Messenger)</a>
-                                    <a href="#" className="contacts__container-text">yarddevelopment34@gmail.com</a>
+                                    <a href="/" className="contacts__container-text">+380 (98) 22 55 800 (Viber, Telegram, Messenger)</a>
+                                    <a href="/" className="contacts__container-text">yarddevelopment34@gmail.com</a>
 
                                     <div className="footer__actions-socials burger__socials">
-                                        <a href="https://www.instagram.com/yard.development/" target="_blank" onClick={showBurger}>
+                                        <a href="https://www.instagram.com/yard.development/" target="_blank" rel="noopener noreferrer" onClick={showBurger}>
                                             <svg className="social-icon">
                                                 <use href={icons + '#instagram'}></use>
                                             </svg>
                                         </a>
 
-                                        <a href="https://www.facebook.com/profile.php?id=100093522396873" target="_blank" onClick={showBurger}>
+                                        <a href="https://www.facebook.com/profile.php?id=100093522396873" target="_blank" rel="noopener noreferrer" onClick={showBurger}>
                                             <svg className="social-icon">
                                                 <use href={icons + '#facebook'}></use>
                                             </svg>
                                         </a>
 
-                                        <a href="https://www.tiktok.com/@yarddevelopment?_t=8eAdRa2Vt5B&_r=1" target="_blank" onClick={showBurger}>
+                                        <a href="https://www.tiktok.com/@yarddevelopment?_t=8eAdRa2Vt5B&_r=1" target="_blank" rel="noopener noreferrer" onClick={showBurger}>
                                             <img src={tiktokIcon} alt='tiktok' className="tiktok-icon" />
                                         </a>
                                     </div>
@@ -129,7 +129,7 @@ function Header(props) {
                 <div className="header__items">
                     <div className="header__items-nav">
 
-                        <a href="#"><img src={mainLogoWhite} alt="main-logo" className="header__items-logo"/></a>
+                        <a href="/"><img src={mainLogoWhite} alt="main-logo" className="header__items-logo"/></a>
                         <ul className="navigations">
                             <li className='comfortTown_action'><a href="#comfort-town" className="navigations__action" onClick={handleClickScroll}>Comfort Town</a></li>
                             <li><a href="#west-town" className="navigations__action" onClick={handleClickScroll}>West town</a></li>
@@ -138,7 +138,7 @@ function Header(props) {
                     </div>
 
                     <div className="header__items-contacts">
-                        <p className="contacts__number"><img src={phoneIcon} className='contacts__phone-icon'/>+380 (98) 22 55 800</p>
+                        <p className="contacts__number"><img src={phoneIcon} alt='phone' className='contacts__phone-icon'/>+380 (98) 22 55 800</p>
                         <motion.button className="contacts__button main-button" id='contacts__button' onClick={() => setModalActive(true)}
                             whileHover={{scale: 1.05}}
                             transition={{duration: 0.02}}

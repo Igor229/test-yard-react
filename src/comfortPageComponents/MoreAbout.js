@@ -27,7 +27,7 @@ function MoreAboutCard (props) {
   const {icon, text} = props
   return (
     <div className='moreabout-card'>
-      <img src={icon} alt='icon' className='moreabout-card__icon'/>
+      <img src={icon} alt='cart' className='moreabout-card__icon'/>
       <p className='moreabout-card__text'>{text}</p>
     </div>
   )
@@ -65,7 +65,7 @@ function MoreAbout() {
                 </div>
               </div>
             </div>
-            <img src={blockImage} alt='about image' className='moreabout-content__img'/>
+            <img src={blockImage} alt='about' className='moreabout-content__img'/>
           </div>
       </div>
   )

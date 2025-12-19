@@ -15,6 +15,9 @@ import image6 from '../assets/westPage/images/previous-builds/6.webp'
 import image7 from '../assets/westPage/images/previous-builds/7.webp'
 import image8 from '../assets/westPage/images/previous-builds/8.webp'
 import image9 from '../assets/westPage/images/previous-builds/9.webp'
+import image10 from '../assets/westPage/images/previous-builds/10.webp'
+import image11 from '../assets/westPage/images/previous-builds/11.webp'
+import image12 from '../assets/westPage/images/previous-builds/12.webp'
 
 
 
@@ -62,6 +65,21 @@ const westSliderData = [
     {
       image: image9,
       header: '9 черга',
+      type: 'Введено в експлуатацію'
+    },
+    {
+      image: image10,
+      header: '10 черга',
+      type: 'Введено в експлуатацію'
+    },
+    {
+      image: image11,
+      header: '11 черга',
+      type: 'Введено в експлуатацію'
+    },
+    {
+      image: image12,
+      header: '12 черга',
       type: 'Введено в експлуатацію'
     },
 ]
@@ -132,6 +150,9 @@ export default function PreviousStatus() {
                     image7,
                     image8,
                     image9,
+                    image10,
+                    image11,
+                    image12,
                 ]}
             />
         </>

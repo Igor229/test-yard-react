@@ -65,12 +65,12 @@ export default function IntroductionBlock() {
             <p className='introduction-info__text'>Таунхауси COMFORT TOWN - це високоякісні будинки з приватним подвір’ям, які розташовані в еко-локації міста.</p>
 
             <div className='introduction-info__blocks'>
-              <div className='introduction-info__block'><img src={checkIcon}/><p className='inroduction-info__block-text'>Розвинута інфраструктура району</p></div>
-              <div className='introduction-info__block'><img src={checkIcon}/><p className='inroduction-info__block-text'>Близкість до Центру міста</p></div>
+              <div className='introduction-info__block'><img src={checkIcon} alt='cart'/><p className='inroduction-info__block-text'>Розвинута інфраструктура району</p></div>
+              <div className='introduction-info__block'><img src={checkIcon} alt='cart'/><p className='inroduction-info__block-text'>Близкість до Центру міста</p></div>
             </div>
             <div className='introduction-info__blocks'>
-              <div className='introduction-info__block'><img src={checkIcon}/><p className='inroduction-info__block-text'>Зручне транспортне сполучення</p></div>
-              <div className='introduction-info__block'><img src={checkIcon}/><p className='inroduction-info__block-text'>Функціональне планування</p></div>
+              <div className='introduction-info__block'><img src={checkIcon} alt='cart'/><p className='inroduction-info__block-text'>Зручне транспортне сполучення</p></div>
+              <div className='introduction-info__block'><img src={checkIcon} alt='cart'/><p className='inroduction-info__block-text'>Функціональне планування</p></div>
             </div>
 
             <p className='introduction-info__text'>І це ще далеко не всі переваги комплексу!</p>

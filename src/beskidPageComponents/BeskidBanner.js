@@ -1,5 +1,4 @@
 import mainImg from '../assets/beskidPage/images/main-banner.webp'
-// import mainImg from '../assets/beskidPage/images/main-banner.png'
 import checkIcon from '../assets/beskidPage/icons/check.svg'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
@@ -14,7 +13,7 @@ function BeskidBanner () {
             <img src={mainImg} className='banner__image' alt='main-logo' />
             <div className='banner__titles'>
 
-                <p className='banner__titles-liltext'><img src={checkIcon} className='banner__titles-liltext-icon'/> Котеджі введено в експлуатацію</p>
+                <p className='banner__titles-liltext'><img src={checkIcon} alt='check' className='banner__titles-liltext-icon'/> Котеджі введено в експлуатацію</p>
 
                 <motion.h1 className='banner__titles-main'
                     initial={{y: -70, opacity: 0}}

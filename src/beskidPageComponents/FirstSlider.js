@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import FsLightbox from 'fslightbox-react';
@@ -12,13 +12,13 @@ import './Slider.css';
 // import required modules
 import { Navigation } from 'swiper/modules';
 
-import beskidImg1 from '../assets/beskidPage/images/first-slider/0.png'
-import beskidImg2 from '../assets/beskidPage/images/first-slider/1.png'
-import beskidImg3 from '../assets/beskidPage/images/first-slider/2.png'
-import beskidImg4 from '../assets/beskidPage/images/first-slider/3.png'
-import beskidImg5 from '../assets/beskidPage/images/first-slider/4.png'
-import beskidImg6 from '../assets/beskidPage/images/first-slider/5.png'
-import beskidImg7 from '../assets/beskidPage/images/first-slider/6.png'
+import beskidImg1 from '../assets/beskidPage/images/first-slider/0.webp'
+import beskidImg2 from '../assets/beskidPage/images/first-slider/1.webp'
+import beskidImg3 from '../assets/beskidPage/images/first-slider/2.webp'
+import beskidImg4 from '../assets/beskidPage/images/first-slider/3.webp'
+import beskidImg5 from '../assets/beskidPage/images/first-slider/4.webp'
+import beskidImg6 from '../assets/beskidPage/images/first-slider/5.webp'
+import beskidImg7 from '../assets/beskidPage/images/first-slider/6.webp'
 
 const images = [
   {
@@ -69,7 +69,7 @@ export default function FirstSlider() {
         {images.map((item, index) => {
           return (
             <SwiperSlide onClick={() => {setToggler(!toggler)}}>
-              <img className="slider-img" src={require('../assets/beskidPage/images/first-slider/' + index + '.png')} alt={item.alt}/>
+              <img className="slider-img" src={require('../assets/beskidPage/images/first-slider/' + index + '.webp')} alt={item.alt}/>
             </SwiperSlide>
           )
         })}

@@ -27,12 +27,6 @@ import WestForm from '../westPageComponents/WestForm'
 function ComfortPage () {
   const [modalActive, setModalActive] = useState(false)
 
-  const handleClickProposal = () => {
-    const element = document.getElementById('propose')
-    if (element) {
-      element.scrollIntoView({behavior: 'smooth'})
-    }
-  }
   return (
     <>
       <Modal active={modalActive} setActive={setModalActive}/>
@@ -56,7 +50,7 @@ function ComfortPage () {
             <svg className="action-icon">
               <use href={icons + "#chevron-left"} />
             </svg>
-            <a href="#" className="action-text">
+            <a href="/" className="action-text">
               На головну
             </a>
           </motion.div>
@@ -131,7 +125,7 @@ function ComfortPage () {
         <section className='contacts'>  
             <div className='contacts-container'>
                 <div className='contacts__item'>
-                    <img src={phoneIcon} className='contacts__item-icon'/>
+                    <img src={phoneIcon} className='contacts__item-icon' alt='cart'/>
                     <div className='contacts__item-info'>
                         <p className='contacts-title'>Номер телефону:</p>
                         <p className='contacts-subtitle'>+38 (098) 225 58 00 </p>
@@ -139,7 +133,7 @@ function ComfortPage () {
                 </div>
 
                 <a href='https://www.instagram.com/comfort_town_if?igsh=dm5tZXF4Y3M1eGNj' target='etarget' className='contacts__item'>
-                    <img src={instagramIcon} className='contacts__item-icon'/>
+                    <img src={instagramIcon} className='contacts__item-icon' alt='cart'/>
                     <div className='contacts__item-info'>
                         <p className='contacts-title'>Instagram:</p>
                         <p className='contacts-subtitle'>comfort_town_if</p>
@@ -147,7 +141,7 @@ function ComfortPage () {
                 </a>
 
                 <div className='contacts__item'>
-                    <img src={mailIcon} className='contacts__item-icon'/>
+                    <img src={mailIcon} className='contacts__item-icon' alt='cart'/>
                     <div className='contacts__item-info'>
                         <p className='contacts-title'>Email:</p>
                         <p className='contacts-subtitle'>yarddevelopment34@gmail.com</p>
@@ -155,7 +149,7 @@ function ComfortPage () {
                 </div>
 
                 <div className='contacts__item'>
-                    <img src={mapIcon} className='contacts__item-icon'/>
+                    <img src={mapIcon} className='contacts__item-icon' alt='cart'/>
                     <div className='contacts__item-info'>
                         <p className='contacts-title'>Локація:</p>
                         <p className='contacts-subtitle'>с. Угорники, вулиця Тополина</p>

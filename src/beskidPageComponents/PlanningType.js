@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from 'swiper/modules';
 import FsLightbox from 'fslightbox-react';
 
-import planTypeMain from '../assets/beskidPage/images/planning-types/resized/0.webp'
-import planTypeOne from '../assets/beskidPage/images/planning-types/resized/1.webp'
-import planTypeTwo from '../assets/beskidPage/images/planning-types/resized/2.webp'
+import planTypeMain from '../assets/beskidPage/images/planning-types/0.webp'
+import planTypeOne from '../assets/beskidPage/images/planning-types/1.webp'
+import planTypeTwo from '../assets/beskidPage/images/planning-types/2.webp'
 import './PlanningType.scss'
 import "swiper/css";
 
@@ -45,7 +45,7 @@ function PlanningType () {
                     {data.map((item, index) => {
                     return (
                         <SwiperSlide onClick={() => {setToggler(!toggler)}}>
-                        <img className="slider-img" src={require('../assets/beskidPage/images/planning-types/resized/' + index + '.webp')} alt={item.alt}/>
+                        <img className="slider-img" src={require('../assets/beskidPage/images/planning-types/' + index + '.webp')} alt={item.alt}/>
                         </SwiperSlide>
                     )
                     })}

@@ -15,8 +15,8 @@
     background-color: #181E1A;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: start;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding: 24px;
     gap: 12px;
     border-radius: 20px;
@@ -38,7 +38,7 @@
     &__info {
       display: flex;
       flex-direction: column;
-      align-items: start;
+      align-items: flex-start;
       gap: 24px;
       max-width: 50%;
 
@@ -56,7 +56,7 @@
       &-item {
         display: flex;
         gap: 16px;
-        align-items: start;
+        align-items: flex-start;
         &-text {
           font-weight: 400;
           font-size: 16px;
