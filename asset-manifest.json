@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-yard-react/static/css/main.a2be4afa.css",
-    "main.js": "/test-yard-react/static/js/main.64816ad0.js",
+    "main.css": "/test-yard-react/static/css/main.29e0e57a.css",
+    "main.js": "/test-yard-react/static/js/main.944a381a.js",
     "static/js/787.3a6277e1.chunk.js": "/test-yard-react/static/js/787.3a6277e1.chunk.js",
     "static/media/manageGroupImg4.webp": "/test-yard-react/static/media/manageGroupImg4.6eba19e1f749aefca32e.webp",
     "static/media/4.webp": "/test-yard-react/static/media/4.f0a1fd0072f7ba20ee0a.webp",
@@ -163,15 +163,16 @@
     "static/media/shield.svg": "/test-yard-react/static/media/shield.f2160250697e21312c06c9f46ffb6eed.svg",
     "static/media/Frame.svg": "/test-yard-react/static/media/Frame.00bca8afdf9431aecb9d59c5c81a9bba.svg",
     "static/media/tiktok.svg": "/test-yard-react/static/media/tiktok.83e784ecc95c8e7c1f3b9f396f0f49b9.svg",
-    "static/media/menu-open.svg": "/test-yard-react/static/media/menu-open.1427a2f0f5c05ff742f6d668529955a6.svg",
+    "static/media/menu-open.svg": "/test-yard-react/static/media/menu-open.c6bf71521c29e0c45c931cd177213015.svg",
     "static/media/stoncks.svg": "/test-yard-react/static/media/stoncks.3d1ce1c73db49ecf1fcaa3e62a2e1b51.svg",
     "static/media/menu-close.svg": "/test-yard-react/static/media/menu-close.e20279ac4433a2ac04225d21f9064a29.svg",
-    "main.a2be4afa.css.map": "/test-yard-react/static/css/main.a2be4afa.css.map",
-    "main.64816ad0.js.map": "/test-yard-react/static/js/main.64816ad0.js.map",
+    "static/media/chevron-down.svg": "/test-yard-react/static/media/chevron-down.ef808bd72c2fbedf162b05f13d60d8b8.svg",
+    "main.29e0e57a.css.map": "/test-yard-react/static/css/main.29e0e57a.css.map",
+    "main.944a381a.js.map": "/test-yard-react/static/js/main.944a381a.js.map",
     "787.3a6277e1.chunk.js.map": "/test-yard-react/static/js/787.3a6277e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2be4afa.css",
-    "static/js/main.64816ad0.js"
+    "static/css/main.29e0e57a.css",
+    "static/js/main.944a381a.js"
   ]
 }
