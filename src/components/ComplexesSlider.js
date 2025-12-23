@@ -16,7 +16,7 @@ const complexesData = [
     {
         header: 'RIVER TOWN',
         location: 'Микитинці',
-        type: '10 хв до Центру Івано-Франківська',
+        type: '5 хв до Центру Івано-Франківська',
         image: RiverTownCardPhoto,
         href: '#river-town'
     },
