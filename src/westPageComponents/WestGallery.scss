@@ -4,10 +4,38 @@
 }
 .west-gallery__slider {
     border-radius: 20px;
+    margin: 24px 0;
+}
+.sb-box {
+    padding-bottom: 80px;
+}
+.sb-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    &-text {
+        max-width: 70%;
+        padding-bottom: 24px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        color: #555;
+    }
 }
 
 @media screen and (max-width: 1440px) {
     .west-gallery__img {
         height: 250px !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .sb-info-text {
+        text-align: left;
+        max-width: 100%;
+    }
+    .sb-box {
+        padding-bottom: 36px;
     }
 }

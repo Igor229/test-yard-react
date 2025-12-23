@@ -10,8 +10,16 @@ import mapPinIcon from '../assets/icons/map-pin.png'
 import comfortCardPhoto from '../assets/images/home-comfort.webp'
 import westCardPhoto from '../assets/images/home-west.webp'
 import westXIIICardPhoto from '../assets/images/home-west_XIII.webp'
+import RiverTownCardPhoto from '../assets/images/river-home.webp'
 
 const complexesData = [
+    {
+        header: 'RIVER TOWN',
+        location: 'Микитинці',
+        type: '10 хв до Центру Івано-Франківська',
+        image: RiverTownCardPhoto,
+        href: '#river-town'
+    },
     {
         header: 'WEST TOWN XIII (квадрохауси)',
         location: 'Крихівці',

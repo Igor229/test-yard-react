@@ -74,13 +74,8 @@ function RiverPage () {
 
             <RiverAdvantages />
 
-            <motion.div className='info wrapper info-container second-slider__container'
-            initial={{opacity: 0, y: 100, scale: 0.9}}
-            whileInView={{opacity: 1, y: 0, scale: 1}}
-            transition={{duration: 0.37}}
-            >
-                <SecondBlock/>
-            </motion.div>
+            {/* ======= second block with gallery ======= */}
+            <SecondBlock/>
 
             {/* planning types section */}
             <motion.div className='wrapper'

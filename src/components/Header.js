@@ -108,7 +108,7 @@ const closeMenu = () => {
                 {/* Burger Menu */}
                 <div className='burger'>
                     <div className="burger__items">
-                        <a href='/#'><img src={mainLogoWhite} alt="main-logo" className="header__items-logo"/></a>
+                        <a href='/'><img src={mainLogoWhite} alt="main-logo" className="header__items-logo"/></a>
                         <div className="humburger">
                             <img src={burger_icon} alt="menu-open" className="burger__items-icon menuIcon" onClick={showBurger}/>
                             <img src={burger_icon} alt="menu-close" className="burger__items-icon closeIcon" onClick={showBurger}/>
