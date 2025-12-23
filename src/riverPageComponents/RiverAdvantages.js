@@ -6,7 +6,7 @@ import './RiverAdvantages.scss'
 function RiverAdvantages() {
   return (
     <>
-    <div className='riveradv'>
+    <div className='riveradv wrapper'>
         <div className='riveradv-titles'>
             <h1 className='riveradv-titles__main'> Переваги містечка</h1>
         </div>

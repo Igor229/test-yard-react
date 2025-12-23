@@ -7,6 +7,7 @@ import icons from '../assets/icons/sprite.svg'
 import Modal from './Modal'
 import tiktokIcon from '../assets/icons/tiktok.svg'
 import phoneIcon from '../assets/icons/phone.png'
+import chevronDown from '../assets/icons/chevron-down.svg'
 import { motion } from 'framer-motion';
 import './Header.scss'
 
@@ -65,6 +66,39 @@ function Header(props) {
         window.scrollTo(0, 0)
     }
 
+    // DropDown
+    const triggerRef = useRef(null);
+    const [open, setOpen] = useState(false);
+
+    const dropdownStyle = triggerRef.current
+    ? {
+          position: 'fixed',
+          top: triggerRef.current.getBoundingClientRect().bottom + 10,
+          left: triggerRef.current.getBoundingClientRect().left,
+      }
+    : {};
+
+    const closeTimeout = useRef(null);
+
+const openMenu = () => {
+    clearTimeout(closeTimeout.current);
+    setOpen(true);
+    setColor(true);
+};
+
+const closeMenu = () => {
+    closeTimeout.current = setTimeout(() => {
+        setOpen(false);
+        if (window.scrollY >= 90){
+            setColor(true)
+        } else {
+            setColor(false)
+        };
+    }, 350);
+};
+
+
+
     return (
         <>
             <header className={color ? 'header header-bg' : 'header'} style={{top: color ? '0px' : top}}>
@@ -74,11 +108,11 @@ function Header(props) {
                 {/* Burger Menu */}
                 <div className='burger'>
                     <div className="burger__items">
+                        <a href='/'><img src={mainLogoWhite} alt="main-logo" className="header__items-logo"/></a>
                         <div className="humburger">
                             <img src={burger_icon} alt="menu-open" className="burger__items-icon menuIcon" onClick={showBurger}/>
                             <img src={burger_icon} alt="menu-close" className="burger__items-icon closeIcon" onClick={showBurger}/>
-                        </div> 
-                        <a href='/'><img src={mainLogoWhite} alt="main-logo" className="header__items-logo"/></a>
+                        </div>
                     </div>
 
                     <div className={burger_class}>
@@ -93,9 +127,10 @@ function Header(props) {
                             <div className="burger__menu-contacts">
                                 <div className="contacts__container">
                                     <h4 className="contacts__container-title">Yard Development</h4>
-                                    <a href="#comfort-town" className="contacts__container-text burger-link" onClick={showBurger}>Comfort Town</a>
+                                    <a href="#comfort-town" className="contacts__container-text burger-link" onClick={showBurger}>COMFORT TOWN</a>
                                     <a href="#fomich-guesthouses" className="contacts__container-text burger-link" onClick={showBurger}>FOMICH RESIDENCE GUESTHOUSES</a>
                                     <a href="#west-town" className="contacts__container-text burger-link" onClick={showBurger}>WEST TOWN</a>
+                                    <a href="#river-town" className="contacts__container-text burger-link" onClick={showBurger}>RIVER TOWN</a>
                                 </div>
                                 <div className="contacts__container">
                                     <h4 className="contacts__container-title">Контактна інформація</h4>
@@ -128,13 +163,10 @@ function Header(props) {
                 <div className="wrapper">
                 <div className="header__items">
                     <div className="header__items-nav">
-
                         <a href="/"><img src={mainLogoWhite} alt="main-logo" className="header__items-logo"/></a>
-                        <ul className="navigations">
-                            <li className='comfortTown_action'><a href="#comfort-town" className="navigations__action" onClick={handleClickScroll}>Comfort Town</a></li>
-                            <li><a href="#west-town" className="navigations__action" onClick={handleClickScroll}>West town</a></li>
-                            <li><a href="#fomich-guesthouses" className="navigations__action" onClick={handleClickScroll}>FOMICH RESIDENCE GUESTHOUSES</a></li>
-                        </ul>
+                        <div className='nav-dropdown' onMouseEnter={openMenu} onMouseLeave={closeMenu} ref={triggerRef}>
+                            <span className='nav-dropdown__title'>Наші Комплекси <img src={chevronDown} alt='chevron-down'/></span>
+                        </div>
                     </div>
 
                     <div className="header__items-contacts">
@@ -155,6 +187,14 @@ function Header(props) {
                 </div>
             </div>
             </header>
+            {open && (
+                <ul className="navigations nav-dropdown__menu" onMouseEnter={openMenu} onMouseLeave={closeMenu} style={dropdownStyle}>
+                    <li><a href="#comfort-town" className="navigations__action" onClick={handleClickScroll}>COMFORT TOWN</a></li>
+                    <li><a href="#west-town" className="navigations__action" onClick={handleClickScroll}>WEST TOWN</a></li>
+                    <li><a href="#fomich-guesthouses" className="navigations__action" onClick={handleClickScroll}>FOMICH RESIDENCE GUESTHOUSES</a></li>
+                    <li><a href="#river-town" className="navigations__action" onClick={handleClickScroll}>RIVER TOWN</a></li>
+                </ul>
+            )}
         </>
     )
 }

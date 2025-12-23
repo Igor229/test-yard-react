@@ -1,18 +1,26 @@
 .rtype-actions {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     gap: 32px;
+    
+    &__buttons {
+        gap: 13px;
+        width: auto !important;
+    }
+}
+.rtype-image-block {
+    width: 100%;
 }
 
 .rtype-info {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    align-items: start;
 
     &__title {
-        font-weight: 500;
         font-size: 26px;
         line-height: 32px;
         color: #181E1A;
@@ -23,5 +31,28 @@
         font-size: 16px;
         line-height: 24px;
         color: #555;
+    }
+}
+
+.rtype {
+    &-button {
+        transition: all 0.25s ease;
+    }
+    &-button:hover {
+        transform: scale(1.05);
+    }
+    &-button--noactive {
+        transition: all 0.25s ease;
+    }
+    &-button--noactive:hover {
+        transform: scale(1.05);
+        background-color: #527246b9;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .rtype-info {
+        align-items: center;
     }
 }

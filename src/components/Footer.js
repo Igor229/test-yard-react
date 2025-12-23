@@ -22,6 +22,7 @@ function Footer () {
                         <a href='#comfort-town' className="content__item-text upper" onClick={handleClickScroll}>COMFORT TOWN</a>
                         <a href='#fomich-guesthouses' className="content__item-text upper" onClick={handleClickScroll}>FOMICH RESIDENCE GUESTHOUSES</a>
                         <a href='#west-town' className="content__item-text upper" onClick={handleClickScroll}>WEST TOWN</a>
+                        <a href='#river-town' className="content__item-text upper" onClick={handleClickScroll}>RIVER TOWN</a>
                     </div>
 
                     <div className="content__item">

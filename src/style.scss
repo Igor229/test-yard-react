@@ -213,9 +213,9 @@ svg {
     
     .burger__items {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 16px;
+        // align-items: center;
+        // justify-content: center;
+        padding: 10px 56px;
 
         .humburger {
             display: flex;
@@ -225,8 +225,8 @@ svg {
 
         &-icon {
             position: fixed;
-            left: 0;
-            padding-left: 55px;
+            right: 0;
+            padding-right: 55px;
             cursor: pointer;
         }
 

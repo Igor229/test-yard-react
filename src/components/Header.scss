@@ -24,74 +24,97 @@
             padding: 10px 0;
         }
 
-        .navigations {
-            display: flex;
-            align-items: center;
-            text-align: center;
-            flex-direction: row;
-            gap: 32px;
-            & li {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-            }
-
-            &__action {
-                color: #fff;
-                font-weight: 400;
-                line-height: 24px;
-                text-transform: uppercase;
-                font-size: 14px;
-                cursor: pointer;
-                &-span {
-                    background-color: #FFEC8B;
-                    padding: 4px 10px;
-                    font-size: 14px;
-                    color: #181E1A;
-                    border: 1px solid #FFEC8B;
-                    border-radius: 20px;
-                    text-align: center;
-                }
-    
-                &::after {
-                    content: '';
-                    display: block;
-                    width: 0;
-                    height: 1px;
-                    background: #fff;
-                    transition: width .3s;
-                }
-    
-                &:hover::after {
-                    width: 100%;
-                    transition: width .3s;
-                }
-            }
-        }
 
         &-contacts {
             display: flex;
             align-items: center;
             gap: 32px;
-
-            .contacts__number {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                color: #fff;
-                font-weight: 400;
-                line-height: 24px;
-                font-size: 14px;
-            }
-
-            .contacts__button {
-                width: 230px;
-                height: 65px;
-                font-size: 14px;
-                font-weight: 400;
-            }
         }
     }
+}
+
+.nav-dropdown {
+    transition: all 1s ease-in-out;
+
+    &__title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 14px 24px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        transition: all 0.2s ease-in-out;
+        border-radius: 7px;
+        &:hover {
+            background-color: rgba($color: #fff, $alpha: 0.1);
+            backdrop-filter: blur(60px);
+            transition: all 0.2s ease-in-out;
+        }
+    }
+}
+
+.navigations {
+    display: flex;
+    align-items: start;
+    text-align: start;
+    flex-direction: column;
+    position: absolute;
+    padding: 6px 12px;
+    // visibility: hidden;
+    background-color: rgba(24, 30, 36, 0.4);
+    backdrop-filter: blur(60px);
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+    z-index: 999;
+    & li {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        transition: all 0.2s ease-in-out;
+    }
+
+    & li:not(:last-child) {
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.1);
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__action {
+        color: #fff;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-size: 14px;
+        cursor: pointer;
+        padding: 14px 12px;
+        border-radius: 7px;
+        width: 100%;
+        &:hover {
+            background-color: rgba($color: #fff, $alpha: 0.1);
+            backdrop-filter: blur(40px);
+            transition: all 0.08s ease-in-out;
+        }
+    }
+}
+
+.contacts__number {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.contacts__button {
+    width: 230px !important;
+    height: 65px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 1366px) {

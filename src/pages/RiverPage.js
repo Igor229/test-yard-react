@@ -63,7 +63,7 @@ function RiverPage () {
 
             {/* ======= first block about river town ======= */}
             <motion.div
-            className="wrapper west-info info-container"
+            className="wrapper west-info info-container river-info"
             initial={{ opacity: 0, y: 100, scale: 0.9 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.37 }}
