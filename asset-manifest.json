@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-yard-react/static/css/main.21d98a66.css",
-    "main.js": "/test-yard-react/static/js/main.1607ec5c.js",
+    "main.css": "/test-yard-react/static/css/main.0e0ae4cc.css",
+    "main.js": "/test-yard-react/static/js/main.901967dd.js",
     "static/js/787.3a6277e1.chunk.js": "/test-yard-react/static/js/787.3a6277e1.chunk.js",
     "static/media/manageGroupImg4.webp": "/test-yard-react/static/media/manageGroupImg4.6eba19e1f749aefca32e.webp",
     "static/media/4.webp": "/test-yard-react/static/media/4.f0a1fd0072f7ba20ee0a.webp",
@@ -154,26 +154,26 @@
     "static/media/main-0.webp": "/test-yard-react/static/media/main-0.9336885b1a313a2b4f6f.webp",
     "static/media/main-2.webp": "/test-yard-react/static/media/main-2.d1752c11cdaf15fc2c93.webp",
     "static/media/TypeTwo.webp": "/test-yard-react/static/media/TypeTwo.5e19435a28bb62028147.webp",
-    "static/media/sprite.svg": "/test-yard-react/static/media/sprite.ed002f29049753607d6b64b630138cc9.svg",
-    "static/media/tree.svg": "/test-yard-react/static/media/tree.e52774606d636ffa3a123d6e487f9d29.svg",
-    "static/media/calendar.svg": "/test-yard-react/static/media/calendar.84e5f1ca2081b39e0b98bf17e0486ea8.svg",
-    "static/media/check.svg": "/test-yard-react/static/media/check.79eb2a9adb605fc7b5e6495bb79e8185.svg",
-    "static/media/town.svg": "/test-yard-react/static/media/town.b52d9710491897d26eea1466a0859542.svg",
+    "static/media/sprite.svg": "/test-yard-react/static/media/sprite.1a2213c19ef454154d32c8e91328be7b.svg",
+    "static/media/tree.svg": "/test-yard-react/static/media/tree.c0546db603a466e0a965ff8fa04c3673.svg",
+    "static/media/calendar.svg": "/test-yard-react/static/media/calendar.d863a14f7419fdeccf27e5df1f5acd65.svg",
+    "static/media/check.svg": "/test-yard-react/static/media/check.c720488a736097ac84142150e87954eb.svg",
+    "static/media/town.svg": "/test-yard-react/static/media/town.2f6aadc64668933b5e5dd24848c60459.svg",
     "index.html": "/test-yard-react/index.html",
-    "static/media/lock.svg": "/test-yard-react/static/media/lock.379857588971009f0807c885ed4e99fa.svg",
-    "static/media/shield.svg": "/test-yard-react/static/media/shield.d18d75e13ebf69f971d8ade72dd80818.svg",
-    "static/media/Frame.svg": "/test-yard-react/static/media/Frame.dd6b7a1b22b71390d4b8f8935a39f27a.svg",
-    "static/media/tiktok.svg": "/test-yard-react/static/media/tiktok.8da0dc92cc7e0d4932d89693f5935153.svg",
-    "static/media/menu-open.svg": "/test-yard-react/static/media/menu-open.ea38748c3b4795117e922b3bedb68624.svg",
-    "static/media/stoncks.svg": "/test-yard-react/static/media/stoncks.da35ef693bc8b9c13e84bb74e236d45a.svg",
-    "static/media/menu-close.svg": "/test-yard-react/static/media/menu-close.83af43c5ad2451fc6cbcb8abd0ede7c5.svg",
-    "static/media/chevron-down.svg": "/test-yard-react/static/media/chevron-down.93b7cbd9ce76cf4f10a02362a54ad719.svg",
-    "main.21d98a66.css.map": "/test-yard-react/static/css/main.21d98a66.css.map",
-    "main.1607ec5c.js.map": "/test-yard-react/static/js/main.1607ec5c.js.map",
+    "static/media/lock.svg": "/test-yard-react/static/media/lock.992bc7f88514647b1e991f240fbf80d9.svg",
+    "static/media/shield.svg": "/test-yard-react/static/media/shield.f2160250697e21312c06c9f46ffb6eed.svg",
+    "static/media/Frame.svg": "/test-yard-react/static/media/Frame.00bca8afdf9431aecb9d59c5c81a9bba.svg",
+    "static/media/tiktok.svg": "/test-yard-react/static/media/tiktok.83e784ecc95c8e7c1f3b9f396f0f49b9.svg",
+    "static/media/menu-open.svg": "/test-yard-react/static/media/menu-open.c6bf71521c29e0c45c931cd177213015.svg",
+    "static/media/stoncks.svg": "/test-yard-react/static/media/stoncks.3d1ce1c73db49ecf1fcaa3e62a2e1b51.svg",
+    "static/media/menu-close.svg": "/test-yard-react/static/media/menu-close.e20279ac4433a2ac04225d21f9064a29.svg",
+    "static/media/chevron-down.svg": "/test-yard-react/static/media/chevron-down.ef808bd72c2fbedf162b05f13d60d8b8.svg",
+    "main.0e0ae4cc.css.map": "/test-yard-react/static/css/main.0e0ae4cc.css.map",
+    "main.901967dd.js.map": "/test-yard-react/static/js/main.901967dd.js.map",
     "787.3a6277e1.chunk.js.map": "/test-yard-react/static/js/787.3a6277e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21d98a66.css",
-    "static/js/main.1607ec5c.js"
+    "static/css/main.0e0ae4cc.css",
+    "static/js/main.901967dd.js"
   ]
 }
