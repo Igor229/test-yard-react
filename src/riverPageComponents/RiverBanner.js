@@ -37,7 +37,7 @@ function RiverBanner () {
                             whileInView={{y: 0, opacity: 1}}
                             transition={{duration: 0.5}}
                         >
-                            <button className="banner__action about-button-comfort" id='contacts__button' onClick={() => setModalActive(true)}
+                            <button className="banner__action about-button-river" id='contacts__button' onClick={() => setModalActive(true)}
                                 whileHover={{scale: 1.05}}
                                 transition={{duration: 0.02}}
                             >

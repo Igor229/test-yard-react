@@ -64,7 +64,7 @@ $title-color: #7F9E56;
     margin-right: 30px;
 }
 
-.about-button-comfort {
+.about-button-river {
     text-transform: uppercase;
     width: 620px !important;
     font-size: 25px !important;
@@ -73,36 +73,42 @@ $title-color: #7F9E56;
 }
 
 @media screen and (max-width: 920px) {
-    .text-container__title-comfort {
+    .text-container__title-river {
         font-size: 80px;
     }
 }
 @media screen and (max-width: 768px) {
-    .text-container__title-comfort {
+    .text-container__title-river {
         font-size: 52px;
         line-height: 72px;
     }
 }
 @media screen and (max-width: 768px) {
-    .text-container__title-comfort {
+    .text-container__title-river {
         font-size: 36px;
         line-height: 32px;
     }
-    .text-container__text-comfort {
-        font-size: 22px;
+    .text-container__text-river {
+        font-size: 20px;
         line-height: 24px;
     }
 }
 @media screen and (max-width: 768px) {
-    .about-button-comfort {
+    .about-button-river {
         width: 420px !important;
         font-size: 14px !important;
         line-height: 20px !important;
         
     }
 }
+@media screen and (max-width: 600px) {
+    .text-container__text-river {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
 @media screen and (max-height: 600px) {
-    .about-button-comfort {
+    .about-button-river {
         margin-bottom: 25px !important;
     }
 }
