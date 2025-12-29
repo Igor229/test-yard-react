@@ -23,18 +23,19 @@
     &__title {
         font-size: 26px;
         line-height: 32px;
-        color: #181E1A;
+        color: #fff;
     }
 
     &__text {
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        color: #555;
+        color: #969F9A;
     }
 }
 
 .rtype {
+    padding: 65px 0;
     &-button {
         transition: all 0.25s ease;
     }

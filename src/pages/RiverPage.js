@@ -78,13 +78,15 @@ function RiverPage () {
             <SecondBlock/>
 
             {/* planning types section */}
-            <motion.div className='wrapper'
-            initial={{y: 150, opacity: 0}}
-            whileInView={{y: 0, opacity: 1}}
-            transition={{duration: 0.6}}
-            >
+            <div className='rplantype' style={{backgroundColor: '#181E1A'}}>
+              <motion.div className='wrapper'
+              initial={{y: 150, opacity: 0}}
+              whileInView={{y: 0, opacity: 1}}
+              transition={{duration: 0.6}}
+              >
                 <RPlanType/>
-            </motion.div>
+              </motion.div>
+            </div>
 
             {/* Adventages List section */}
             <div className="wrapper title-container box">
