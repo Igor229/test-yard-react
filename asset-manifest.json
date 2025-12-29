@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-yard-react/static/css/main.0e0ae4cc.css",
-    "main.js": "/test-yard-react/static/js/main.901967dd.js",
+    "main.css": "/test-yard-react/static/css/main.23583cd4.css",
+    "main.js": "/test-yard-react/static/js/main.638dfd82.js",
     "static/js/787.3a6277e1.chunk.js": "/test-yard-react/static/js/787.3a6277e1.chunk.js",
     "static/media/manageGroupImg4.webp": "/test-yard-react/static/media/manageGroupImg4.6eba19e1f749aefca32e.webp",
     "static/media/4.webp": "/test-yard-react/static/media/4.f0a1fd0072f7ba20ee0a.webp",
@@ -168,12 +168,12 @@
     "static/media/stoncks.svg": "/test-yard-react/static/media/stoncks.3d1ce1c73db49ecf1fcaa3e62a2e1b51.svg",
     "static/media/menu-close.svg": "/test-yard-react/static/media/menu-close.e20279ac4433a2ac04225d21f9064a29.svg",
     "static/media/chevron-down.svg": "/test-yard-react/static/media/chevron-down.ef808bd72c2fbedf162b05f13d60d8b8.svg",
-    "main.0e0ae4cc.css.map": "/test-yard-react/static/css/main.0e0ae4cc.css.map",
-    "main.901967dd.js.map": "/test-yard-react/static/js/main.901967dd.js.map",
+    "main.23583cd4.css.map": "/test-yard-react/static/css/main.23583cd4.css.map",
+    "main.638dfd82.js.map": "/test-yard-react/static/js/main.638dfd82.js.map",
     "787.3a6277e1.chunk.js.map": "/test-yard-react/static/js/787.3a6277e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e0ae4cc.css",
-    "static/js/main.901967dd.js"
+    "static/css/main.23583cd4.css",
+    "static/js/main.638dfd82.js"
   ]
 }
