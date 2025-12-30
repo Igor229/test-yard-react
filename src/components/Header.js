@@ -163,7 +163,7 @@ const closeMenu = () => {
                 <div className="wrapper">
                 <div className="header__items">
                     <div className="header__items-nav">
-                        <a href="/"><img src={mainLogoWhite} alt="main-logo" className="header__items-logo"/></a>
+                        <a href="#"><img src={mainLogoWhite} alt="main-logo" className="header__items-logo"/></a>
                         <div className='nav-dropdown' onMouseEnter={openMenu} onMouseLeave={closeMenu} ref={triggerRef}>
                             <span className='nav-dropdown__title'>Наші Комплекси <img src={chevronDown} alt='chevron-down'/></span>
                         </div>
